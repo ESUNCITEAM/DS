@@ -60,9 +60,9 @@ var copyCode = new Clipboard('.btn-copy');
 
 copyCode.on('success', function (event) {
   event.clearSelection();
-  event.trigger.textContent = '複製..';
+  event.trigger.textContent = '👌';
   window.setTimeout(function () {
-    event.trigger.textContent = '👌';
+    event.trigger.textContent = '複製';
   }, 500);
 
 });
