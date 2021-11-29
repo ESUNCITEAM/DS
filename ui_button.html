@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -529,7 +530,47 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <!-- 程式碼 -->
+                            <div class="pt-4 pb-2">
+                                <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">程式碼</h1>
+                            </div>
+                            <!-- 網頁按鈕類型 卡片 -->
+                            <div class="row mt-3 text-gray-11">
+                                <div class="col">
+                                    <div class="card position-relative shadow mb-4 p-3">
+
+                                        <pre><code class="hljs" id="cc">
+
+                                                .btn {
+                                                    background: $primary-8;
+                                                    color: #fff;
+                                                    border-radius: pxTorem(4px);
+                                                    padding: pxTorem(15px);
+                                                    width: 140px;
+                                                    padding: 0px 20px;
+                                                    height: 65px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    text-align: center;
+                                                    transition: 0.3s;
+                                                    &:hover {
+                                                        opacity: 0.7;
+                                                    }
+                                                    @include min(sm) {
+                                                        width: 200px;
+                                                        padding: 0px 50px;
+                                                    }
+                                                }
+                                                </code></pre>
+
+                                        <div class="copy-code position-absolute btn-copy" data-clipboard-target="#cc">複製
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
                       </div>
             
