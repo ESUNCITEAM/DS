@@ -13,6 +13,9 @@
 
     <!-- Plugin套件 -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
@@ -24,47 +27,54 @@
     <div id="wrapper">
         <!-- Sidebar 側邊選單 -->
         <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Heading -->
-            <div class="sidebar-heading mt-3">
-                Brand
-            </div>
-            <!-- Nav Item - About關於玉山 -->
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">
-                    <span>關於玉山</span></a>
-            </li>
-            <!-- Nav Item - Principle設計原則-->
-            <li class="nav-item">
-                <a class="nav-link" href="principle.html">
-                    <span>設計原則</span></a>
-            </li>
+           <!-- Heading -->
+           <div class="sidebar-heading mt-3">
+            Brand
+        </div>
+        <!-- Nav Item - Principle設計原則-->
+        <li class="nav-item active">
+            <a class="nav-link" href="principle.html">
+                <i class="fas fa-book"></i>
+                <span>Principle 設計原則</span></a>
+        </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+        <!-- Divider -->
+        <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Style
-            </div>
-            <!-- Nav Item - Color顏色 -->
-            <li class="nav-item">
-                <a class="nav-link" href="color.html">
-                    <i class="fas fa-swatchbook"></i>
-                    <span>顏色</span></a>
-            </li>
-            <!-- Nav Item - Typography字型 -->
-            <li class="nav-item">
-                <a class="nav-link" href="typography.html">
-                    <i class="fas fa-font"></i>
-                    <span>字型</span></a>
-            </li>
-            <!-- Nav Item - Icon圖示 -->
-            <li class="nav-item">
-                <a class="nav-link" href="icon.html">
-                    <i class="far fa-image"></i>
-                    <span>圖示</span></a>
-            </li>
-
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Style
+        </div>
+        <!-- Nav Item - Color顏色 -->
+        <li class="nav-item">
+            <a class="nav-link" href="color.html">
+                <i class="fas fa-swatchbook"></i>
+                <span>Color 顏色</span></a>
+        </li>
+        <!-- Nav Item - Typography字型 -->
+        <li class="nav-item">
+            <a class="nav-link" href="typography.html">
+                <i class="fas fa-font"></i>
+                <span>Typography 字型</span></a>
+        </li>
+        <!-- Nav Item - Icon圖示 -->
+        <li class="nav-item">
+            <a class="nav-link" href="icon.html">
+                <i class="far fa-image"></i>
+                <span>Icon 圖示</span></a>
+        </li>
+        <!-- Nav Item - Photo照片 -->
+        <li class="nav-item">
+            <a class="nav-link" href="photography.html">
+                <i class="far fa-image"></i>
+                <span>Photo 照片</span></a>
+        </li>
+          <!-- Nav Item - illustration插圖 -->
+          <li class="nav-item">
+            <a class="nav-link" href="illustration.html">
+                <i class="far fa-image"></i>
+                <span>Illustration 插圖</span></a>
+        </li>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -77,7 +87,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <span>Component 元件</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -148,55 +158,15 @@
 
                     <!-- Page Heading -->
                     <div class="pt-4 pb-2">
-                        <h1 class="h2 mb-0 text-gray-800 mt-5 font-weight-normal">關於玉山設計系統</h1>
-                        <h2 class="h5 mb-0 text-gray-800 mt-2 font-weight-light">建立本行Design
-                            System，內容包含設計原則與設計語言等，並作為往後各平台間設計產出之規範依據。
-                        </h2>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row pt-5">
-                        <!-- 關於玉山 -->
-                        <div class="scale col-md-6">
-                            <a class="card shadow mb-4 position-relative overflow-hidden" href="./about.html">
-                                <img class="card-bg position-absolute" src="./img/m-1.jpg" alt="">
-                                <div class="card-mask-dark position-absolute w-100 h-100"></div>
-                                <div class="card-content p-4">
-                                    <h2 class="position-relative text-light font-weight-blod">關於玉山系統</h2>
-                                    <p class="h6 position-relative text-light font-weight-normal">
-                                        玉山銀行以最高服務品質，提供優質金融服務。</p>
-                                    <div class="card-content position-relative text-light mt-5 pt-5">關於玉山<i
-                                            class="fas fa-fw fa-arrow-right"></i></div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- 設計三大原則 -->
-                        <div class="scale col-md-6">
-                            <a class="card shadow mb-4 position-relative overflow-hidden" href="./principle.html">
-                                <img class="card-bg position-absolute" src="./img/m-2.jpg" alt="">
-                                <div class="card-content p-4">
-                                    <h2 class="position-relative text-primary  font-weight-blod">設計三大原則</h2>
-                                    <p class="h6 position-relative text-primary  font-weight-normal">
-                                        貼近、信任、簡約</p>
-                                    <div class="position-relative text-primary mt-5 pt-5">了解更多<i
-                                            class="fas fa-fw fa-arrow-right"></i></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Page Heading -->
-                    <div class="pt-4 pb-2">
                         <h1 class="h2 mb-0 text-gray-800 mt-5 font-weight-normal">玉山設計三大原則</h1>
-                        <h2 class="h5 mb-0 text-gray-800 mt-2 font-weight-light">貼近、信任、簡約
+                       
                         </h2>
                     </div>
-                    <div class="row pt-5">
+                    <div class="row mt-3 mb-5">
                         <!-- 貼近 -->
                         <div class="scale col-md-4">
-                            <a class="card shadow mb-4 position-relative overflow-hidden" href="./principle.html">
-                                <img class="card-bg position-absolute" src="./img/m-3.jpg" alt="">
+                            <a class="card shadow mb-4 position-relative overflow-hidden" href="#principle01">
+                                <img class="card-bg position-absolute" src="./img/principle/m-3.jpg" alt="">
                                 <div class="card-mask-light position-absolute w-100 h-100"></div>
                                 <div class="card-content p-4">
                                     <h2 class="position-relative text-primary font-weight-blod">貼近</h2>
@@ -207,8 +177,8 @@
                         </div>
                         <!-- 信任 -->
                         <div class="scale col-md-4">
-                            <a class="card shadow mb-4 position-relative overflow-hidden" href="./principle.html">
-                                <img class="card-bg position-absolute" src="./img/m-4.jpg" alt="">
+                            <a class="card shadow mb-4 position-relative overflow-hidden" href="#principle02">
+                                <img class="card-bg position-absolute" src="./img/principle/m-4.jpg" alt="">
                                 <div class="card-mask-light position-absolute w-100 h-100"></div>
                                 <div class="card-content p-4">
                                     <h2 class="position-relative text-primary font-weight-blod">信任</h2>
@@ -219,15 +189,154 @@
                         </div>
                         <!-- 簡單 -->
                         <div class="scale col-md-4">
-                            <a class="card shadow mb-4 position-relative overflow-hidden" href="./principle.html">
-                                <img class="card-bg position-absolute" src="./img/m-5.jpg" alt="">
+                            <a class="card shadow mb-4 position-relative overflow-hidden" href="#principle03">
+                                <img class="card-bg position-absolute" src="./img/principle/m-5.jpg" alt="">
                                 <div class="card-mask-light position-absolute w-100 h-100"></div>
                                 <div class="card-content p-4">
-                                    <h2 class="position-relative text-primary font-weight-blod">簡單</h2>
+                                    <h2 class="position-relative text-primary font-weight-blod">簡約</h2>
                                     <div class="card-content position-relative text-primary mt-5 pt-5">了解更多<i
                                             class="fas fa-fw fa-arrow-right"></i></div>
                                 </div>
                             </a>
+                        </div>
+                    </div>
+                    <!-- 貼近 標題 -->
+                    <div class="pt-4 pb-2" id="principle01">
+                        <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">貼近 - 以人為本　先想一步</h1>
+                    </div>
+                    <!-- 貼近 卡片 -->
+                    <div class="row mt-3 text-gray-900">
+                        <div class="col">
+                            <div class="card shadow mb-4 p-3">
+                                <div class="card-body p-3">
+                                    <p class="h5">我們如何在數位服務上詮釋「貼近」</p>
+                                    <ul class="px-3 mb-3">
+                                        <li>根據顧客的需求先想一步，提供的訊息需經過整體規劃</li>
+                                        <li>用日常語言解釋複雜金融，縮短銀行和顧客間距離</li>
+                                        <li>應以滿足顧客需要為主要訴求，勿以產品行銷、優惠為主軸</li>
+                                    </ul>
+                                    <p class="h5">我們如何在設計上詮釋「貼近」</p>
+                                    <ul class="px-3 mb-3">
+                                        <li>做到設計的通用性，包含顏色對比度、文字、按鈕大小等</li>
+                                        <li>設計需具有易用性和可理解性，能夠讓使用者完成期待中的任務，並且擁有積極和愉悅的用戶體驗</li>
+                                        <li>使用使用者懂的意象，參照真實世界的事物、邏輯幫助使用者理解</li>
+                                    </ul>
+                                    <hr>
+                                    <p class="h6">範例:<span>
+                                            <p>以顧客角度為出發點，資訊層級應以直覺式的分類呈現</p>
+                                        </span></p>
+                                    <div class="row">
+
+                                        <div class="col-lg-6 my-3">
+                                            <p class="text-error">Before</p>
+                                            <a href="./img/principle/principle01-error.jpg" data-toggle="lightbox"
+                                                data-title="Before">
+                                                <img src="./img/principle/principle01-error.jpg" class="w-100" alt="">
+                                            </a>
+
+                                        </div>
+                                        <div class="col-lg-6 my-3">
+                                            <p class="text-done">After</p>
+                                            <a href="./img/principle/principle01-ok.jpg" data-toggle="lightbox"
+                                                data-title="After">
+                                                <img src="./img/principle/principle01-ok.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 信任 標題 -->
+                    <div class="pt-4 pb-2" id="principle02">
+                        <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">信任 - 誠信正直 透明即時</h1>
+                    </div>
+                    <!-- 信任 卡片 -->
+                    <div class="row mt-3 text-gray-900">
+                        <div class="col">
+                            <div class="card shadow mb-4 p-3">
+                                <div class="card-body p-3">
+                                    <p class="h5">我們如何在數位服務上詮釋「信任」</p>
+                                    <ul class="px-3 mb-3">
+                                        <li>讓顧客隨時知道辦理、查詢的進度到哪邊，不讓顧客迷航</li>
+                                        <li>提供充足且必要的資訊，並正面回答顧客問題</li>
+                                        <li>勿使用具爭議性的話題、人物，回歸本質以金融專業為核心</li>
+                                    </ul>
+                                    <p class="h5">我們如何在設計上詮釋「信任」</p>
+                                    <ul class="px-3 mb-3">
+                                        <li>在選圖上，使用正面表述與合適年齡層的情境素材，例如：專業團隊、明亮天空、壯闊山景等，避免營造出負面與幼稚的情境</li>
+                                        <li>顧客需要的資訊放在最明顯的地方，不遮掩、不模糊焦點</li>
+                                        <li>提供清楚的各狀態訊息，讓使用者了解「現在發生了什麼事」</li>
+                                    </ul>
+                                    <hr>
+                                    <p class="h6">範例:<span>
+                                            <p>應將重要資訊放置於顯眼的地方</p>
+                                        </span></p>
+                                    <div class="row">
+
+                                        <div class="col-lg-6 my-3">
+                                            <p class="text-error">Before</p>
+                                            <a href="./img/principle/principle02-error.jpg" data-toggle="lightbox"
+                                                data-title="Before">
+                                                <img src="./img/principle/principle02-error.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 my-3">
+                                            <p class="text-done">After</p>
+                                            <a href="./img/principle/principle02-ok.jpg" data-toggle="lightbox"
+                                                data-title="After">
+                                                <img src="./img/principle/principle02-ok.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 簡約 標題 -->
+                    <div class="pt-4 pb-2" id="principle03">
+                        <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">簡約 - 乾淨大方 快速流暢</h1>
+                    </div>
+                    <!-- 簡約 卡片 -->
+                    <div class="row mt-3 text-gray-900">
+                        <div class="col">
+                            <div class="card shadow mb-4 p-3">
+                                <div class="card-body p-3">
+                                    <p class="h5">我們如何在數位服務上詮釋「簡約」</p>
+                                    <ul class="px-3 mb-3">
+                                        <li>在產品/服務資訊、功能呈現上，分類邏輯一致，層級、架構清楚易懂</li>
+                                        <li>盡最大努力讓顧客操作流程精簡，省時省心不費力</li>
+                                        <li>沒有過多的形容詞，簡潔、重點、一目瞭然</li>
+                                    </ul>
+                                    <p class="h5">我們如何在設計上詮釋「簡約」</p>
+                                    <ul class="px-3 mb-3">
+                                        <li>配色層次清楚，以留白為主沒有過多裝飾</li>
+                                        <li>在排版上規範明確的文字大小、行距以及字重，確保資訊的閱讀性</li>
+                                        <li>使用有規則的格線系統，不僅能讓畫面具有整齊性，也能引導視覺流向，讓使用者更流暢地接收資訊</li>
+                                    </ul>
+                                    <hr>
+                                    <p class="h6">範例:<span>
+                                            <p>保持畫面排版簡潔讓功能與內容清楚揭露</p>
+                                        </span></p>
+                                    <div class="row">
+
+                                        <div class="col-lg-6 my-3">
+                                            <p class="text-error">Before</p>
+                                            <a href="./img/principle/principle03-error.jpg" data-toggle="lightbox"
+                                                data-title="Before">
+                                                <img src="./img/principle/principle03-error.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6 my-3">
+                                            <p class="text-done">After</p>
+                                            <a href="./img/principle/principle03-ok.jpg" data-toggle="lightbox"
+                                                data-title="After">
+                                                <img src="./img/principle/principle03-ok.jpg" class="w-100" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,6 +374,9 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/clipboard/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+        integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
