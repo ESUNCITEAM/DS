@@ -24,13 +24,13 @@
     <div id="wrapper">
         <!-- Sidebar 側邊選單 -->
         <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-              <!-- Heading -->
-              <div class="sidebar-heading mt-3">
+            <!-- Heading -->
+            <div class="sidebar-heading mt-3">
                 Brand
             </div>
             <!-- Nav Item - Principle設計原則-->
             <li class="nav-item">
-                <a class="nav-link" href="principle.html">
+                <a class="nav-link" href="index.html">
                     <i class="fas fa-book"></i>
                     <span>Principle 設計原則</span></a>
             </li>
@@ -66,8 +66,8 @@
                     <i class="far fa-image"></i>
                     <span>Photo 照片</span></a>
             </li>
-              <!-- Nav Item - illustration插圖 -->
-              <li class="nav-item">
+            <!-- Nav Item - illustration插圖 -->
+            <li class="nav-item">
                 <a class="nav-link" href="illustration.html">
                     <i class="far fa-image"></i>
                     <span>Illustration 插圖</span></a>
@@ -87,7 +87,8 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Component 元件</span>
                 </a>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="ui_button.html">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html">Table 表格</a>
@@ -136,7 +137,7 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow overflow-hidden">
 
                     <!-- 漢堡選單 -->
-                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-1">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-1 d-lg-none">
                         <i class="fa fa-bars"></i>
                     </button>
 
@@ -161,91 +162,105 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">程式碼</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
+                                data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">程式碼</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">其他</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
+                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">其他</a>
                         </li>
-                      </ul>
-                      <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                              <!-- 列表類型 標題 -->
-                              <div class="pt-4 pb-2">
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <!-- 列表類型 標題 -->
+                            <div class="pt-4 pb-2">
                                 <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">列表類型</h1>
                             </div>
-                              <!-- 列表類型 卡片 -->
-                              <div class="row mt-3 text-gray-900">
-                                  <div class="col">
+                            <!-- 列表類型 卡片 -->
+                            <div class="row mt-3 text-gray-900">
+                                <div class="col">
                                     <div class="card shadow mb-4 p-3">
                                         <div class="table-responsive  my-3 p-3">
                                             <p class="h5">(1) 純資訊列表: 列表單純呈現資訊</p>
                                             <p>項目符號：使用長寬4px的圓點，顏色使用企業綠或與文字相同顏色</p>
-                                                <table class="table table-bordered w1000">
-                                                    <thead  class="bg-primary-8">
-                                                        <tr>
-                                                            <th scope="col">純文字列表</th>
-                                                            <th scope="col">框線列表</th>
-                                                            <th scope="col">欄位列表</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <img src="img/ui/list-type1-text-small.png" class="w-100 mb-3" alt="">
-                                                                <img src="img/ui/list-type1-text-large.png" class="w-100 mb-3" alt="">
-                                                            </td>
-                                                            <td>
-                                                                <img src="img/ui/list-type1-line-small.png" class="w-100 mb-3" alt="">
-                                                                <img src="img/ui/list-type1-line-large.png" class="w-100 mb-3" alt="">
-                                                            </td>
-                                                            <td>
-                                                                <img src="img/ui/list-type1-bgdark.png" class="max-w-200 mb-3" alt="">
-                                                                <img src="img/ui/list-type1-bglight.png" class="max-w-200 mb-3" alt="">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>                
-                                                                <ul class="pl-3 my-1">
-                                                                    <li>列上下padding最小4px，最大8px</li>
-                                                                </ul>
-                                                            </td>
-                                                            <td>
-                                                                <ul class="pl-3 my-1">
-                                                                    <li>列上下padding 最小8px ，最大20px</li>
-                                                                </ul>
-                                                            </td>
-                                                            <td>
-                                                                <ul class="pl-3 my-1">
-                                                                    <li>列上下padding 最小8px ，最大20px</li>
-                                                                    <li>背景：#00A19B(深);#F5F5F5(淺)</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <table class="table table-bordered w1000">
+                                                <thead class="bg-primary-8">
+                                                    <tr>
+                                                        <th scope="col">純文字列表</th>
+                                                        <th scope="col">框線列表</th>
+                                                        <th scope="col">欄位列表</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/ui/list-type1-text-small.png"
+                                                                class="w-100 mb-3" alt="">
+                                                            <img src="img/ui/list-type1-text-large.png"
+                                                                class="w-100 mb-3" alt="">
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/ui/list-type1-line-small.png"
+                                                                class="w-100 mb-3" alt="">
+                                                            <img src="img/ui/list-type1-line-large.png"
+                                                                class="w-100 mb-3" alt="">
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/ui/list-type1-bgdark.png"
+                                                                class="max-w-200 mb-3" alt="">
+                                                            <img src="img/ui/list-type1-bglight.png"
+                                                                class="max-w-200 mb-3" alt="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <ul class="pl-3 my-1">
+                                                                <li>列上下padding最小4px，最大8px</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="pl-3 my-1">
+                                                                <li>列上下padding 最小8px ，最大20px</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="pl-3 my-1">
+                                                                <li>列上下padding 最小8px ，最大20px</li>
+                                                                <li>背景：#00A19B(深);#F5F5F5(淺)</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                         <div class="my-3 p-3">
                                             <p class="h5">(2) 功能性列表:列表具有導引到不同頁籤的功能</p>
                                             <p>通常含action button或icon</p>
-                                        <img src="img/ui/list-type2.png" class="max-w-280 mb-3" alt="">
-                                        <ul class="pl-4 my-1">
-                                            <li>列的上下padding 最小20px</li>
-                                            <li>icon與文字等高</li>
-                                        </ul>
+                                            <img src="img/ui/list-type2.png" class="max-w-280 mb-3" alt="">
+                                            <ul class="pl-4 my-1">
+                                                <li>列的上下padding 最小20px</li>
+                                                <li>icon與文字等高</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                  </div>
-                              </div>
-                     
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-                      </div>
-            
-                
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...</div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -270,7 +285,7 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button 往上滑動按鈕-->
-    <a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded-circle" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 

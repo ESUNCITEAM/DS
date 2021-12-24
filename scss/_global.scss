@@ -1,0 +1,616 @@
+// Global component styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Main page wrapper
+#wrapper {
+  display: flex;
+  #content-wrapper {
+    background-color: $gray-100;
+    width: 100%;
+    overflow-x: hidden;
+    #content {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #content-wrapper {
+    margin-left: 14rem;
+  }
+}
+
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: $primary-8;
+  line-height: 46px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $primary-6;
+  }
+  i {
+    font-weight: 800;
+  }
+}
+
+//
+.btn-copy {
+  cursor: pointer;
+}
+//表格
+.table {
+  color: $gray-11;
+}
+.table-bordered {
+  td,
+  th {
+    border-color: $gray-5;
+  }
+}
+
+//文字顏色
+.text-gray-11 {
+  color: $gray-11;
+}
+//翠玉綠背景
+.bg-primary-1 {
+  background: $primary-1;
+}
+.bg-primary-2 {
+  background: $primary-2;
+}
+.bg-primary-3 {
+  background: $primary-3;
+}
+.bg-primary-4 {
+  background: $primary-4;
+}
+.bg-primary-5 {
+  background: $primary-5;
+}
+.bg-primary-6 {
+  background: $primary-6;
+}
+.bg-primary-7 {
+  background: $primary-7;
+  color: $white;
+}
+.bg-primary-8 {
+  background: $primary-8;
+  color: $white;
+}
+.bg-primary-9 {
+  background: $primary-9;
+  color: $white;
+}
+.bg-primary-10 {
+  background: $primary-10;
+  color: $white;
+}
+
+//中性色背景
+.bg-gray-1 {
+  background: $gray-1;
+}
+.bg-gray-2 {
+  background: $gray-2;
+}
+.bg-gray-3 {
+  background: $gray-3;
+}
+.bg-gray-4 {
+  background: $gray-4;
+}
+.bg-gray-5 {
+  background: $gray-5;
+}
+.bg-gray-6 {
+  background: $gray-6;
+}
+.bg-gray-7 {
+  background: $gray-7;
+  color: $white;
+}
+.bg-gray-8 {
+  background: $gray-8;
+  color: $white;
+}
+.bg-gray-9 {
+  background: $gray-9;
+  color: $white;
+}
+.bg-gray-10 {
+  background: $gray-10;
+  color: $white;
+}
+.bg-gray-11 {
+  background: $gray-11;
+  color: $white;
+}
+.bg-gray-12 {
+  background: $gray-12;
+  color: $white;
+}
+.bg-gray-13 {
+  background: $gray-13;
+  color: $white;
+}
+
+//產品色-綠
+.text-green-6 {
+  color: $green-6;
+}
+.bg-green-1 {
+  background: $green-1;
+}
+.bg-green-2 {
+  background: $green-2;
+}
+.bg-green-3 {
+  background: $green-3;
+}
+.bg-green-4 {
+  background: $green-4;
+}
+.bg-green-5 {
+  background: $green-5;
+}
+.bg-green-6 {
+  background: $green-6;
+  color: $white;
+}
+.bg-green-7 {
+  background: $green-7;
+  color: $white;
+}
+.bg-green-8 {
+  background: $green-8;
+  color: $white;
+}
+.bg-green-9 {
+  background: $green-9;
+  color: $white;
+}
+.bg-green-10 {
+  background: $green-10;
+  color: $white;
+}
+
+//產品色-黃
+.text-yellow-6 {
+  color: $yellow-6;
+}
+.bg-yellow-1 {
+  background: $yellow-1;
+}
+.bg-yellow-2 {
+  background: $yellow-2;
+}
+.bg-yellow-3 {
+  background: $yellow-3;
+}
+.bg-yellow-4 {
+  background: $yellow-4;
+}
+.bg-yellow-5 {
+  background: $yellow-5;
+}
+.bg-yellow-6 {
+  background: $yellow-6;
+  color: $white;
+}
+.bg-yellow-7 {
+  background: $yellow-7;
+  color: $white;
+}
+.bg-yellow-8 {
+  background: $yellow-8;
+  color: $white;
+}
+.bg-yellow-9 {
+  background: $yellow-9;
+  color: $white;
+}
+.bg-yellow-10 {
+  background: $yellow-10;
+  color: $white;
+}
+
+//產品色-橘
+.text-orange-6 {
+  color: $orange-6;
+}
+.bg-orange-1 {
+  background: $orange-1;
+}
+.bg-orange-2 {
+  background: $orange-2;
+}
+.bg-orange-3 {
+  background: $orange-3;
+}
+.bg-orange-4 {
+  background: $orange-4;
+}
+.bg-orange-5 {
+  background: $orange-5;
+}
+.bg-orange-6 {
+  background: $orange-6;
+  color: $white;
+}
+.bg-orange-7 {
+  background: $orange-7;
+  color: $white;
+}
+.bg-orange-8 {
+  background: $orange-8;
+  color: $white;
+}
+.bg-orange-9 {
+  background: $orange-9;
+  color: $white;
+}
+.bg-orange-10 {
+  background: $orange-10;
+  color: $white;
+}
+
+//產品色-紅
+.text-red-6 {
+  color: $red-6;
+}
+.bg-red-1 {
+  background: $red-1;
+}
+.bg-red-2 {
+  background: $red-2;
+}
+.bg-red-3 {
+  background: $red-3;
+}
+.bg-red-4 {
+  background: $red-4;
+}
+.bg-red-5 {
+  background: $red-5;
+}
+.bg-red-6 {
+  background: $red-6;
+  color: $white;
+}
+.bg-red-7 {
+  background: $red-7;
+  color: $white;
+}
+.bg-red-8 {
+  background: $red-8;
+  color: $white;
+}
+.bg-red-9 {
+  background: $red-9;
+  color: $white;
+}
+.bg-red-10 {
+  background: $red-10;
+  color: $white;
+}
+
+//產品色-藍
+.text-blue-6 {
+  color: $blue-6;
+}
+.bg-blue-1 {
+  background: $blue-1;
+}
+.bg-blue-2 {
+  background: $blue-2;
+}
+.bg-blue-3 {
+  background: $blue-3;
+}
+.bg-blue-4 {
+  background: $blue-4;
+}
+.bg-blue-5 {
+  background: $blue-5;
+}
+.bg-blue-6 {
+  background: $blue-6;
+  color: $white;
+}
+.bg-blue-7 {
+  background: $blue-7;
+  color: $white;
+}
+.bg-blue-8 {
+  background: $blue-8;
+  color: $white;
+}
+.bg-blue-9 {
+  background: $blue-9;
+  color: $white;
+}
+.bg-blue-10 {
+  background: $blue-10;
+  color: $white;
+}
+
+//產品色-桃紅
+.text-pink-6 {
+  color: $pink-6;
+}
+.bg-pink-1 {
+  background: $pink-1;
+}
+.bg-pink-2 {
+  background: $pink-2;
+}
+.bg-pink-3 {
+  background: $pink-3;
+}
+.bg-pink-4 {
+  background: $pink-4;
+}
+.bg-pink-5 {
+  background: $pink-5;
+}
+.bg-pink-6 {
+  background: $pink-6;
+  color: $white;
+}
+.bg-pink-7 {
+  background: $pink-7;
+  color: $white;
+}
+.bg-pink-8 {
+  background: $pink-8;
+  color: $white;
+}
+.bg-pink-9 {
+  background: $pink-9;
+  color: $white;
+}
+.bg-pink-10 {
+  background: $pink-10;
+  color: $white;
+}
+//功能色
+.bg-highlight-1 {
+  background: $highlight-1;
+  color: $white;
+}
+.bg-highlight-2 {
+  background: $highlight-2;
+  color: $white;
+}
+.bg-error {
+  background: $error;
+}
+.bg-done {
+  background: $done;
+}
+.text-error {
+  color: $error;
+}
+.text-done {
+  color: $done;
+}
+.text-highlight-1 {
+  color: $highlight-2;
+}
+.border-width-6 {
+  border-width: $border-with-6;
+}
+.border-color-done {
+  border-color: $done !important;
+}
+.border-color-error {
+  border-color: $error !important;
+}
+.border-color-primary-8 {
+  border-color: $primary-8 !important;
+}
+
+//按鈕
+.btn {
+  display: block;
+  max-width: 154px;
+  width: 100%;
+  height: 72px;
+  border: 0;
+  font-size: 16px;
+}
+.btn-primary {
+  background: $primary-8;
+  border-radius: 4px;
+  color: $white;
+
+  &:hover {
+    background: $primary-6;
+  }
+}
+.btn-secondary {
+  border: 1px solid $primary-8;
+  border-radius: 4px;
+  color: $primary-8;
+  background: $white;
+  &:hover {
+    background: $white;
+    color: $primary-8;
+    border-color: $primary-8;
+  }
+}
+
+//最大寬度
+.max-w-800 {
+  max-width: 800px;
+}
+.max-w-500 {
+  max-width: 500px;
+}
+.max-w-400 {
+  max-width: 400px;
+}
+.max-w-340 {
+  max-width: 340px;
+}
+.max-w-280 {
+  max-width: 280px;
+}
+.max-w-200 {
+  max-width: 200px;
+}
+.max-w-140 {
+  max-width: 140px;
+}
+
+//絕對寬度
+.w1000 {
+  width: 1000px;
+}
+.w600 {
+  width: 600px;
+}
+
+//字級大小
+.pc-heading-1 {
+  font-size: 36px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 26px;
+  }
+}
+.pc-heading-2 {
+  font-size: 32px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 22px;
+  }
+}
+.pc-heading-3 {
+  font-size: 24px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 20px;
+  }
+}
+.pc-heading-4 {
+  font-size: 18px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 16px;
+  }
+}
+
+.pc-paragraph-1 {
+  font-size: 20px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 18px;
+  }
+}
+.pc-paragraph-2 {
+  font-size: 16px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 16px;
+  }
+}
+.pc-paragraph-3 {
+  font-size: 14px;
+  font-weight: normal;
+  @include max(md) {
+    font-size: 14px;
+  }
+}
+
+.m-heading-1 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.m-heading-2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+.m-heading-3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.m-heading-4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.m-paragraph-1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.m-paragraph-2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.m-paragraph-3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.m-paragraph-4 {
+  font-size: 12px;
+  font-weight: normal;
+}
+//m版選單
+.sidebar .nav-item .collapse {
+  @include max(md) {
+    position: static !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.sidebar.toggled.sidebar-dark {
+}
+
+//copy-code
+.copy-code {
+  right: 30px;
+  top: 30px;
+  border: solid 1px $gray-5;
+  background: $gray-1;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

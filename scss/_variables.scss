@@ -1,0 +1,207 @@
+// Override Bootstrap default variables here
+// Do not edit any of the files in /vendor/bootstrap/scss/!
+
+// Color Variables
+// Bootstrap Color Overrides
+
+$white: #fff !default;
+$gray-100: #f8f9fc !default;
+$gray-200: #eaecf4 !default;
+$gray-300: #f5f5f5 !default;
+$gray-400: #d1d3e2 !default;
+$gray-500: #b7b9cc !default;
+$gray-600: #858796 !default;
+$gray-700: #6e707e !default;
+$gray-800: #5a5c69 !default;
+$gray-900: #3a3b45 !default;
+$black: #000 !default;
+
+$blue: #00a19b !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #e74a3b !default;
+$orange: #fd7e14 !default;
+$yellow: #f6c23e !default;
+$green: #1cc88a !default;
+$teal: #20c9a6 !default;
+$cyan: #36b9cc !default;
+
+// Custom Colors
+$brand-google: #ea4335 !default;
+$brand-facebook: #3b5998 !default;
+
+//功能色
+$error: #c92e34 !default;
+$done: #21cc96 !default;
+
+//邊框線條
+$border-with-6:6px!important;
+
+
+// Set Contrast Threshold
+$yiq-contrasted-threshold: 195 !default;
+
+// Typography
+$body-color: $gray-600 !default;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "微軟正黑體", "Roboto", "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$font-weight-light: 300 !default;
+// $font-weight-base: 400;
+$headings-font-weight: 400 !default;
+
+// Shadows
+$box-shadow-sm: 0 0.125rem 0.25rem 0 rgba($gray-900, 0.2) !default;
+$box-shadow: 0 0.15rem 1.75rem 0 rgba($gray-900, 0.15) !default;
+// $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+
+// Borders Radius
+$border-radius: 0.35rem !default;
+$border-color: darken($gray-200, 2%) !default;
+
+// Spacing Variables
+// Change below variable if the height of the navbar changes
+$topbar-base-height: 3.5rem !default;
+// Change below variable to change the width of the sidenav
+$sidebar-base-width: 14rem !default;
+// Change below variable to change the width of the sidenav when collapsed
+$sidebar-collapsed-width: 6rem !default;
+
+// Card
+$card-cap-bg: $gray-100 !default;
+$card-border-color: $border-color !default;
+
+// Adjust column spacing for symmetry
+$spacer: 1rem !default;
+$grid-gutter-width: $spacer * 1.5 !default;
+
+// Transitions
+$transition-collapse: height 0.15s ease !default;
+
+// Dropdowns
+$dropdown-font-size: 0.85rem !default;
+$dropdown-border-color: $border-color !default;
+
+// Images
+$login-image: "https://source.unsplash.com/K4mSJ7kc0As/600x800" !default;
+$register-image: "https://source.unsplash.com/Mv9hjnEUHR4/600x800" !default;
+$password-image: "https://source.unsplash.com/oWTW-jNGl9I/600x800" !default;
+
+//請自便黑當自己家
+//
+$card-border-radius: 1.5rem;
+
+//Primary Color
+$primary-1: #f4f8fa !default;
+$primary-2: #e1efef !default;
+$primary-3: #bde3e2 !default;
+$primary-4: #87d4c7 !default;
+$primary-5: #5fc7b9 !default;
+$primary-6: #3cbaad !default;
+$primary-7: #1cada4 !default;
+$primary-8: #00a19b !default;
+$primary-9: #007a7a !default;
+$primary-10: #005154 !default;
+
+//Neutral Color
+$gray-1: #ffffff !default;
+$gray-2: #fafafa !default;
+$gray-3: #f5f5f5 !default;
+$gray-4: #f0f0f0 !default;
+$gray-5: #d9d9d9 !default;
+$gray-6: #acacac !default;
+$gray-7: #7c7c7c !default;
+$gray-8: #595959 !default;
+$gray-9: #434343 !default;
+$gray-10: #262626 !default;
+$gray-11: #1c1c1c !default;
+$gray-12: #141414 !default;
+$gray-13: #000000 !default;
+
+//產品色-綠
+$green-1: #e6fff4 !default;
+$green-2: #9bf2ce !default;
+$green-3: #6ee6b8 !default;
+$green-4: #45d9a5 !default;
+$green-5: #21cc96 !default;
+$green-6: #00c08b !default;
+$green-7: #009973 !default;
+$green-8: #00735a !default;
+$green-9: #004d3e !default;
+$green-10: #002621 !default;
+
+//產品色-黃
+$yellow-1: #fffde6 !default;
+$yellow-2: #fff7ba !default;
+$yellow-3: #ffef91 !default;
+$yellow-4: #ffe369 !default;
+$yellow-5: #ffd640 !default;
+$yellow-6: #ffc517 !default;
+$yellow-7: #d99e09 !default;
+$yellow-8: #b37a00 !default;
+$yellow-9: #8c5b00 !default;
+$yellow-10: #663f00 !default;
+
+//產品色-橘
+$orange-1: #fff9e6 !default;
+$orange-2: #ffe7a3 !default;
+$orange-3: #ffd77a !default;
+$orange-4: #ffc552 !default;
+$orange-5: #ffb029 !default;
+$orange-6: #ff9900 !default;
+$orange-7: #d97b00 !default;
+$orange-8: #b35f00 !default;
+$orange-9: #8c4600 !default;
+$orange-10: #663000 !default;
+
+//產品色-紅
+$red-1: #fff2f0 !default;
+$red-2: #ffedeb !default;
+$red-3: #ffc8c2 !default;
+$red-4: #ffa099 !default;
+$red-5: #fc746f !default;
+$red-6: #ef4343 !default;
+$red-7: #c92e34 !default;
+$red-8: #a31d26 !default;
+$red-9: #7d101b !default;
+$red-10: #570a15 !default;
+
+//產品色-藍
+$blue-1: #e6fbff !default;
+$blue-2: #a3eeff !default;
+$blue-3: #7ae2ff !default;
+$blue-4: #52d4ff !default;
+$blue-5: #28c0fc !default;
+$blue-6: #00a4ef !default;
+$blue-7: #0083c9 !default;
+$blue-8: #0065a3 !default;
+$blue-9: #00497d !default;
+$blue-10: #003057 !default;
+
+//產品色-桃紅
+$pink-1: #fff0f4 !default;
+$pink-2: #ffd1de !default;
+$pink-3: #ffa8c4 !default;
+$pink-4: #ff80ac !default;
+$pink-5: #f25290 !default;
+$pink-6: #e62978 !default;
+$pink-7: #bf1964 !default;
+$pink-8: #990c50 !default;
+$pink-9: #73033d !default;
+$pink-10: #4d022b !default;
+
+//功能色
+$highlight-1: #f8524c !default;
+$highlight-2: #ef7800 !default;
+
+//breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+) !default;
