@@ -446,7 +446,13 @@ a {
 .border-color-primary-8 {
   border-color: $primary-8 !important;
 }
-
+//膚色
+.skin-1{
+  background: $skin-1;
+}
+.skin-2{
+  background: $skin-2;
+}
 //按鈕
 .btn {
   display: block;

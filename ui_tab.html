@@ -89,7 +89,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ui_button.html">Button 按鈕</a>
+                        <a class="collapse-item" href="ui_button.html">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html">List 列表</a>
                         <a class="collapse-item" href="ui_checkbox.html">Checkbox 核取方塊</a>
@@ -178,30 +178,76 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
-                            <!-- 網頁頁籤類型 標題 -->
-                            <div class="pt-4 pb-2">
-                                <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">網頁頁籤類型</h1>
-                            </div>
-                            <!-- 網頁頁籤類型 卡片 -->
-                            <div class="row mt-3 text-gray-900">
-                                <div class="col">
-                                    <div class="card shadow mb-4 p-3">
-                                        <div class="my-3 p-3">
-                                            <p class="h5">適用平台：官網、網銀</p>
-                                            <p class="mb-0">pc版</p>
-                                            <img src="img/ui/tab-pc.svg" class="max-w-800 d-block w-100 mb-3" alt="">
-                                            <br>
-                                            <p class="mb-0">M版</p>
-                                            <img src="img/ui/tab-m.svg" class="max-w-500 d-block w-100 mb-3" alt="">
-                                            <ul class="pl-4 my-1">
-                                                <li>使用情境：此款TAB通常會使用在主要TAB的內容裡</li>
-                                                <li>Active時，會以企業色#00a19b實心呈現</li>
-                                                <li>在M版上寬度受限時，則用淡化方式讓使用者知道還有其他項目</li>
-                                            </ul>
-                                        </div>
+                           
+                           <!-- 網頁頁籤類型 標題 -->
+                           <div class="pt-4 pb-2">
+                            <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">網頁頁籤類型</h1>
+                        </div>
+                        <!-- 網頁頁籤類型 卡片 -->
+                        <div class="row mt-3 text-gray-900">
+                            <div class="col">
+                                <div class="card shadow mb-4 p-3">
+                                    <div class="table-responsive  my-3 p-3">
+                                        <p class="h5">適用平台：官網、網銀PC</p>
+                                        <table class="table table-bordered w1000">
+                                            <thead class="bg-primary-8">
+                                                <tr>
+                                                    <th scope="col">線條版</th>
+                                                    <th scope="col">色塊版</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">PC版</p>
+                                                        <img src="img/ui/tab-type1.svg" class="max-w-500 mb-2"
+                                                            alt="">
+                                                            <p class="mt-3 mb-0">M版</p>
+                                                            <img src="img/ui/tab-type1-m.svg" class="max-w-400 mb-2"
+                                                                alt="">
+
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">PC版</p>
+                                                        <img src="img/ui/tab-type2.svg" class="max-w-500 mb-2"
+                                                            alt="">
+                                                            <p class="mt-3 mb-0">M版</p>
+                                                            <img src="img/ui/tab-type2-m.svg" class="max-w-400 mb-2"
+                                                                alt="">
+
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <ul class="pl-3 my-1">
+                                                            <li>TAB位置：置中</li>
+                                                            <li>TAB線條底色：#E1EFEF 4px</li>
+                                                            <li>Active狀態：底線#00a19b 4px ; 文字#00a19b 18px bold</li>
+                                                            <li>Defult狀態：文字#1c1c1c 16px regular</li>
+                                                            <li>內容區域皆需搭配底色 #E1EFEF</li>
+                                                            <li>M版上寬度受限，用淡化方式讓使用者知道還有其他項目</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ul class="pl-3 my-1">
+                                                            <li>TAB位置：置中</li>
+                                                            <li>Active狀態：加上箭頭;底色#00a19b;文字#ffffff 18px regular</li>
+                                                            <li>Defult狀態 文字#00a19b 18px regular  線條1px  #00a19b</li>
+                                                            <li>內容區域皆需搭配底色 ##F4F8FA</li>
+                                                            <li>M版上寬度受限，用淡化方式讓使用者知道還有其他項目</li>
+                                                        </ul>
+                                                    </td>
+                                               
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
                                     </div>
+
                                 </div>
                             </div>
+                        </div>
                             <!-- app頁籤類型 標題 -->
                             <div class="pt-4 pb-2">
                                 <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">app頁籤類型</h1>
@@ -210,15 +256,39 @@
                             <div class="row mt-3 text-gray-900">
                                 <div class="col">
                                     <div class="card shadow mb-4 p-3">
-                                        <div class="my-3 p-3">
+                                        <div class="table-responsive  my-3 p-3">
                                             <p class="h5">適用平台：行動銀行</p>
-                                            <img src="img/ui/Apptab.svg" class="max-w-500 d-block w-100 mb-3" alt="">
-                                            <ul class="pl-4 my-1">
-                                                <li>TAB線條底色：#E1EFEF 4px</li>
-                                                <li>文字Defult #1c1c1c regular 14px</li>
-                                                <li>文字Active #00a19b medium 16px</li>
-                                            </ul>
+                                            <table class="table table-bordered w1000">
+                                                <thead class="bg-primary-8">
+                                                    <tr>
+                                                        <th scope="col">線條版</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/ui/Apptab.svg" class="max-w-500 mb-2"
+                                                                alt="">
+    
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <ul class="pl-3 my-1">
+                                                                <li>TAB位置：置中</li>
+                                                                <li>TAB線條底色：#E1EFEF 4px</li>
+                                                                <li>Active狀態：底線#00a19b 4px ; 文字#00a19b 16px bold</li>
+                                                                <li>Defult狀態：文字#1c1c1c 14px regular</li>
+                                                            </ul>
+                                                        </td>
+                                                   
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+    
                                         </div>
+    
                                     </div>
                                 </div>
                             </div>
