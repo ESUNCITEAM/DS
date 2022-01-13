@@ -23,7 +23,7 @@ a {
 #wrapper {
   display: flex;
   #content-wrapper {
-    background-color: $gray-100;
+    background-color: #F4F8FA;
     width: 100%;
     overflow-x: hidden;
     #content {
@@ -81,6 +81,10 @@ a {
   th {
     border-color: $gray-5;
   }
+}
+//
+.text-orange{
+  color: #EF7800;
 }
 
 //文字顏色
@@ -519,6 +523,12 @@ a {
 .w300 {
   width: 300px;
 }
+.w120 {
+  width: 120px;
+}
+.w80 {
+  width: 80px;
+}
 
 //字級大小
 .pc-heading-1 {
@@ -613,8 +623,7 @@ a {
     margin: 0 auto;
   }
 }
-.sidebar.toggled.sidebar-dark {
-}
+
 
 //copy-code
 .copy-code {
@@ -625,4 +634,27 @@ a {
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+//link
+.link-primary{
+  text-decoration: underline;
+  color: $primary-8;
+}
+
+//btn
+.btn{
+  color: $primary-8;
+  border: solid 1px $primary-8;
+  border-radius: 4px;
+  height: 65px;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background: $primary-6;
+    color: $gray-1;
+  }
 }
