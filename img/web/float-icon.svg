@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+  <g id="float-icon" transform="translate(-723 -301)">
+    <circle id="Ellipse_172" data-name="Ellipse 172" cx="38" cy="38" r="38" transform="translate(723 301)" fill="#ef7800"/>
+    <text id="icon按鈕" transform="translate(761 358)" fill="#fff" font-size="14" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC"><tspan x="-27.839" y="0">icon</tspan><tspan y="0">按鈕</tspan></text>
+    <g id="Rectangle_1217" data-name="Rectangle 1217" transform="translate(748 314)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="26" height="26" stroke="none"/>
+      <rect x="0.5" y="0.5" width="25" height="25" fill="none"/>
+    </g>
+  </g>
+</svg>
