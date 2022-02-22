@@ -102,9 +102,10 @@ a {
 }
 
 //翠玉綠背景
-.text-primary-8{
+.text-primary-8 {
   color: $primary-8;
 }
+
 .bg-primary-1 {
   background: $primary-1;
 }
@@ -565,37 +566,6 @@ a {
   background: $skin-2;
 }
 
-//按鈕
-// .btn {
-//   display: block;
-//   max-width: 154px;
-//   width: 100%;
-//   height: 72px;
-//   border: 0;
-//   font-size: 16px;
-// }
-.btn-primary {
-  background: $primary-8;
-  border-radius: 4px;
-  color: $white;
-
-  &:hover {
-    background: $primary-6;
-  }
-}
-
-.btn-secondary {
-  border: 1px solid $primary-8;
-  border-radius: 4px;
-  color: $primary-8;
-  background: $white;
-
-  &:hover {
-    background: $white;
-    color: $primary-8;
-    border-color: $primary-8;
-  }
-}
 
 //最大寬度
 .max-w-800 {
@@ -767,7 +737,7 @@ a {
 
 //copy-code
 .copy-code {
-  right: 30px;
+  right: 12px;
   top: 30px;
   border: solid 1px $gray-5;
   background: $gray-1;
@@ -783,8 +753,57 @@ a {
 }
 
 //btn
-.primary-btn {
- text-align: center;
+.btn {
+  width: 100%;
+  max-width: 200px;
+  height: 65px;
+  border-radius: 4px;
+  background: $primary-8;
+  color: $gray-1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: .7;
+    color: #fff;
+  }
+
+  @include max(md) {
+    max-width: 140px;
+  }
+}
+
+//btn-line
+.btn-line {
+  width: 100%;
+  max-width: 200px;
+  height: 65px;
+  border-radius: 4px;
+  text-align: center;
+  border: solid 1px $primary-8;
+  color: $primary-8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  @include max(md) {
+    max-width: 140px;
+  }
+}
+
+.secondary-btn {
+  text-align: center;
+  border: solid 1px;
   border-radius: 4px;
   height: 65px;
   max-width: 200px;
@@ -793,29 +812,12 @@ a {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+
   &:hover {
-   opacity: .7;
-   color: #fff;
+    opacity: .7;
   }
+
   @include max(md) {
-   max-width: 140px;
+    max-width: 140px;
   }
 }
-.secondary-btn {
-  text-align: center;
-   border: solid 1px;
-   border-radius: 4px;
-   height: 65px;
-   max-width: 200px;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   transition: 0.3s;
-   &:hover {
-    opacity: .7;
-   }
-   @include max(md) {
-    max-width: 140px;
-   }
- }

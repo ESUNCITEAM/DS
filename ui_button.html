@@ -598,33 +598,141 @@
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
-                            <!-- 程式碼 -->
+                            <!-- 主要按鈕 (btn) -->
                             <div class="pt-4 pb-2">
-                                <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">程式碼</h1>
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">主要按鈕 (btn)</h2>
                             </div>
                             <!-- 網頁按鈕類型 卡片 -->
-                            <div class="row mt-3 text-gray-11">
-                                <div class="col">
-                                    <div class="card position-relative shadow mb-4 p-3">
-
-                                        <pre><code class="hljs" id="cc">
-p {
-  color: #333;
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-}
-                                                </code></pre>
-
-                                        <div class="copy-code position-absolute btn-copy" data-clipboard-target="#cc">複製
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="d-flex pt-4">
+                                            <div class="btn mx-2">範例按鈕</div>
+                                            <div class="btn mx-2">範例按鈕<br>雙排文字</div>
                                         </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-1">
+&ltdiv class="btn">範例按鈕&lt/div>
+&ltdiv class="btn">範例按鈕&ltbr>雙排文字&lt/div>
+                                            </code>
+                                        </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-1">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-2">
+.btn {
+    width: 100%;
+    max-width: 200px;
+    height: 65px;
+    border-radius: 4px;
+    background: $primary-8;
+    color: $gray-1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+        &:hover {
+            opacity: .7;
+            color: #fff;
+        }
+    
+        @include max(md) {
+            max-width: 140px;
+        }
+
+    }
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-2">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
                                     </div>
                                 </div>
                             </div>
+                            <!-- 次要按鈕 (btn-line) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">次要按鈕 (btn-line)</h2>
+                            </div>
+                            <div class="col text-gray-11">
+                                <div class="card shadow mb-4 p-4">
+                                    <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                    <hr class="m-1">
+                                    <div class="d-flex pt-4">
+                                        <div class="btn-line mx-2">範例按鈕</div>
+                                        <div class="btn-line mx-2">範例按鈕<br>雙排文字</div>
+                                    </div>
+                                    <!-- HTML -->
+                                    <p class="m-0 p-0 pt-5">HTML</p>
+                                    <hr class="m-1">
+                                    <div class="position-relative">
+                                        <pre class="m-0">
+                                        <code class="hljs" id="btn-copy-3">
+&ltdiv class="btn-line">範例按鈕&lt/div>
+&ltdiv class="btn-line">範例按鈕&ltbr>雙排文字&lt/div>
+                                        </code>
+                                    </pre>
+                                        <div class="copy-code position-absolute btn-copy"
+                                            data-clipboard-target="#btn-copy-3">複製
+                                        </div>
+                                    </div>
+                                    <!-- HTML -->
+                                    <!-- CSS -->
+                                    <p class="m-0 p-0 pt-5">CSS</p>
+                                    <hr class="m-1">
+                                    <div class="position-relative">
+                                        <pre class="m-0">
+                                        <code class="hljs" id="btn-copy-4">
+.btn-line {
+    width: 100%;
+    max-width: 200px;
+    height: 65px;
+    border-radius: 4px;
+    text-align: center;
+    border: solid 1px $primary-8;
+    color: $primary-8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    
+        &:hover {
+            opacity: .7;
+        }
+    
+        @include max(md) {
+            max-width: 140px;
+        }
+    }
+                                        </code>
+                                        </pre>
+                                        <div class="copy-code position-absolute btn-copy"
+                                            data-clipboard-target="#btn-copy-4">複製
+                                        </div>
+                                    </div>
+                                    <!-- CSS -->
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
         </div>
