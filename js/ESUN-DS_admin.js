@@ -79,3 +79,11 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+const horizontalScroll = document.querySelectorAll(".table-responsive ");
+
+horizontalScroll.forEach(function (item) {
+    item.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        item.scrollLeft += evt.deltaY;
+    });
+});
