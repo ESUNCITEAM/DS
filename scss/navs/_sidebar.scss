@@ -5,6 +5,7 @@
     display: none;
     position: absolute;
     padding-top: 80px;
+
     .nav-item {
         position: relative;
 
@@ -131,6 +132,7 @@
         .sidebar-card {
             display: none;
         }
+
         #content-wrapper {
             margin-left: -14rem !important;
         }
@@ -180,13 +182,16 @@
         margin-bottom: 1rem;
         padding: 1rem;
         background-color: fade-out($black, 0.9);
+
         .sidebar-card-illustration {
             height: 3rem;
             display: block;
         }
+
         .sidebar-card-title {
             font-weight: bold;
         }
+
         p {
             font-size: 0.75rem;
             color: fade-out($white, 0.5);
@@ -201,7 +206,24 @@
         position: fixed;
         overflow-y: scroll;
         overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: $gray-5 $gray-3;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $gray-3;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $gray-5;
+            border-radius: 20px;
+        }
+
         .nav-item {
+
             // Accordion
             .collapse {
                 position: relative;
@@ -283,7 +305,9 @@
             position: relative;
             display: none;
             justify-self: self-start;
+
             .nav-item {
+
                 // Accordion
                 .collapse {
                     position: absolute;

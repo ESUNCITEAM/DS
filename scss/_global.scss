@@ -16,6 +16,7 @@ a {
 
   &:hover {
     text-decoration: none;
+    outline: none;
   }
 }
 
@@ -26,7 +27,7 @@ a {
   #content-wrapper {
     background-color: #F4F8FA;
     width: 100%;
-    overflow-x: hidden;
+    overflow-y: auto;
 
     #content {
       flex: 1 0 auto;
@@ -36,7 +37,7 @@ a {
 
 @include media-breakpoint-up(lg) {
   #content-wrapper {
-    margin-left: 14rem;
+    margin-left: $sidebar-base-width;
   }
 }
 
@@ -758,8 +759,8 @@ a {
   max-width: 200px;
   height: 65px;
   border-radius: 4px;
-  background: $primary-8;
-  color: $gray-1;
+  //background: $primary-8;
+  color: $primary-8;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -769,7 +770,6 @@ a {
 
   &:hover {
     opacity: .7;
-    color: #fff;
   }
 
   @include max(md) {

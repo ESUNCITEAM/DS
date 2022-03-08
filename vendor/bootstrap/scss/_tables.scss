@@ -20,7 +20,7 @@
     border-bottom: (2 * $table-border-width) solid $table-border-color;
   }
 
-  tbody + tbody {
+  tbody+tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
   }
 }
@@ -31,6 +31,7 @@
 //
 
 .table-sm {
+
   th,
   td {
     padding: $table-cell-padding-sm;
@@ -51,6 +52,7 @@
   }
 
   thead {
+
     th,
     td {
       border-bottom-width: 2 * $table-border-width;
@@ -59,10 +61,11 @@
 }
 
 .table-borderless {
+
   th,
   td,
   thead th,
-  tbody + tbody {
+  tbody+tbody {
     border: 0;
   }
 }
@@ -97,7 +100,8 @@
 // Exact selectors below required to override `.table-striped` and prevent
 // inheritance to nested tables.
 
-@each $color, $value in $theme-colors {
+@each $color,
+$value in $theme-colors {
   @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
 }
 
@@ -173,10 +177,26 @@
         display: block;
         width: 100%;
         overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: $gray-5 $gray-3;
+
+        &::-webkit-scrollbar {
+          height: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: $gray-3;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: $gray-5;
+          border-radius: 20px;
+        }
+
         -webkit-overflow-scrolling: touch;
 
         // Prevent double border on horizontal scroll due to use of `display: block;`
-        > .table-bordered {
+        >.table-bordered {
           border: 0;
         }
       }

@@ -36,7 +36,7 @@ $error: #c92e34 !default;
 $done: #21cc96 !default;
 
 //邊框線條
-$border-with-6:6px!important;
+$border-with-6:6px !important;
 
 
 // Set Contrast Threshold
@@ -45,8 +45,19 @@ $yiq-contrasted-threshold: 195 !default;
 // Typography
 $body-color: $gray-600 !default;
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "微軟正黑體", "Roboto", "Segoe UI",
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: -apple-system,
+BlinkMacSystemFont,
+"Noto Sans TC",
+"微軟正黑體",
+"Roboto",
+"Segoe UI",
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
 
 $font-weight-light: 300 !default;
 // $font-weight-base: 400;
@@ -65,7 +76,7 @@ $border-color: darken($gray-200, 2%) !default;
 // Change below variable if the height of the navbar changes
 $topbar-base-height: 3.5rem !default;
 // Change below variable to change the width of the sidenav
-$sidebar-base-width: 14rem !default;
+$sidebar-base-width: 20rem !default;
 // Change below variable to change the width of the sidenav when collapsed
 $sidebar-collapsed-width: 6rem !default;
 
@@ -199,8 +210,7 @@ $highlight-1: #f8524c !default;
 $highlight-2: #ef7800 !default;
 
 //breakpoints
-$breakpoints: (
-    xs: 0,
+$breakpoints: (xs: 0,
     sm: 576px,
     md: 768px,
     lg: 992px,
