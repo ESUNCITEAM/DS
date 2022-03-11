@@ -1,0 +1,140 @@
+/*
+* @data 2020-10-15
+* Author: Katie Lu #7708
+*
+* E.SUN Design Library Internal Entrance
+-----------------------------------
+   Main
+-----------------------------------
+*/ 
+
+
+		/*===============================
+			Setting Form
+		================================*/
+
+	/* 左側 */
+
+		#sideFixContainer{
+			display: block;
+			position: fixed;
+			height: 100vh;
+			width: 400px;
+			background-color: #fff;
+			padding: 135px 60px;
+			text-align:left;
+			border: 1px solid #E6E9F5;
+			z-index: 1;
+			color: #3C4C5E;;
+		}
+		h1.sideMainTitle{
+			font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;;
+			font-weight: revert;
+			font-style: normal;
+			font-size: 65px;
+			line-height: 70px;
+			margin: 0;
+			letter-spacing: 0px;
+		}
+		
+		h2.sideSubTitle{
+			font-size: 28px;
+			margin: 20px 0px 0px;
+		}
+		.sideSubContent{
+			font-family: 'PingFang TC Thin', 'PingFang TC';
+			font-weight: 200;
+			font-style: normal;
+			font-size: 16px;
+			line-height: 22px;
+			margin: 0px;
+		}
+
+
+	/* 右側 */
+
+		#scrollContentWrapper{
+			height: 100%;
+			color: #444;
+			padding: 142px 110px 0px 620px;
+			/*margin: 0 0 110px 0;
+			overflow: hidden; */
+		}
+		#contentWarpper{
+			padding-bottom: 0px;
+		}
+		#scrollContentContainer{
+		    max-width: 1280px;
+			min-width: 568px;
+			overflow: hidden;
+		}
+		.contentWrapper-R{
+			float: left;
+			width: 600px;
+			margin-bottom: 70px;
+			margin-left: 10px;
+			min-height: 300px;
+		}
+		h2.deviceTitle{
+			text-align: left;
+			padding-bottom: 5px;
+			margin: 0;
+			letter-spacing: -0.05px;
+			font-size: 22px;
+		}
+		.contentWrapper-R a{
+			color: #444;
+			font-weight: lighter;
+		}
+		.contentWrapper-R a.entranceArrowLinks:hover{
+			color: #45B29D;
+			opacity: 1;
+		}
+		.linkBox{
+			display: inline-block;
+			overflow: hidden;
+			width: 264px;
+			height: 136px;
+			background-color: #fff;
+			margin: 15px 7px 0px 0px;
+			border-radius: 6px;
+			box-shadow: 0 6px 0 0 rgba(7, 114, 181, 0.15);
+			border: .5px solid #E6E9F5;
+		
+		}
+		.linkBox.small{
+			height: 88px;
+		}
+		.linkBox.small a{
+			display: block;
+			width: 264px;
+			height: 88px;  /* 短的高*/
+			/* height: 136px; */
+		}
+		.linkBox.small a:hover{
+			background-color:  rgba(192, 195, 232, 0.077);
+		}
+		.linkBox.small .entranceArrowLinks i{
+			padding: 27px 20px 0px 0px;
+			float: right;
+		}
+		
+		.deviceSubTitleWrapper{
+			float: left;
+		}
+		.deviceSubTitle{
+			font-size: 22px;
+			line-height: 30px;
+			padding: 18px 0 0 20px;
+			color: #191919;
+			max-width: 190px;
+		}
+		.deviceSubTitle.ciBold{
+			letter-spacing: 5px;
+		}
+		.internalWebLinks{
+			float: right;
+			text-align: right;
+			line-height: 23px;
+			padding: 20px 20 0 0;
+		}

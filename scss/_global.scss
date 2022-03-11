@@ -48,6 +48,16 @@ a {
   padding-right: $grid-gutter-width;
 }
 
+#sidebarToggleTop {
+  border: none;
+  color: $primary-8;
+  background: none;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
 // Scroll to top button
 .scroll-to-top {
   position: fixed;
@@ -753,14 +763,16 @@ a {
   color: $primary-8;
 }
 
-//btn
+//-----------------------------------
+// btn按鈕
+//-----------------------------------
 .btn {
   width: 100%;
   max-width: 200px;
   height: 65px;
   border-radius: 4px;
-  //background: $primary-8;
-  color: $primary-8;
+  background: $primary-8;
+  color: $gray-1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -769,7 +781,8 @@ a {
   transition: 0.3s;
 
   &:hover {
-    opacity: .7;
+    color: $gray-1;
+    background: $primary-6;
   }
 
   @include max(md) {

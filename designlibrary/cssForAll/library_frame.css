@@ -1,0 +1,393 @@
+/*
+* @data 2020-10-15
+* Author: Katie #7708
+*
+* E.SUN Design Library CIVI
+-----------------------------------
+   Main
+-----------------------------------
+*/ 
+		
+		/* a 連結 focus 狀態 */
+/* 
+		a:focus {
+			border: 2px solid #fff;
+			outline: none;
+			box-shadow: 0 0 0 3px #22fcd4;
+			box-shadow: 0 0 0 3px #45B29D;
+		} */
+
+        /*===============================
+            2. Navigation Bar
+		================================*/
+		nav {
+			height: 50px;
+			line-height: 50px;
+		}
+        nav #navPageMenu{
+            float:right;
+        }
+        nav #navPageMenu ul li{
+		    float: left;
+		    width: 159px;
+		    text-align: center;
+		    padding: 0 20px;
+        }
+        nav #navPageMenu li a{
+			display: block;
+			height: 50px;
+            color: #fff;
+        }
+        nav #navPageMenu li.select{
+            display: block;
+        }
+        nav #navPageMenu li.select > a{
+            color: #FFF;
+            font-weight: bold;
+            opacity: 1;
+            display: block;
+            height: 95%;
+            border-bottom: 3px solid #FFF; 
+		}     
+		
+		nav #navPageMenu ul li:hover{
+			background-color: #3AA48F;
+		}
+		nav #navPageLogo {
+			margin-top: 8px;
+		}
+		nav #navPageLogo a{
+			height: 35px;
+			display: block;
+		}
+        /*===============================
+			3. Side Menu
+		================================*/
+		
+		ul.sideMainMenu li a,
+		ul.sideMainMenu > li.withSubMenu{
+			display: block;
+			font-size: 17px;
+			color: #3C4C5E;
+			opacity: .9;
+			padding-left: 10px;
+			cursor: pointer;
+		}
+		
+        /*=== With Sub Menu ===*/
+		ul.sideMainMenu li.withSubMenu.select{
+			font-weight: bold;
+			opacity: 1;
+			border-top: 1px solid #CECECE;
+			border-bottom: 1px solid #CECECE;
+			height: fit-content;
+		}
+		ul.sideSubMenu{
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			transition: all .2s;
+			-moz-transition: all .2s;
+			-ms-transition: all .2s;
+			-o-transition: all .2s;
+		}
+		li.withSubMenu.select ul.sideSubMenu{
+			margin-top: 12px;
+			max-height: 100%;
+			opacity: 1;
+			transition: all .2s;
+			-moz-transition: all .2s;
+			-ms-transition: all .2s;
+			-o-transition: all .2s;
+		}
+		ul.sideSubMenu li a{
+			display: block;
+			font-size: 16px;
+			font-weight: normal;
+		}
+		ul.sideMainMenu li.select > a{
+			color: #45B29D;
+			font-weight: bold;
+			opacity: 1;
+			border-left: 3px solid #45B29D;
+		}
+		/* 選單 a 連結 focus 的 寬度 */
+		
+			ul.sideMainMenu li a{
+				width: calc( 100% - 30px );
+				margin-left: 3px;
+			}
+			ul.sideMainMenu li a.unfocus{
+				padding-left: 0px;
+			}
+
+		/*===   No Sub Menu === */
+		ul.sideMainMenu > li.noSubMenu{
+			    margin-left: -4px;
+			}
+
+
+
+		@media screen and (max-width: 1366px){
+			#sideMenuContainer{
+				width: 180px;
+			}
+			ul.sideMainMenu{
+				padding: 15px 15px 0;
+			}
+			/* ul.sideMainMenu li{
+				padding: 10px 0;
+			} */
+			/* ul.sideMainMenu li a, */
+			ul.sideMainMenu > li.withSubMenu{
+				padding-left: 6px;
+			}
+			/*=== With Sub Menu ===*/
+			li.withSubMenu.select ul.sideSubMenu{
+				margin-top: 10px;
+			}
+			ul.sideSubMenu li a{
+				font-size: 15px;
+			}
+			/*===   No Sub Menu === */
+			ul.sideMainMenu > li.noSubMenu{
+				margin-left: -8px;
+			}
+
+		}
+
+		/*===============================
+			Fill Form
+		================================*/
+		#pageContentContainer header{
+			font-size: 32px;
+			margin: 10 0 0 0px;
+		}
+        #YourNameZone{
+            background-color: #D1D1D6;
+			overflow: hidden;
+			margin-bottom: 20px;
+			min-height: 77vh;
+		}
+
+		  
+		#typeZone{
+			background-color: #F1F3F7;
+			overflow: hidden;
+			margin-bottom: 20px;
+			min-height: 77vh;
+			/* padding: 0px 30px; */
+		}
+        h1.formSubTitle{
+            font-size: 12px;
+            font-weight: 200;
+            color: #979797;
+            margin: 4px 2px 24px;
+		}
+
+		/*===============================
+			Tab 分頁頁籤
+		================================*/
+
+		#tabWrapper {
+			min-height: 100%;
+			position: relative;
+			overflow: hidden;
+		} 
+		.wrapper {
+			display: block;
+		}
+		.formTab {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			-webkit-transform: translateY(5px);
+			transform: translateY(5px);
+			border-bottom: 5px solid #3C4C5E;
+		}
+		.formTab > li {
+			transition-duration: 0.25s;
+			display: table-cell;
+			list-style: none;
+			text-align: center;
+			background-color:#F0F3F7;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			color: #979797;
+
+			height: 42px;
+			padding-top: 11px;
+			border-radius: 5px 5px 0px 0px;
+		}
+			.formTab > li:before {
+			z-index: 0;
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 240px;
+			top: -170px;
+			left: 0;
+			background-color: rgba(171, 171, 171, 0.3);
+			-webkit-transform: translateY(100%);
+			transform: translateY(100%);
+			transition-duration: 0.25s;
+			border-radius: 5px 5px 0 0;
+		}
+		.formTab > li:hover:before {
+			-webkit-transform: translateY(70%);
+			transform: translateY(70%);
+		}
+		.formTab > li.active {
+			font-weight: bold;
+			color: #FFF;
+			background-color: rgba(60, 76, 94, 1);
+		}
+		.formTab > li.active:before {
+			transition-duration: 0.5s;
+			background-color: rgba(60, 76, 94, 1);
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+			z-index: -1;
+		}
+		
+		.tab__content {
+			background-color: white;
+			position: relative;
+			width: 100%;
+			border-radius: 0px 0px 5px 5px;
+			margin-top: 5px;
+			/* min-height: 60vh; */
+		}
+		.tab__content > .active{
+			height:max-content!important;
+		}
+		.tab__content > li {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			list-style: none;
+		}
+		.tab__content > li .content__wrapper {
+			/* border-radius: 5px; */
+			width: 100%;
+			background-color: white;
+			/* border: 1px solid #ccc; */
+		}
+		  		
+		.stickyTab{
+			z-index: 10;          
+			position: fixed;      
+			top: 45px;
+			left: 180px;
+			margin-top: 0;
+			opacity: 1;
+			transition: opacity .5s ease-out;
+			width: calc(100% - 180px)!important;	
+		}
+		.stickyTabStyle{
+			border-radius: 0px!important;
+		}
+
+		/*===============================
+			Tab 分頁頁籤  ＮＥＷ
+		================================*/
+		/* .formLabel {
+			transition-duration: 0.25s;
+			display: table-cell;
+			list-style: none;
+			text-align: center;
+			background-color: #F0F3F7;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			color: #979797;
+			height: 42px;
+			border-radius: 5px 5px 0px 0px;
+		} */
+		
+
+		#tabWrapper {
+			min-height: 100%;
+			position: relative;
+			overflow: hidden;
+		} 
+		.wrapper {
+			display: block;
+		}
+		
+			/* Style the tab */
+		.tab {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			-webkit-transform: translateY(5px);
+			transform: translateY(5px);
+			border-bottom: 5px solid #3C4C5E;
+		}
+		
+		/* Style the buttons inside the tab */
+		.tab button {
+			transition-duration: 0.3s;
+			display: table-cell;
+			list-style: none;
+			text-align: center;
+			background-color: #F0F3F7;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			color: #979797;
+			height: 42px;
+			border-radius: 5px 5px 0px 0px;
+			font-size: 16px;
+			line-height: 44px;
+			border: 0px;
+			width: calc(100% / 2);
+			letter-spacing: 0.06em;
+			outline: none; 
+			border-color: transparent; 
+			font-family: "Arial", "Helvetica","微軟正黑體","DFHei", "Microsoft JhengHei","sans-serif";
+		}
+		
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+			background-color: #ddd;
+			height: 42px;
+		}
+		
+		/* Create an active/current tablink class */
+		.tab button.active {
+			color: #FFF;
+			background-color: rgba(60, 76, 94, 1);
+			font-weight: 600;
+		}
+		
+		/* Style the tab content */
+		.tabcontent {
+			display: none;
+			padding: 6px 12px;
+			/* border: 1px solid #ccc; */
+			border-top: none;
+			background-color: white;
+			padding: 64px 76px;
+
+
+			/* display: block; 
+			height: 0px; 
+			overflow: hidden;  */
+		}
+
+		/* .tabcontent>.active{ height: auto;} */
+
+
+
+
+		.bx--row {
+			max-width: 80%;
+		}
+		.bx--row.rightMenuOff {
+			max-width: 100%;
+		}
+

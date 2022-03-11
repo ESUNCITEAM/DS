@@ -1,0 +1,2225 @@
+@charset "UTF-8";
+/*
+* @data 2020-8-11
+* Author: Alyshia Lee #7711
+*
+* E.SUN CreditCard CBP Stylesheet
+-----------------------------------
+   1. Universe
+   2. Navigation Bar
+   3. Side Menu
+   4. Breadcrumb
+   5. Popup
+   6. Error Page
+   7. Btn
+   8. Radio
+   9. Checkbox
+  10. Switch
+  11. Input Text
+  12. Select
+  13. Pager
+  14. InfoCard
+  15. Quick Call
+  16. Transfer Form
+  17. Form
+  18. Message Board
+  19. Loading
+  20. Change For Library
+-----------------------------------
+*/
+
+
+		/*===============================
+			1. Universe
+		================================*/
+		html, body{
+			height: 100%;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: "Arial", "Helvetica","微軟正黑體","DFHei", "Microsoft JhengHei","sans-serif";
+			font-size: 16px;
+			color: #222;
+			letter-spacing: 0.06em;
+			background: #F0F3F7;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul, li, ol{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		#pageWarpper{
+			min-height: 100%;
+			position: relative;
+			min-width: 1280px;
+		}
+		#contentWarpper{
+			padding-bottom: 30px;
+		}
+		
+		/*=== Page Content ===*/
+		#pageContentWarpper{
+			padding: 60px 0 0 220px;/* Nav & Side Menu*/
+		}
+		#pageContentWarpper.withoutSideMenu{
+			padding: 60px 0 0 0;/* Nav */
+		}
+		#pageContentContainer{
+			padding: 40px 30px 0;
+		}
+		#pageContentContainer header{
+			font-size: 22px;
+			font-weight: bold;
+			color: #3C4C5E;
+			margin: 10px 0 15px;
+		}
+		.layoutZoneContainer{
+			position: relative;
+		}
+		.layoutZoneContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.layoutZone{
+			float: left;
+			position: relative;
+			width: 100%;
+		}
+		@media screen and (max-width: 1366px){
+			#pageContentWarpper{
+				padding: 60px 0 0 180px;/* Nav & Side Menu*/
+			}
+		}
+
+		/*===============================
+			2. Navigation Bar
+		================================*/
+			nav{
+				height: 60px;
+				line-height: 60px;
+				width: calc( 100% - 60px );
+				padding: 0 30px;
+				background: #45B29D;
+				color: #FFF;
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: 100;
+				transition: height .3s;
+				-webkit-transition: height .3s;
+				-moz-transition: height .3s;
+				-ms-transition: height .3s;
+				-o-transition: height .3s;
+			}
+			nav::after{
+				content: "";
+				display: block;
+				float: none;
+				clear: both;
+			}
+			nav #navPageLogo{
+				float: left;
+				margin-right: 10px;
+				margin-top: 14px;
+			}
+			nav #navPageTitle{
+				font-size: 20px;
+				font-weight: bold;
+				float: left;
+			}
+			nav #navFunctionContainer{
+				float: right;
+			}
+			.navFunction{
+				margin-top: calc( (60px - 36px)/2 );
+				margin-right: 15px;
+				float: left;
+			}
+			.navFunction:last-child{
+				margin-right: 0;
+			}
+			/*=== User ===*/
+			nav #navUserContainer{
+				margin-top: 0;
+				padding-left: 29px;
+				background-image: url(../images/ic_white_user.svg);
+				background-size: 24px;
+				background-position: left center;
+				background-repeat: no-repeat;
+			}
+			/*=== Extension ===*/
+			#navExtensionContainer{
+				position: relative;
+			}
+			#navExtensionField{
+				width: calc( 120px - 30px );
+				height: 36px;
+				line-height: 36px;
+				position: relative;
+				padding-left: 30px;
+				background: #FFF;
+				border-radius: 18px;
+			}
+			#navExtensionField.editing{
+				background: #E3F5F2;
+			}
+			#navExtensionField::after{
+				display: block;
+				content: "#";
+				color: #979797;
+				position: absolute;
+				left: 15px;
+				top: 0;
+				line-height: 36px;
+			}
+			#navExtensionField input[type="text"].editable{
+				appearance: none;
+				outline: none;
+				border: 0;
+				width: calc( 100% - 36px );
+				background: #E3F5F2;
+				font-size: 16px;
+				color: #222;
+				height: 36px;
+				line-height: 36px;
+			}
+			#navExtensionField input[type="text"]::placeholder{
+				color: #979797;
+			}
+			#navExtensionField input[type="text"].editable:disabled{
+				color: #222;
+				opacity: 1;
+				cursor: not-allowed;
+				background: #FFF;
+			}
+			#navExtensionField button#btnNavExtensionEdit{
+				width: 36px;
+				background-image: url(../images/ic_white_pen.svg);
+				background-size: 20px;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0 18px 18px 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			#navExtensionField.editing button#btnNavExtensionEdit{
+				background-image: url(../images/ic_white_save.svg);
+			}
+			.extensionAlert{
+				font-size: 14px;
+				color: #FFF;
+				line-height: 1.2;
+				border-radius: 10px;
+				padding: 15px 15px 15px 39px;
+				background-color: rgba(244, 97, 85, .9);
+				background-image: url(../images/ic_white_alert.svg);
+				background-repeat: no-repeat;
+				background-size: 24px;
+				background-position: 10px center;
+				position: absolute;
+				top: 140%;
+				right: -15px;
+				white-space: nowrap;
+				display: none;
+			}
+			.extensionAlert.show{
+				display: block;
+			}
+			.extensionAlert::before{
+				display: block;
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 5px 10px 5px;
+				border-color: transparent transparent #f46255 transparent;
+				position: absolute;
+				top: -10px;
+				right: 70px;
+			}
+			/*=== Online ===*/
+			#navOnlineContainer .switch {
+				width: 84px;
+				height: 36px;
+			}
+			#navOnlineContainer .slider {
+				border-radius: 18px;
+				background-color: #F46155;
+			}
+			#navOnlineContainer .slider::before {
+				height: 28px;
+				width: 28px;
+			}
+			#navOnlineContainer .slider::after {
+				display: block;
+				content: "佔線";
+				height: 36px;
+				line-height: 36px;
+				color: #FFF;
+				font-size: 16px;
+				position: absolute;
+				right: 12px;
+				top: 0px;
+			}
+			#navOnlineContainer .switchField input:checked + .slider {
+				background-color: #3C4C5E;
+			}
+			#navOnlineContainer .switchField input:focus + .slider {
+				box-shadow: 0 0 1px #3C4C5E;
+			}
+			#navOnlineContainer .switchField input:checked + .slider:before {
+				transform: translateX(48px);/* width 84px - space 4px*2 - slider width 28px */
+				-webkit-transform: translateX(48px);
+				-moz-transform: translateX(48px);
+				-ms-transform: translateX(48px);
+				-o-transform: translateX(48px);
+			}
+			#navOnlineContainer .switchField input:checked + .slider:after {
+				content: "上線";
+				left: 12px;
+			}
+			/*=== Call ===*/
+			#navCallContainer button#btnNavCall{
+				background-color: rgba(0, 0, 0, 0);
+				color: #FFF;
+				border: 1px solid #FFF;
+			}
+			#navCallContainer button#btnNavCall:hover{
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+			/*=== Nav Icon Btn ===*/
+			.navFunction.iconBtn button{
+				width: 36px;
+				border-radius: 18px;
+				background-color: rgba(0, 0, 0, 0);
+				background-size: 22px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.navFunction.iconBtn button:hover{
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+			/*=== Logout ===*/
+			#navLogoutContainer button#btnNavLogout{
+				background-image: url(../images/ic_white_log_out.svg);
+			}
+			/*=== Notify ===*/
+			#navNotifyContainer button#btnNavNotify{
+				background-image: url(../images/ic_white_bell.svg);
+				position: relative;
+			}
+			#navNotifyContainer button#btnNavNotify.alert::after{
+				display: block;
+				content: "";
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background: #F46155;
+				position: absolute;
+				top: 8px;
+				right: 8px;
+			}
+
+		/*===============================
+			3. Side Menu
+		================================*/
+		#sideMenuContainer{
+			padding-top: 60px;/* Nav height */
+			width: 220px;
+			height: calc( 100% - 60px );
+			background: #FFF;
+			z-index: 99;
+			position: fixed;
+			left: 0;
+			top: 0;
+			overflow-y: auto;
+		}
+		ul.sideMainMenu{
+			padding: 15px 20px 0;
+		}
+		ul.sideMainMenu li{
+			padding: 8px 0;
+			display: block;
+		}
+		ul.sideMainMenu li a,
+		ul.sideMainMenu > li.withSubMenu{
+			display: block;
+			font-size: 18px;
+			color: #3C4C5E;
+			opacity: .9;
+			padding-left: 10px;
+			cursor: pointer;
+		}
+		ul.sideMainMenu li a:hover,
+		ul.sideMainMenu li.withSubMenu:hover,
+		ul.sideSubMenu li a:hover{
+			opacity: 1;
+			font-weight: bold;
+		}
+		ul.sideMainMenu li.select > a{
+			color: #45B29D;
+			font-weight: bold;
+			opacity: 1;
+			border-left: 3px solid #45B29D;
+		}
+		/*=== With Sub Menu ===*/
+		ul.sideMainMenu li.withSubMenu.select{
+			font-weight: bold;
+			opacity: 1;
+			border-top: 1px solid #CECECE;
+			border-bottom: 1px solid #CECECE;
+		}
+		ul.sideSubMenu{
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			transition: all .2s;
+			-moz-transition: all .2s;
+			-ms-transition: all .2s;
+			-o-transition: all .2s;
+		}
+		li.withSubMenu.select ul.sideSubMenu{
+			margin-top: 12px;
+			max-height: 100%;
+			opacity: 1;
+			transition: all .2s;
+			-moz-transition: all .2s;
+			-ms-transition: all .2s;
+			-o-transition: all .2s;
+		}
+		ul.sideSubMenu li a{
+			display: block;
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+		@media screen and (max-width: 1366px){
+			#sideMenuContainer{
+				width: 180px;
+			}
+			ul.sideMainMenu{
+				padding: 15px 15px 0;
+			}
+			ul.sideMainMenu li{
+				padding: 10px 0;
+			}
+			ul.sideMainMenu li a,
+			ul.sideMainMenu > li.withSubMenu{
+				font-size: 16px;
+				padding-left: 6px;
+			}
+			/*=== With Sub Menu ===*/
+			li.withSubMenu.select ul.sideSubMenu{
+				margin-top: 10px;
+			}
+			ul.sideSubMenu li a{
+				font-size: 15px;
+			}
+		}
+
+		/*===============================
+			4. Breadcrumb
+		================================*/
+		.breadcrumbContainer ul::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.breadcrumbContainer ul li{
+			float: left;
+			margin-right: 30px;
+			font-size: 14px;
+			color: #979797;
+			position: relative;
+		}
+		.breadcrumbContainer ul li:last-child{
+			margin-right: 0;
+		}
+		.breadcrumbContainer ul li::after{
+			display: block;
+			content: "";
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			right: -20px;
+			top: 5px;
+			background-image: url(../imageForAll/ic_gray_right_arrow.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.breadcrumbContainer ul li:last-child::after{
+			display: none;
+		}
+		.breadcrumbContainer ul li.now{
+			color: #222;
+		}
+
+		/*===============================
+			5. Popup
+		================================*/
+		.popup{
+			z-index: 500;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			overflow: auto;
+			background: rgba(0, 0, 0, .5);
+			display: none;
+		}
+		.popup.show{
+			display: block;
+		}
+		.popupContainer{
+			position: relative;
+			background: #FFF;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+			-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+			-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+			-ms-box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+			-o-box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+			margin: 100px auto;
+			width: 60%;
+			max-width: 960px;
+			min-width: 860px;
+		}
+		.popupContainer.form{
+			height: auto;
+		}
+		.popupContainer.message{
+			min-height: 300px;
+			margin: 160px auto;
+		}
+		.btnPopupX{
+			width: 30px;
+			height: 30px;
+			background-image: url(../internal/website/guideline/images/imagesCBP/ic_black_x.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			opacity: .3;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+		.btnPopupX:hover{
+			opacity: .5;
+		}
+		/*=== Content ===*/
+		.popupContent{
+			padding: 30px 20px 78px;
+		}
+		.popup header{
+			font-size: 22px;
+			font-weight: bold;
+			color: #3C4C5E;
+			text-align: center;
+		}
+		.popupFormContainer{
+			margin: 25px 0;
+		}
+		.popupMessageContainer{
+			padding: 40px 60px 60px;
+			text-align: center;
+		}
+		.messageContent{
+			font-size: 22px;
+			line-height: 1.5;
+		}
+		.popupMessageIcon{
+			width: 100px;
+			height: 100px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			margin: 0 auto 10px;
+		}
+		.popupMessageIcon.success{
+			background-image: url(../images/ic_big_green_success.svg);
+		}
+		.popupMessageIcon.alert{
+			background-image: url(../images/ic_big_red_alert.svg);
+		}
+		/*=== Btn ===*/
+		.popupBtnContainer{
+			position: absolute;
+			bottom: 30px;
+		}
+		.popupBtnContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.popupBtnContainer.twoSub{
+			left: calc( (100% - 220px*2 - 20px) / 2 );
+		}
+		.popupBtnContainer.twoSize{
+			left: calc( (100% - 220px - 320px - 20px) / 2 );
+		}
+		.popupBtnContainer button.uiStyle{
+			margin-right: 20px;
+			float: left;
+		}
+		.popupBtnContainer button.uiStyle:last-child{
+			margin-right: 0;
+		}
+
+		/*===============================
+			6. Error Page
+		================================*/
+		.pageMessageContainer{
+			width: 65%;
+			padding: 50px 100px;
+			max-width: 1000px;
+			margin: 5% auto 0;
+			border-radius: 10px;
+			background: #FFF;
+			position: relative;
+		}
+		.messageContentContainer{
+			margin-bottom: 40px;
+		}
+		.messageContentContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.messageIconContainer{
+			margin-right: 6%;
+			float: left;
+		}
+		.messageIconContainer img{
+			width: 150px;
+			height: 150px;
+		}
+		.messageTextContainer{
+			width: calc( 100% - 150px - 6%);
+			padding: 15px 0;
+			float: left;
+		}
+		.mainContent{
+			font-size: 24px;
+			line-height: 1.5;
+			margin-bottom: 15px;
+			text-align: justify;
+		}
+		.mainContent font.alert{
+			color: #F46155;
+		}
+		/* If 1 Btn: Btn length use "mainLength" class */
+		.messageBtnContainer{
+			margin-left: calc( (100% - 320px ) / 2);
+		}
+		/* If 2 Btn: Btn length use "subLength" class */
+		.messageBtnContainer.twoSub{
+			margin-left: calc( (100% - 220px * 2 - 20px ) / 2);
+		}
+		.messageBtnContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.messageBtnContainer a{
+			float: left;
+			margin-right: 20px;
+		}
+		.messageBtnContainer a:last-child{
+			margin-right: 0;
+		}
+		
+		/*===============================
+			7. Btn
+		================================*/
+		button.uiStyle{
+			outline: none;
+			appearance: none;
+			border: 0;
+			padding: 0;
+			margin: 0;
+			font-family: "Arial", "Helvetica","微軟正黑體","DFHei", "Microsoft JhengHei","sans-serif";
+			letter-spacing: 0.06em;
+			font-size: 16px;
+			padding: 0 15px;
+			font-weight: bold;
+		}
+		/*=== Color ===*/
+		button.uiStyle.btnGreen{
+			background-color: #45B29D;
+			color: #FFF;
+		}
+		button.uiStyle.btnGreen:hover{
+			background-color: #3AA48F;
+		}
+		button.uiStyle.btnDarkBlue{
+			background-color: #3C4C5E;
+			color: #FFF;
+		}
+		button.uiStyle.btnDarkBlue:hover{
+			background-color: #2B3C50;
+		}
+		button.uiStyle.btnRed{
+			background-color: #F46155;
+			color: #FFF;
+		}
+		button.uiStyle.btnRed:hover{
+			background-color: #F1473A;
+		}
+		button.uiStyle.btnWhite{
+			background-color: #FFF;
+			color: #45B29D;
+		}
+		button.uiStyle.btnWhite:hover{
+			background-color: #EDEDED;
+		}
+		button.uiStyle.btnWhiteLine{
+			background-color: rgba(0, 0, 0, 0);
+			color: #FFF;
+			border: 1px solid #FFF;
+		}
+		button.uiStyle.btnWhiteLine:hover{
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+		button.uiStyle.btnDarkBlueLine{
+			color: #3C4C5E;
+			border: 1px solid #3C4C5E;
+			background-color: rgba(0, 0, 0, 0);
+		}
+		button.uiStyle.btnDarkBlueLine:hover{
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+		button.uiStyle.btnGreen:disabled,
+		button.uiStyle.btnDarkBlue:disabled,
+		button.uiStyle.btnRed:disabled,
+		button.uiStyle.btnWhiteLine:disabled,
+		button.uiStyle.btnDarkBlueLine:disabled{
+			background-color: #CECECE;
+			color: #979797;
+			border: 0;
+			cursor: not-allowed;
+		}
+		/*=== Size ===*/
+		button.uiStyle.sizeS{
+			height: 36px;
+			line-height: 36px;
+			border-radius: 18px;
+		}
+		button.uiStyle.sizeM{
+			height: 40px;
+			line-height: 40px;
+			border-radius: 20px;
+			min-width: 100px;
+		}
+		button.uiStyle.sizeL{
+			height: 48px;
+			line-height: 48px;
+			border-radius: 24px;
+			font-size: 20px;
+		}
+		/*=== Length ===*/
+		button.uiStyle.minLength{
+			width: 180px;
+		}
+		button.uiStyle.subLength{
+			width: 220px;
+		}
+		button.uiStyle.mainLength{
+			width: 320px;
+		}
+		/*=== Icon ===*/
+		button.uiStyle.withIcon{
+			padding-left: 10px;
+		}
+		button.uiStyle.withIcon img{
+			margin-right: 5px;
+			float: left;
+		}
+		button.uiStyle.sizeS.withIcon img{
+			width: 20px;
+			height: 20px;
+		}
+		button.uiStyle.sizeM.withIcon img{
+			width: 24px;
+			height: 24px;
+		}
+		button.uiStyle.sizeS.withIcon img{
+			margin-top: calc( (36px - 20px) / 2 );
+		}
+		button.uiStyle.sizeM.withIcon img{
+			margin-top: calc( (40px - 24px) / 2 );
+		}
+
+		/*===============================
+			8. Radio
+		================================*/
+		.radioForm::after{
+			display: block;
+			content: "";
+			float: none;
+			clear: both;
+		}
+		.radioField{
+			position: relative;
+			float: left;
+			display: block;
+			/* width: auto; */
+			margin-right: 20px;
+			/* margin-bottom: 10px; */
+		}
+		.radioField:last-child{
+			margin: 0;
+		}
+		.radioTitle{
+			font-size: 18px;
+			height: 40px;
+			line-height: 40px;
+			float: left;
+			margin-right: 20px;
+		}
+		.radioField input[type="radio"]{
+			display: none;
+			opacity: 0;
+			visibility: hidden;
+		}
+		.radioField input[type="radio"] + label{
+			display: block;
+			cursor: pointer;
+			position: static;
+			text-align: left;
+			/* width: auto; */
+		}
+		.radioField input[type="radio"] + label .radioIcon{
+			width: 32px;
+			height: 32px;
+			border-radius: 16px;
+			background: #FFF;
+			border: 1px solid #CECECE;
+			float: left;
+			margin-right: 5px;
+			margin-top: calc( (40px - 34px) / 2 );
+			position: relative;
+		}
+		.radioField input[type="radio"] + label:hover .radioIcon{
+			background: #FBFBFB;
+		}
+		.radioField input[type="radio"] + label .radioIcon .radioInsideCircle{
+			width: 24px;
+			height: 24px;
+			border-radius: 12px;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+		}
+		.radioField input[type="radio"]:checked + label .radioIcon{
+			border: 1px solid #45B29D;
+			background: #FFF;
+		}
+		.radioField input[type="radio"]:checked + label .radioIcon .radioInsideCircle{
+			background: #45B29D;
+		}
+		.radioField .radioText{
+			color: #222;
+			font-weight: normal;
+			font-size: 16px;
+			height: 40px;
+			line-height: 40px;
+			display: inline-block;
+		}
+
+		/*===============================
+			9. Checkbox
+		================================*/
+		.checkboxForm::after{
+			display: block;
+			content: " ";
+			float: none;
+			clear: both;
+		}
+		.checkboxField{
+			position: relative;
+			float: left;
+			display: block;
+			/* width: auto; */
+			margin-right: 20px;
+			/* margin-bottom: 10px; */
+		}
+		.checkboxField:last-child{
+			margin: 0;
+		}
+		.checkboxTitle{
+			font-size: 18px;
+			height: 40px;
+			line-height: 40px;
+			float: left;
+			margin-right: 20px;
+		}
+		.checkboxField input[type="checkbox"]{
+			display: none;
+			opacity: 0;
+			visibility: hidden;
+		}
+		.checkboxField input[type="checkbox"] + label{
+			display: block;
+			cursor: pointer;
+			position: static;
+			text-align: left;
+			/* width: auto; */
+		}
+		.checkboxField input[type="checkbox"] + label .checkboxIcon{
+			width: 32px;
+			height: 32px;
+			background-color: #FFF;
+			border: 1px solid #CECECE;
+			float: left;
+			margin-right: 5px;
+			margin-top: calc( (40px - 34px) / 2 );
+			position: relative;
+			background-image: url(../imageForAll/ic_lightgray_trans_check.svg);
+			background-repeat: no-repeat;
+			background-size: 30px;
+			background-position: center;
+		}
+		.checkboxField input[type="checkbox"] + label:hover .checkboxIcon{
+			background-color: #FBFBFB;
+		}
+		.checkboxField input[type="checkbox"]:checked + label .checkboxIcon{
+			border: 1px solid #45B29D;
+			background-color: #45B29D;
+			background-image: url(../internal/website/guideline/images/imagesCBP/ic_white_check.svg);
+		}
+		.checkboxField .checkboxText{
+			color: #222;
+			font-weight: normal;
+			font-size: 16px;
+			height: 40px;
+			line-height: 40px;
+			display: inline-block;
+		}
+
+		/*===============================
+			10. Switch
+		================================*/
+		.switch {
+			position: relative;
+			display: inline-block;
+			width: 68px;
+			height: 40px;
+		}
+		.switch input{
+			display:none;
+		}
+		.slider {
+			border-radius: 20px;
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #CECECE;
+			transition: .4s;
+			-webkit-transition: .4s;
+			-moz-transition: .4s;
+			-ms-transition: .4s;
+			-o-transition: .4s;
+		}
+		.slider:before {
+			display: block;
+			content: "";
+			height: 32px;
+			width: 32px;
+			border-radius: 50%;
+			position: absolute;
+			left: 4px;
+			bottom: 4px;
+			background-color: #FFF;
+			transition: .4s;
+			-webkit-transition: .4s;
+			-moz-transition: .4s;
+			-ms-transition: .4s;
+			-o-transition: .4s;
+		}
+		.switchField input:checked + .slider {
+			background-color: #45B29D;
+		}
+		.switchField input:focus + .slider {
+			box-shadow: 0 0 1px #45B29D;
+		}
+		.switchField input:checked + .slider:before {
+			transform: translateX(28px);/* width 68px - space 4px*2 - slider width 32px */
+			-webkit-transform: translateX(28px);
+			-moz-transform: translateX(28px);
+			-ms-transform: translateX(28px);
+			-o-transform: translateX(28px);
+		}
+		/*=== Multiple Switch ===*/
+		.multiSwitch{
+			position: relative;
+			height: 40px;
+			width: 120px;
+			border-radius: 20px;
+			background-color: #CECECE;
+			position: relative;
+		}
+		.multiSwitch.status2{
+			background-color: #FF9252;
+		}
+		.multiSwitch.status3{
+			background-color: #45B29D;
+		}
+		.multiSwitch::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background: #FFF;
+			position: absolute;
+			left: 4px;
+			top: 4px;
+			transition: .4s;
+			-webkit-transition: .4s;
+			-moz-transition: .4s;
+			-ms-transition: .4s;
+			-o-transition: .4s;
+		}
+		.multiSwitch.status2::after{
+			transform: translateX(40px);/* width 120px - space 4px*2 - slider width 32px*2 */
+			-webkit-transform: translateX(40px);
+			-moz-transform: translateX(40px);
+			-ms-transform: translateX(40px);
+			-o-transform: translateX(40px);
+		}
+		.multiSwitch.status3::after{
+			transform: translateX(80px);/* width 120px - space 4px*2 - slider width 32px*2 */
+			-webkit-transform: translateX(80px);
+			-moz-transform: translateX(80px);
+			-ms-transform: translateX(80px);
+			-o-transform: translateX(80px);
+		}
+		.multiSwitch input{
+			display: none;
+		}
+		.multiSwitchOptField{
+			display: block;
+			width: 40px;
+			height: 40px;
+			float: left;
+			position: relative;
+		}
+		.multiSwitchOpt{
+			display: block;
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			position: relative;
+		}
+		.multiSwitchOpt::before{
+			display: block;
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #808080;
+			position: absolute;
+			top: 17px;
+			left: 17px;
+			opacity: 0.8;
+		}
+		.multiSwitchOpt:hover::before{
+			opacity: 1;
+		}
+		.multiSwitchOpt.status2::before{
+			background: #FF9252;
+		}
+		.multiSwitchOpt.status3::before{
+			background: #45B29D;
+		}
+
+		/*===============================
+			11. Input Text
+		================================*/
+		input[type="text"].uiStyle{
+			appearance: none;
+			outline: none;
+			margin: 0;
+			padding: 0;
+			background: #FFF;
+			font-size: 16px;
+			color: #222;
+			letter-spacing: 0.06em;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 5px;
+			border: 1px solid #CECECE;
+			padding-left: 10px;
+		}
+		input[type="text"].uiStyle:hover{
+			background: #FBFBFB;
+		}
+		input[type="text"].uiStyle:focus{
+			border: 2px solid #6883A1;
+		}
+		input[type="text"].uiStyle::placeholder{
+			color: #979797;
+		}
+		input[type="text"].uiStyle:disabled{
+			background-color: #E1E1E1;
+			color: #979797;
+			cursor: not-allowed;
+		}
+		input[type="text"].uiStyle.editable{
+			background: #E3F5F2;
+		}
+		input[type="text"].uiStyle.editable:disabled{
+			background: #FFF;
+		}
+		/*=== With Text ===*/
+		.inputWithTextField{
+			position: relative;
+		}
+		.inputWithTextField::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.inputWithTextField input[type="text"].uiStyle,
+		.inputWithTextField .inputText{
+			float: left;
+		}
+		.inputText.before{
+			margin-right: 10px;
+		}
+		.inputText.after{
+			margin-left: 5px;
+		}
+		/*=== With Btn ===*/
+		.inputWithBtnField{
+			display: inline-block;
+			position: relative;
+		}
+		.inputWithBtnField input[type="text"].uiStyle{
+			padding-right: 45px;
+		}
+		.inputWithBtnField button{
+			width: 40px;
+			height: 40px;
+			border: 1px solid #3C4C5E;
+			border-radius: 0 5px 5px 0;
+			padding: 0;
+			text-align: center;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.inputWithBtnField button img{
+			width: 24px;
+			height: 24px;
+		}
+		/*=== Textarea ===*/
+		textarea.uiStyle{
+			appearance: none;
+			outline: none;
+			border: 0;
+			border-radius: 5px;
+			border: 1px solid #CECECE;
+			background: #FFF;
+			font-family: "Arial", "Helvetica","微軟正黑體","DFHei", "Microsoft JhengHei","sans-serif";
+			font-size: 14px;
+			color: #222;
+			letter-spacing: 0.06em;
+			line-height: 1.5;
+			padding: 10px;
+		}
+		textarea.uiStyle:hover{
+			background: #FBFBFB;
+		}
+		textarea.uiStyle:focus{
+			border: 2px solid #6883A1;
+		}
+		textarea.uiStyle::placeholder{
+			color: #979797;
+			opacity: 1;
+		}
+
+		/*===============================
+			12. Select
+		================================*/
+		.selectField{
+			height: 40px;
+			float: left;
+			margin-right: 10px;
+		}
+		.selectField:last-child{
+			margin-right: 0;
+		}
+		.selectField.withText::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.selectField.withText .dropdownBtn,
+		.selectField.withText .selectText{
+			float: left;
+		}
+		.selectField.withText .selectText.before{
+			margin-right: 10px;
+		}
+		.selectField.withText .selectText.after{
+			margin-left: 5px;
+		}
+		/*=== Select Box ===*/
+		.dropdownBtn{
+			box-sizing: border-box;
+			font-size: 16px;
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			height: 40px;
+			line-height: 40px;
+			padding-right: calc( 20px + 15px );
+			background: #FFFFFF;
+			border: solid 1px #CECECE;
+			border-radius: 5px;
+			color: #3C4C5E;
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			outline: none;
+			/* float: left; */
+		}
+		.dropdownBtn.active{
+			border: 2px solid #6883A1;
+		}
+		.dropdownBtn::before {
+			display: block;
+			content: "";
+			width: 15px;
+			height: 15px;
+			background-image: url(../images/ic_darkblue_down_arrow.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			right: 10px;
+			top: 13px;
+		}
+		.dropdownBtn.active::before {
+			right: 8px;
+			top: 11px;
+			background-image: url(../images/ic_darkblue_up_arrow.svg);
+		}
+		.dropdownBtn:hover {
+			background: #FBFBFB;
+		}
+		.dropdownPlaceholder{
+			display: block;
+			font-size: 16px;
+			color: #222;
+			pointer-events: none;
+			user-select: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			visibility: visible;
+			padding-left: 10px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.dropdownBox {
+			position: absolute;
+			top: calc( 100% + 4px );
+			display: none;
+			list-style-type: none;
+			font-size: 16px;
+			background-color: #FFF;
+			width: calc( 100% + 2px );
+			box-sizing: border-box;
+			z-index: 2000;
+			margin: 0px;
+			padding: 0px;
+			border: 1px solid #CECECE;
+			border-radius: 5px;
+			padding: 10px 0;
+			color: #4A4A4A;
+			list-style: none;
+			text-align: left;
+			max-height: 300px;
+			overflow: auto;
+		}
+		.dropdownBtn.active .dropdownBox {
+			display: block;
+		}
+		.dropdownBoxOptions {
+			display: list-item;
+			font-size: 16px;
+			color: #222;
+			padding: 0px;
+			padding-left: 20px;
+			user-select: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		}
+		.dropdownBoxOptions.selected::before {
+			display: inline;
+		}
+		.dropdownBoxOptions.selected{
+			background-color: #3C4C5E;
+			color: #FFF;
+		}
+		.dropdownBoxOptions:hover {
+			background-color: #EDEDED;
+			color: #222;
+		}
+
+		/*===============================
+			13. Pager
+		================================*/
+		.pagerContainer{
+			margin: 0 auto;
+		}
+		.pagerContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.pagerContainer.totalPage1{
+			display: none;
+		}
+		.pagerContainer.totalPage2{
+			width: calc( 36px * 2 );
+		}
+		.pagerContainer.totalPage3{
+			width: calc( 36px * 3 );
+		}
+		.pagerContainer.totalPage4{
+			width: calc( 36px * 4 );
+		}
+		.pagerContainer.totalPage5{
+			width: calc( 36px * 5 );
+		}
+		.pagerContainer.totalPageMore{
+			width: calc( 36px * 7 );
+		}
+		.pagerContainer ul::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.pagerContainer ul li{
+			font-size: 14px;
+			color: #979797;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			border-radius: 50%;
+			text-align: center;
+			float: left;
+			cursor: pointer;
+			opacity: .9;
+		}
+		.pagerContainer ul li:hover{
+			font-weight: bold;
+			opacity: 1;
+		}
+		.pagerContainer ul li.now{
+			font-size: 16px;
+			color: #3C4C5E;
+			font-weight: bold;
+			opacity: 1;
+			background-color: rgba(60, 76, 94, .15);
+		}
+		.pagerContainer ul li.nextArrow{
+			background-image: url(../images/ic_gray_right_arrow.svg);
+			background-repeat: no-repeat;
+			background-size: 10px;
+			background-position: center;
+		}
+		.pagerContainer ul li.prevArrow{
+			background-image: url(../images/ic_gray_left_arrow.svg);
+			background-repeat: no-repeat;
+			background-size: 10px;
+			background-position: center;
+		}
+		.pagerContainer ul li.now.nextArrow,
+		.pagerContainer ul li.now.prevArrow{
+			background-color: rgba(60, 76, 94, 0);
+		}
+		.pagerContainer.totalPageMore ul{
+			display: none;
+		}
+		.pagerContainer.totalPageMore ul.show{
+			display: block;
+		}
+		/*=== Input Page ===*/
+		.pagerContainer.inputPage{
+			font-size: 14px;
+			height: 32px;
+			line-height: 32px;
+		}
+		.totalCountContainer{
+			color: #979797;
+			float: left;
+		}
+		.inputPageContainer{
+			float: left;
+		}
+		.inputPageContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.inputPageContainer .nextArrow,
+		.inputPageContainer .prevArrow{
+			outline: none;
+			appearance: none;
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			margin: 0;
+			width: 32px;
+			height: 32px;
+			float: left;
+			background-repeat: no-repeat;
+			background-size: 10px;
+			background-position: center;
+			cursor: pointer;
+			opacity: .9;
+		}
+		.inputPageContainer .nextArrow:hover,
+		.inputPageContainer .prevArrow:hover{
+			opacity: 1;
+		}
+		.inputPageContainer .nextArrow:disabled,
+		.inputPageContainer .prevArrow:disabled{
+			opacity: 0;
+			cursor: default;
+		}
+		.inputPageContainer .nextArrow{
+			background-image: url(../images/ic_gray_right_arrow.svg);
+		}
+		.inputPageContainer .prevArrow{
+			background-image: url(../images/ic_gray_left_arrow.svg);
+		}
+		.pagerSetContainer{
+			float: left;
+		} 
+		.pagerSetContainer input.uiStyle{
+			width: 48px;
+			height: 32px;
+			line-height: 32px;
+			font-size: 14px;
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		/*===============================
+			14. InfoCard
+		================================*/
+		.infoCardContainer{
+			background: rgba(255, 255, 255, .9);
+			border-radius: 10px;
+			box-shadow: 0 0 5px rgba(151, 151, 151, .1);
+			padding: 20px 20px 72px 20px;
+			display: inline-block;
+			position: relative;
+		}
+		.infoCardContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.infoCardIconContainer, .infoCardContentContainer{
+			float: left;
+		}
+		.infoCardIconContainer{
+			margin-right: 20px;
+		}
+		.infoCardIcon{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: rgba(244, 97, 85, .15);
+			background-image: url(../images/ic_gray_user.svg);
+			background-repeat: no-repeat;
+			background-size: 24px;
+			background-position: center;
+		}
+		.infoCardIcon.female{
+			background-color: rgba(255, 165, 186, .15);
+		}
+		.infoCardIcon.male{
+			background-color: rgba(134, 177, 225, .15);
+		}
+		.infoCardContentContainer{
+			line-height: 1.5;
+		}
+		.infoCardName{
+			font-size: 20px;
+		}
+		.infoCardPosition{
+			color: #979797;
+		}
+		.infoCardBtnContainer{
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+		}
+		.infoCardBtnContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.infoCardBtnContainer a{
+			float: left;
+			margin-right: 15px;
+		}
+		.infoCardBtnContainer a:last-child{
+			margin-right: 0px;
+		}
+		.infoCardBtn{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 1px solid #979797;
+			background-repeat: no-repeat;
+			background-size: 26px;
+			background-position: center;
+			opacity: .9;
+		}
+		.infoCardBtn.tel{
+			background-image: url(../images/ic_gray_phone.svg);
+		}
+		.infoCardBtn.mail{
+			background-image: url(../images/ic_gray_mail.svg);
+		}
+		.infoCardBtn:hover{
+			background-color: #FBFBFB;
+			opacity: 1;
+		}
+
+		/*===============================
+			15. Quick Call
+		================================*/
+		.popupCallContainer{
+			margin: 25px auto;
+			width: calc( 300px + 10px + 64px + 40px + 76px * 3 + 15px * 2 );
+		}
+		.popupCallContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.callTextContainer{
+			float: left;
+			margin-top: 100px;
+		}
+		.callTitle{
+			font-size: 20px;
+		}
+		.callInputContainer{
+			margin: 10px 0;
+			position: relative;
+		}
+		.callInputContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.popupCallContainer .callInputContainer input[type="text"]{
+			float: left;
+			height: 64px;
+			line-height: 64px;
+			width: 300px;
+			font-size: 22px;
+			padding-left: 20px;
+			padding-right: 60px;
+		}
+		.popupCallContainer .callInputContainer input[type="text"]::-ms-clear{
+			display: none;
+		}
+		.popupCallContainer .callInputContainer button.btnPopupQuickCallClear{
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			background-image: url(../images/ic_black_x.svg);
+			background-repeat: no-repeat;
+			background-size: 24px;
+			background-position: center;
+			opacity: .2;
+			background-color: rgba(0, 0, 0, 0);
+			position: absolute;
+			left: 250px;
+			top: 12px;
+			display: none;
+		}
+		.callInputContainer button.btnPopupQuickCallClear:hover{
+			opacity: .4;
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+		.callInputContainer button.btnPopupQuickCallClear.show{
+			display: block;
+		}
+		.callInputContainer button.btnPopupQuickCallCall{
+			float: left;
+			margin-left: 10px;
+			width: 64px;
+			height: 64px;
+			line-height: 64px;
+			border-radius: 10px;
+			background-image: url(../images/ic_white_phone.svg);
+			background-repeat: no-repeat;
+			background-size: 36px;
+			background-position: center;
+		}
+		.callAnnotation{
+			font-size: 16px;
+			color: #979797;
+		}
+		.keypadContainer{
+			float: left;
+			margin-left: 40px;
+		}
+		.keypadRow{
+			margin-bottom: 15px;
+		}
+		.keypadRow:last-child{
+			margin-bottom: 0;
+		}
+		.keypadRow::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.keypadContainer button.btnKeypad{
+			width: 76px;
+			height: 76px;
+			line-height: 76px;
+			background-color: #F0F3F7;
+			border: 1px solid #CECECE;
+			border-radius: 10px;
+			font-size: 36px;
+			font-weight: bold;
+			color: #3C4C5E;
+			float: left;
+			margin-right: 15px;
+		}
+		.keypadContainer button.btnKeypad:last-child{
+			margin-right: 0;
+		}
+		.keypadContainer button.btnKeypad:hover{
+			background-color: #E5E9EF;
+		}
+		.keypadContainer button.btnKeypad:active{
+			background-color: #DCE0E7;
+		}
+
+		/*===============================
+			16. Transfer Form
+		================================*/
+		.transferFormContainer{
+			position: relative;
+			width: 100%;
+			background-image: url(../images/bg_transferlist.svg);
+			background-size: 40px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.transferFormContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.transferForm{
+			float: left;
+			width: calc( (100% - 75px) / 2 );
+			box-sizing: border-box;
+			border: 1px solid #CECECE;
+			background: #FFF;
+		}
+		.transferFrom{
+			margin-right: 75px;
+		}
+		.transferTo{
+			height: calc( 51px + 48px * 5 );
+		}
+		.transferRow{
+			font-size: 16px;
+			padding: 0 10px;
+			overflow: auto;
+		}
+		.transferTitle{
+			background: #E1E1E1;
+			border-bottom: 1px solid #CECECE;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.transferRow .checkboxField{
+			margin-right: 0;
+		}
+		.transferRow .checkboxField input[type="checkbox"] + label{
+			height: 40px;
+			line-height: 40px;
+			padding: 4px 0;
+		}
+		.transferRow .checkboxField input[type="checkbox"] + label .checkboxIcon{
+			margin-right: 10px;
+		}
+		.transferTitle .checkboxField .checkboxText{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.transferTo .transferRow .checkboxField input[type="checkbox"] + label{
+			display: none;
+		}
+		.transferTo .transferRow.transferTitle .checkboxField input[type="checkbox"] + label{
+			display: block;
+		}
+		.transferTo .transferRow .checkboxField input[type="checkbox"]:checked + label{
+			display: block;
+		}
+		.transferTo .transferRow .checkboxField input[type="checkbox"] + label .checkboxIcon{
+			background-image: url(../images/ic_lightgray_trans_checkbox_x.svg);
+		}
+		.transferTo .transferRow .checkboxField input[type="checkbox"]:checked + label .checkboxIcon{
+			background-image: url(../images/ic_white_checkbox_x.svg);
+			background-color: #F46155;
+			border: 1px solid #F46155;
+		}
+		.transferToEmptyText{
+			display: none;
+		}
+		.transferToEmptyText.show{
+			color: #CECECE;
+			font-size: 16px;
+			text-align: center;
+			margin-top: 14px;
+			display: block;
+		}
+		
+		/*= Transfer Person Search =*/
+		.transferPersonSearchContainer{
+			height: 40px;
+			line-height: 40px;
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		.transferPersonSearchContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.transferPersonSearchTitle{
+			float: left;
+			margin-right: 5px;
+		}
+		button.btnTransferPersonSearch{
+			width: 40px;
+			height: 40px;
+			border-radius: 5px;
+			padding: 0;
+			float: left;
+			margin-right: 10px;
+		}
+		.transferPersonSearchContainer .selectField.withSerch .select2-container,
+		.transferPersonSearchContainer input[type="text"].uiStyle{
+			width: 180px !important;
+		}
+
+		/*===============================
+			17. Form
+		================================*/
+		.formContainer{
+			margin-bottom: 30px;
+		}
+		.formContainer:last-child{
+			margin-bottom: 0;
+		}
+		.formContainer .formSectionTitle{
+			border-bottom: 5px solid #3C4C5E;
+			color: #3C4C5E;
+			font-size: 20px;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+		.formRow{
+			background: #FFF;
+			position: relative;
+			border-left: 1px solid #CECECE;
+			border-right: 1px solid #CECECE;
+			border-bottom: 1px solid #CECECE;
+		}
+		.formRow:first-child{
+			border-top: 1px solid #CECECE;
+		}
+		.formRow::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.formCell{
+			min-height: 20px; 
+			padding: 0 10px;
+			line-height: 48px;
+			float: left;
+			border-right: 1px solid #EBEBEB;
+			font-size: 16px;
+			/* overflow: hidden; */
+			white-space: nowrap;
+			text-overflow: ellipsis; 
+		}
+		.formCell:last-child{
+			border-right: 0;
+		}
+		.formRow.alert, .formCell.alert{
+			color: #F46155;
+		}
+		.formContainer.listForm .formRow.formTitle, .formTitle{
+			background: #E1E1E1;
+			font-weight: bold;
+			text-align: center;
+		}
+		/*=== List Form ===*/
+		.listForm .formRow:nth-child(odd){
+			background: #FFF;
+		}
+		.listForm .formRow:nth-child(even){
+			background: #FBFBFB;
+		}
+		.listForm .formRow:hover{
+			background: #EFEFEF;
+		}
+		.listForm .formRow.unread{
+			background: #FFFAE7;
+		}
+		.listForm .formRow.select{
+			background: #EBF6F4;
+		}
+		.listForm .formRow.select::before{
+			display: block;
+			content: "";
+			width: 5px;
+			height: 100%;
+			background: #45B29D;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.listForm .formCell{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		/*=== Fill Form ===*/
+		.fillForm .radioField,
+		.fillForm .checkboxField,
+		.fillForm input[type="text"].uiStyle,
+		.fillForm .inputWithBtnField,
+		.fillForm .selectField,
+		.fillForm .timepicker{
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+		.fillForm .inputWithBtnField input[type="text"].uiStyle{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.fillForm .selectField{
+			width: 100%;
+			position: relative;
+		}
+		.fillForm input[type="text"].uiStyle,
+		.fillForm .inputWithBtnField,
+		.fillForm .selectField .dropdownBtn,
+		.fillForm .selectField.withSerch select.selectWithSearch,
+		.fillForm .timepicker{
+			width: 100%;
+		}
+		.fillForm .selectField.withSerch .select2-container{
+			width: 100% !important;
+		}
+		.fillForm .selectField.customize,
+		.fillForm .inputWithBtnField.customize,
+		.fillForm .timepicker.customize{
+			width: auto;
+			position: relative;
+		}
+		.fillForm .selectField.customize .dropdownBtn{
+			width: auto;
+		}
+		.fillForm .inputWithTextField.text1 input[type="text"].uiStyle{
+			width: calc( 100% - 18px - 10px );
+		}
+		.fillForm .inputWithTextField.text2 input[type="text"].uiStyle{
+			width: calc( 100% - 18px*2 - 10px );
+		}
+		.fillForm .formRow.fullCell .formCell{
+			width: calc( 100% - 20px );
+			padding: 10px;
+		}
+		.fillForm .formRow.fullCell .formCell textarea.uiStyle{
+			width: 100%;
+		}
+		/*= Less =*/
+		.fillForm.less .formRow.set1 .formCell.formTitle,
+		.fillForm.less .formRow.set2 .formCell.formTitle,
+		.fillForm.less .formRow.set3 .formCell.formTitle{
+			width: calc( 135px - 20px );
+		}
+		.fillForm.less .formRow.set1 .formCell{
+			width: calc( 100% - 20px - 135px - 2px);
+		}
+		.fillForm.less .formRow.set2 .formCell{
+			width: calc( ( 100% - 20px*2 - 135px*2 - 4px ) / 2 );
+		}
+		.fillForm.less .formRow.set3 .formCell{
+			width: calc( ( 100% - 20px*3 - 135px*3 - 6px ) / 3 );
+		}
+		/*= More =*/
+		.fillForm.more .formRow.set4 .formCell.formTitle{
+			width: calc( 105px - 20px );
+		}
+		.fillForm.more .formRow.set4 .formCell{
+			width: calc( ( 100% - 20px*4 - 105px*4 - 7px ) / 4 );
+		}
+		.fillForm.more .formRow.set4 .formCell.cell4-2{
+			width: calc( ( 100% - 20px*4 - 105px*4 - 7px ) / 4 * 2 + ( 105px + 20px + 2px ) );
+		}
+		.fillForm.more .formRow.set4 .formCell.cell4-3{
+			width: calc( ( 100% - 20px*4 - 105px*4 - 7px ) / 4 * 3 + 2 * ( 105px + 20px + 2px) );
+		}
+		.fillForm.more .formRow.set4 .formCell.cell4-4{
+			width: calc( ( 100% - 20px*4 - 105px*4 - 7px ) / 4 * 4 + 3 * ( 105px + 20px + 2px) );
+		}
+
+		/*=== Sortable Form ===*/
+		.listForm.listSortable .formRow.formTitle .formCell.sortableCell{
+			width: calc( 88px - 20px );
+		}
+		.listForm.listSortable .formRow.formTitle .formCell.sortableCell button{
+			margin-top: 6px;
+		}
+		.listSortable button.btnSortSave{
+			display: none;
+		}
+		.listSortable.sorting button.btnSortSave{
+			display: block;
+		}
+		.listSortable.sorting button.btnSort{
+			display: none;
+		}
+		.listForm.listSortable.sorting .formRow .formCell:last-child::after{
+			display: block;
+			content: "";
+			width: 24px;
+			height: 24px;
+			background-image: url(../images/ic_darkblue_drag.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			right: 0;
+			top: 13px;
+			opacity: .5;
+		}
+		.listForm.listSortable.sorting .formRow.formTitle .formCell:last-child::after{
+			display: none;
+		}
+		.listForm.listSortable.sorting .formRow .formCell:last-child:hover::after{
+			opacity: .8;
+		}
+		.sortableZone .formRow:first-child {
+			border-top: 0;
+		}
+		.listForm.listSortable .ui-sortable-placeholder {
+			background-color: rgba(0, 0, 0, .1);
+			visibility: visible !important;
+		}
+
+		/*=== Label ===*/
+		.formLabelContainer{
+			border-bottom: 5px solid #3C4C5E;
+		}
+		.formLabelContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.formLabel{
+			height: 48px;
+			line-height: 48px;
+			font-size: 18px;
+			color: #979797;
+			text-align: center;
+			background: #EFEFEF;
+			border: 1px solid #CECECE;
+			border-radius: 10px 10px 0 0;
+			float: left;
+			cursor: pointer;
+		}
+		.formLabel:hover{
+			background: #E1E1E1;
+		}
+		.formLabel.select{
+			font-weight: bold;
+			color: #FFF;
+			background: #3C4C5E;
+			border: 1px solid #3C4C5E;
+		}
+		.formLabelContainer.label2 .formLabel{
+			width: calc( (100% - 4px) / 2 );
+		}
+		.formLabelContainer.label3 .formLabel{
+			width: calc( (100% - 6px) / 3 );
+		}
+		.formLabelContainer.label4 .formLabel{
+			width: calc( (100% - 8px) / 4 );
+		}
+		.formLabelContainer.label5 .formLabel{
+			width: calc( (100% - 10px) / 5 );
+		}
+
+		/*=== Top Function ===*/
+		.formFunctionContainer{
+			margin-bottom: 20px;
+		}
+		.formFunctionContainer::after{
+			display: block;
+			content: "";
+			float: none;
+			clear: both;
+		}
+
+		/*=== Bottom Btn ===*/
+		.formBtnContainer{
+			margin: 30px auto 0;
+		}
+		.formBtnContainer::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.formBtnContainer.twoSub{
+			width: calc( 220px*2 + 20px );
+		}
+		.formBtnContainer.twoSize{
+			width: calc( 220px + 320px + 20px );
+		}
+		.formBtnContainer button.uiStyle{
+			float: left;
+			margin-right: 20px;
+		}
+		.formBtnContainer button.uiStyle:last-child{
+			margin-right: 0;
+		}
+
+		/*=== Form Count ===*/
+		.formCountContainer{
+			margin-top: 5px;
+			font-size: 14px;
+			color: #979797;
+			text-align: right;
+		}
+
+		/*===============================
+			18. Message Board
+		================================*/
+		.messageBoardContainer{
+			border-radius: 5px;
+		}
+		.messageBoardTitle{
+			height: 48px;
+			line-height: 48px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #FFF;
+			text-align: center;
+			background: #686E74;
+			border: 1px solid #686E74;
+			border-radius: 5px 5px 0 0;
+		}
+		.messageBoardContent{
+			padding: 15px;
+			background: #FFF;
+			border: 1px solid #CECECE;
+			border-radius: 0 0 5px 5px;
+			overflow: auto;
+			position: relative;
+		}
+		.messageBoradContentSet{
+			display: none;
+		}
+		.messageBoradContentSet.show{
+			display: block;
+		}
+		.messageBoradContentSet.empty{
+			padding-top: 150px;
+			font-size: 20px;
+			color: #979797;
+			text-align: center;
+		}
+		.messageBoradContentSet .contentTitle{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.messageBoradContentSet .contentTextContainer{
+			margin-top: 15px;
+			padding-top: 15px;
+			border-top: 1px solid #979797;
+		}
+		.messageBoradContentSet .contentTextContainer .contentItem{
+			position: relative;
+			margin-bottom: 5px;
+		}
+		.messageBoradContentSet .contentTextContainer .contentItem:last-child{
+			margin-bottom: 0;
+		}
+		.messageBoradContentSet .contentTextContainer .contentItem::after{
+			display: block;
+			content: "";
+			clear: both;
+			float: none;
+		}
+		.messageBoradContentSet .contentTextContainer .contentItem .contentItemTitle,
+		.messageBoradContentSet .contentTextContainer .contentItem .contentItemText{
+			float: left;
+			line-height: 24px;
+		}
+		.messageBoradContentSet .contentTextContainer .contentItem .contentItemTitle{
+			font-weight: bold;
+			color: #3C4C5E;
+			float: left;
+			margin-right: 10px;
+			width: 70px;
+		}
+		.messageBoradContentSet .contentTextContainer .contentItem .contentItemText{
+			width: calc( 100% - 70px - 10px );
+		}
+		.contentItemLinkBtn{
+			width: 24px;
+			height: 24px;
+			background-image: url(../images/ic_green_link.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			opacity: .9;
+		}
+		.contentItemLinkBtn:hover{
+			opacity: 1;
+		}
+		.messageBoradContentSet .contentTextContainer .contentText{
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: justify;
+		}
+		.btnMessageEdit{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 1px solid #45B29D;
+			background-color: #FFF;
+			background-image: url(../images/ic_green_pen.svg);
+			background-repeat: no-repeat;
+			background-size: 26px;
+			background-position: center;
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			cursor: pointer;
+			opacity: .9;
+		}
+		.btnMessageEdit:hover{
+			opacity: 1;
+			background-color: #FBFBFB;
+		}
+		.btnMessageEdit.noEdit{
+			display: none;
+		}
+
+		/*===============================
+			19. Loading
+		================================*/
+		/*=== Simple ===*/
+		#lottieLoadingSimple {
+			width: 80px;
+			height: 80px;
+		}
+		/*=== Shade ===*/
+		.loadingShade{
+			z-index: 501;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			overflow: auto;
+			background: rgba(255, 255, 255, 0.8);
+			display: none;
+		}
+		.loadingShade.show{
+			display: block;
+		}
+		.loadingContainer{
+			text-align: center;
+			margin: 0px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+		}
+		#loadingShadeText{
+			font-size: 24px;
+			color: #808080;
+		}
+		#lottieLoadingShade{
+			width: 160px;
+			height: 160px;
+			margin: 0px auto 20px;
+		}
+
+
+
+
+
+		/*===============================
+			20. Change For Library
+		================================*/
+
+		

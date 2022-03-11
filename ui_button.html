@@ -35,6 +35,12 @@
                     <i class="fas fa-book"></i>
                     <span>Principle 設計原則</span></a>
             </li>
+            <!-- Nav Item - CIVI品牌識別-->
+            <li class="nav-item">
+                <a class="nav-link" href="./designlibrary/civi/Civi.html" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Civi 品牌識別</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -155,7 +161,7 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow overflow-hidden">
 
                     <!-- 漢堡選單 -->
-                    <button id="sidebarToggleTop" class="btn mr-1 d-lg-none">
+                    <button id="sidebarToggleTop" class="mr-1 d-lg-none">
                         <i class="fa fa-bars"></i>
                     </button>
 
@@ -602,7 +608,6 @@
                             <div class="pt-4 pb-2">
                                 <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">主要按鈕 (btn)</h2>
                             </div>
-                            <!-- 網頁按鈕類型 卡片 -->
                             <div class="row mt-3">
                                 <div class="col text-gray-11">
                                     <div class="card shadow mb-4 p-4">
@@ -724,6 +729,70 @@
     }
                                         </code>
                                         </pre>
+                                        <div class="copy-code position-absolute btn-copy"
+                                            data-clipboard-target="#btn-copy-4">複製
+                                        </div>
+                                    </div>
+                                    <!-- CSS -->
+                                </div>
+                            </div>
+                            <!-- icon按鈕 (btn-icon) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">icon按鈕 (btn-icon)</h2>
+                            </div>
+                            <div class="col text-gray-11">
+                                <div class="card shadow mb-4 p-4">
+                                    <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                    <hr class="m-1">
+                                    <div class="d-flex pt-4">
+                                        <div class="btn-line mx-2">範例按鈕</div>
+                                        <div class="btn-line mx-2">範例按鈕<br>雙排文字</div>
+                                    </div>
+                                    <!-- HTML -->
+                                    <p class="m-0 p-0 pt-5">HTML</p>
+                                    <hr class="m-1">
+                                    <div class="position-relative">
+                                        <pre class="m-0">
+                                                                    <code class="hljs" id="btn-copy-3">
+&ltdiv class="btn-line">範例按鈕&lt/div>
+&ltdiv class="btn-line">範例按鈕&ltbr>雙排文字&lt/div> 
+                                                                    </code>
+                                                                </pre>
+                                        <div class="copy-code position-absolute btn-copy"
+                                            data-clipboard-target="#btn-copy-3">複製
+                                        </div>
+                                    </div>
+                                    <!-- HTML -->
+                                    <!-- CSS -->
+                                    <p class="m-0 p-0 pt-5">CSS</p>
+                                    <hr class="m-1">
+                                    <div class="position-relative">
+                                        <pre class="m-0">
+                                                                    <code class="hljs" id="btn-copy-4">
+.btn-line {
+    width: 100%;
+    max-width: 200px;
+    height: 65px;
+    border-radius: 4px;
+    text-align: center;
+    border: solid 1px $primary-8;
+    color: $primary-8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    
+        &:hover {
+            opacity: .7;
+        }
+    
+        @include max(md) {
+            max-width: 140px;
+        }
+    }
+                                                                    </code>
+                                                                    </pre>
                                         <div class="copy-code position-absolute btn-copy"
                                             data-clipboard-target="#btn-copy-4">複製
                                         </div>
