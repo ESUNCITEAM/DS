@@ -984,3 +984,64 @@ a {
     }
   }
 }
+
+//list
+//list
+.list {
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+
+  &Item {
+    border-bottom: solid 1px $gray-5;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &Wrap {
+    list-style: none;
+    margin-left: px-rem(-40px);
+  }
+
+  a {
+    color: initial;
+  }
+
+  &Link {
+    line-height: 2.5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    position: relative;
+    padding-right: px-rem(18px);
+
+    &::before {
+      content: "・";
+      padding-left: px-rem(5px);
+    }
+
+    &::after {
+      content: "";
+      background: url(../img/right.svg) no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      width: px-rem(8px);
+      height: px-rem(20px);
+      position: absolute;
+      right: px-rem(10px);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      color: $primary-8;
+      transition: 0.5s;
+    }
+  }
+}

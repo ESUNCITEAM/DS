@@ -3879,6 +3879,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/right.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/right.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/ui\/accordion-1.jpg" : {
       "ft" : 16384,
       "iS" : 26011,

@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -185,18 +186,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="false">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -275,10 +272,118 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 列表 (List) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">列表 (List)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="list mt-3">
+                                            <ul class="listWrap">
+                                                <li class="listItem"><a class="listLink" href="#"
+                                                        target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字</a>
+                                                </li>
+                                                <li class="listItem"><a class="listLink" href="#"
+                                                        target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字</a>
+                                                </li>
+                                                <li class="listItem"><a class="listLink" href="#"
+                                                        target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字</a>
+                                                </li>
+                                                <li class="listItem"><a class="listLink" href="#"
+                                                        target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字</a>
+                                                </li>
+                                                <li class="listItem"><a class="listLink" href="#"
+                                                        target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                <code class="hljs" id="btn-copy-list-html">
+&ltdiv class="list">
+    &ltul class="listWrap">
+        &ltli class="listItem">&lta class="listLink" href="#" target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字&lt/a>&lt/li>
+        &ltli class="listItem">&lta class="listLink" href="#" target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字&lt/a>&lt/li>
+        &ltli class="listItem">&lta class="listLink" href="#" target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字&lt/a>&lt/li>
+        &ltli class="listItem">&lta class="listLink" href="#" target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字&lt/a>&lt/li>
+        &ltli class="listItem">&lta class="listLink" href="#" target="_blank">範例文字範例文字範例文字範例文字範例文字範例文字範例文字範例文字&lt/a>&lt/li>
+    &lt/ul>
+&lt/div>
+                                                </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-list-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                <code class="hljs" id="btn-copy-list-html">
+.list {
+    margin: 0 auto;
+    text-align: left;
+    }
+    .listItem {
+    border-bottom: solid 1px #d9d9d9;
+    }
+    .listItem:last-child {
+    border: none;
+    }
+    .listLink {
+    line-height: 2.5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    position: relative;
+    padding-right: 1.125rem;
+    }
+    .listLink::before {
+    content: "・";
+    padding-left: 0.3125rem;
+    }
+    .listLink::after {
+    content: "";
+    background: url(../img/right.svg) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 0.5rem;
+    height: 1.25rem;
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+    .listLink:hover {
+    color: #00a19b;
+    transition: 0.5s;
+    }
+                                                </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-list-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                             aria-labelledby="pills-contact-tab">...</div>
                     </div>
