@@ -118,28 +118,28 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item active" href="ui_button.html">Button 按鈕</a>
-                        <a class="collapse-item" href="ui_table.html">Table 表格</a>
-                        <a class="collapse-item" href="ui_list.html">List 列表</a>
-                        <a class="collapse-item" href="ui_checkbox.html">Checkbox 核取方塊</a>
-                        <a class="collapse-item" href="ui_radiobutton.html">Radio Buttons 單選按鈕</a>
-                        <a class="collapse-item" href="ui_dropdowns.html">Dropdowns 下拉選單</a>
-                        <a class="collapse-item" href="ui_datepicker.html">Date Picker 日期選擇器</a>
-                        <a class="collapse-item" href="ui_divider.html">Divider 分隔線</a>
-                        <a class="collapse-item" href="ui_paginator.html">Paginator 分頁器</a>
-                        <a class="collapse-item" href="ui_carousel.html">Carousel 輪播</a>
-                        <a class="collapse-item" href="ui_navbar.html">Navbar 導覽列</a>
-                        <a class="collapse-item" href="ui_breadcrumb.html">Breadcrumb 麵包屑</a>
-                        <a class="collapse-item" href="ui_tab.html">Tab 頁籤</a>
-                        <a class="collapse-item" href="ui_pageanchor.html">Page Anchor 網頁錨點</a>
-                        <a class="collapse-item" href="ui_steps.html">Steps 步驟表示</a>
-                        <a class="collapse-item" href="ui_progress.html">Progress 進度條</a>
-                        <a class="collapse-item" href="ui_timeline.html">Timeline 時間軸</a>
-                        <a class="collapse-item" href="ui_reciprocal.html">Reciprocal 倒數</a>
-                        <a class="collapse-item" href="ui_card.html">Card 卡片</a>
-                        <a class="collapse-item" href="ui_accordion.html">Accordion 手風琴</a>
-                        <a class="collapse-item" href="ui_modal.html">Modal 彈跳視窗</a>
-                        <a class="collapse-item" href="ui_chart.html">Chart 圖表</a>
+                        <a class="collapse-item active" href="ui_button.html#collapseTwo">Button 按鈕</a>
+                        <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
+                        <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
+                        <a class="collapse-item" href="ui_checkbox.html#collapseTwo">Checkbox 核取方塊</a>
+                        <a class="collapse-item" href="ui_radiobutton.html#collapseTwo">Radio Buttons 單選按鈕</a>
+                        <a class="collapse-item" href="ui_dropdowns.html#collapseTwo">Dropdowns 下拉選單</a>
+                        <a class="collapse-item" href="ui_datepicker.html#collapseTwo">Date Picker 日期選擇器</a>
+                        <a class="collapse-item" href="ui_divider.html#collapseTwo">Divider 分隔線</a>
+                        <a class="collapse-item" href="ui_paginator.html#collapseTwo">Paginator 分頁器</a>
+                        <a class="collapse-item" href="ui_carousel.html#collapseTwo">Carousel 輪播</a>
+                        <a class="collapse-item" href="ui_navbar.html#collapseTwo">Navbar 導覽列</a>
+                        <a class="collapse-item" href="ui_breadcrumb.html#collapseTwo">Breadcrumb 麵包屑</a>
+                        <a class="collapse-item" href="ui_tab.html#collapseTwo">Tab 頁籤</a>
+                        <a class="collapse-item" href="ui_pageanchor.html#collapseTwo">Page Anchor 網頁錨點</a>
+                        <a class="collapse-item" href="ui_steps.html#collapseTwo">Steps 步驟表示</a>
+                        <a class="collapse-item" href="ui_progress.html#collapseTwo">Progress 進度條</a>
+                        <a class="collapse-item" href="ui_timeline.html#collapseTwo">Timeline 時間軸</a>
+                        <a class="collapse-item" href="ui_reciprocal.html#collapseTwo">Reciprocal 倒數</a>
+                        <a class="collapse-item" href="ui_card.html#collapseTwo">Card 卡片</a>
+                        <a class="collapse-item" href="ui_accordion.html#collapseTwo">Accordion 手風琴</a>
+                        <a class="collapse-item" href="ui_modal.html#collapseTwo">Modal 彈跳視窗</a>
+                        <a class="collapse-item" href="ui_chart.html#collapseTwo">Chart 圖表</a>
                     </div>
                 </div>
             </li>
@@ -614,8 +614,8 @@
                                         <p class="m-0 p-0 pt-2">SAMPLE</p>
                                         <hr class="m-1">
                                         <div class="d-flex pt-4">
-                                            <div class="btn mx-2">範例按鈕</div>
-                                            <div class="btn mx-2">範例按鈕<br>雙排文字</div>
+                                            <a class="btn mx-2" href="#">範例按鈕</a>
+                                            <a class="btn mx-2" href="#">範例按鈕<br>雙排文字</a>
                                         </div>
                                         <!-- HTML -->
                                         <p class="m-0 p-0 pt-5">HTML</p>
@@ -623,8 +623,8 @@
                                         <div class="position-relative">
                                             <pre class="m-0">
                                             <code class="hljs" id="btn-copy-1">
-&ltdiv class="btn">範例按鈕&lt/div>
-&ltdiv class="btn">範例按鈕&ltbr>雙排文字&lt/div>
+&lta class="btn" href="#">範例按鈕&lt/a>
+&lta class="btn" href="#">範例按鈕&ltbr>雙排文字&lt/a>
                                             </code>
                                         </pre>
                                             <div class="copy-code position-absolute btn-copy"
@@ -640,27 +640,30 @@
                                             <code class="hljs" id="btn-copy-2">
 .btn {
     width: 100%;
-    max-width: 200px;
-    height: 65px;
+    max-width: 12.5rem;
+    height: 4.0625rem;
     border-radius: 4px;
-    background: $primary-8;
-    color: $gray-1;
+    background: #00a19b;
+    color: #ffffff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.3s;
-
-        &:hover {
-            opacity: .7;
-            color: #fff;
-        }
-    
-        @include max(md) {
-            max-width: 140px;
-        }
-
+    }
+    .btn:hover {
+    opacity: 0.7;
+    }
+    .btn:disabled {
+    background: #acacac;
+    color: #ffffff;
+    cursor: not-allowed;
+    }
+    @media (max-width: 768px) {
+    .btn {
+        max-width: 8.75rem;
+    }
     }
                                             </code>
                                             </pre>
@@ -672,17 +675,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- 次要按鈕 (btn-line) -->
+                            <!-- 次要按鈕 (btnLine) -->
                             <div class="pt-4 pb-2">
-                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">次要按鈕 (btn-line)</h2>
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">次要按鈕 (btnLine)</h2>
                             </div>
                             <div class="col text-gray-11">
                                 <div class="card shadow mb-4 p-4">
                                     <p class="m-0 p-0 pt-2">SAMPLE</p>
                                     <hr class="m-1">
                                     <div class="d-flex pt-4">
-                                        <div class="btn-line mx-2">範例按鈕</div>
-                                        <div class="btn-line mx-2">範例按鈕<br>雙排文字</div>
+                                        <a class="btnLine mx-2" href="#">範例按鈕</a>
+                                        <a class="btnLine mx-2" href="#">範例按鈕<br>雙排文字</a>
                                     </div>
                                     <!-- HTML -->
                                     <p class="m-0 p-0 pt-5">HTML</p>
@@ -690,8 +693,8 @@
                                     <div class="position-relative">
                                         <pre class="m-0">
                                         <code class="hljs" id="btn-copy-3">
-&ltdiv class="btn-line">範例按鈕&lt/div>
-&ltdiv class="btn-line">範例按鈕&ltbr>雙排文字&lt/div>
+&lta class="btnLine" href="#">範例按鈕&lt/a>
+&lta class="btnLine" href="#">範例按鈕&ltbr>雙排文字&lt/a>
                                         </code>
                                     </pre>
                                         <div class="copy-code position-absolute btn-copy"
@@ -705,27 +708,33 @@
                                     <div class="position-relative">
                                         <pre class="m-0">
                                         <code class="hljs" id="btn-copy-4">
-.btn-line {
+.btnLine {
     width: 100%;
-    max-width: 200px;
-    height: 65px;
+    max-width: 12.5rem;
+    height: 4.0625rem;
     border-radius: 4px;
     text-align: center;
-    border: solid 1px $primary-8;
-    color: $primary-8;
+    border: solid 1px #00a19b;
+    color: #00a19b;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.3s;
-    
-        &:hover {
-            opacity: .7;
-        }
-    
-        @include max(md) {
-            max-width: 140px;
-        }
+    }
+    .btnLine:hover {
+    opacity: 0.7;
+    }
+    .btnLine:disabled {
+    background: #acacac;
+    color: #ffffff;
+    border: none;
+    cursor: not-allowed;
+    }
+    @media (max-width: 768px) {
+    .btnLine {
+        max-width: 8.75rem;
+    }
     }
                                         </code>
                                         </pre>
@@ -736,17 +745,18 @@
                                     <!-- CSS -->
                                 </div>
                             </div>
-                            <!-- icon按鈕 (btn-icon) -->
+                            <!-- icon按鈕 (btnIcon) -->
                             <div class="pt-4 pb-2">
-                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">icon按鈕 (btn-icon)</h2>
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">icon按鈕 (btnIcon)</h2>
                             </div>
                             <div class="col text-gray-11">
                                 <div class="card shadow mb-4 p-4">
                                     <p class="m-0 p-0 pt-2">SAMPLE</p>
                                     <hr class="m-1">
                                     <div class="d-flex pt-4">
-                                        <div class="btn-line mx-2">範例按鈕</div>
-                                        <div class="btn-line mx-2">範例按鈕<br>雙排文字</div>
+                                        <a class="btnIcon" href="#">
+                                            <img class="btnIcon__img" src="./img/icon-demo.png" alt="圖片說明">範例按鈕
+                                        </a>
                                     </div>
                                     <!-- HTML -->
                                     <p class="m-0 p-0 pt-5">HTML</p>
@@ -754,8 +764,9 @@
                                     <div class="position-relative">
                                         <pre class="m-0">
                                                                     <code class="hljs" id="btn-copy-3">
-&ltdiv class="btn-line">範例按鈕&lt/div>
-&ltdiv class="btn-line">範例按鈕&ltbr>雙排文字&lt/div> 
+&lta class="btnIcon" href="#">
+    &ltimg class="btnIcon__img" src="./img/icon-demo.png" alt="圖片說明">範例按鈕
+&lt/a>
                                                                     </code>
                                                                 </pre>
                                         <div class="copy-code position-absolute btn-copy"
@@ -769,32 +780,72 @@
                                     <div class="position-relative">
                                         <pre class="m-0">
                                                                     <code class="hljs" id="btn-copy-4">
-.btn-line {
-    width: 100%;
-    max-width: 200px;
-    height: 65px;
-    border-radius: 4px;
-    text-align: center;
-    border: solid 1px $primary-8;
-    color: $primary-8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btnIcon {
+    color: #00a19b;
     cursor: pointer;
     transition: 0.3s;
-    
-        &:hover {
-            opacity: .7;
-        }
-    
-        @include max(md) {
-            max-width: 140px;
-        }
+    vertical-align: middle;
+    }
+    .btnIcon img {
+    max-width: 1.5rem;
+    padding-right: 0.75rem;
+    vertical-align: middle;
+    }
+    .btnIcon:hover {
+    opacity: 0.7;
     }
                                                                     </code>
                                                                     </pre>
                                         <div class="copy-code position-absolute btn-copy"
                                             data-clipboard-target="#btn-copy-4">複製
+                                        </div>
+                                    </div>
+                                    <!-- CSS -->
+                                </div>
+                            </div>
+                            <!-- textLink文字連結 (textLink) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">textLink文字連結 (textLink)</h2>
+                            </div>
+                            <div class="col text-gray-11">
+                                <div class="card shadow mb-4 p-4">
+                                    <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                    <hr class="m-1">
+                                    <div class="d-flex pt-4">
+                                        <a href="#" class="textLink">範例連結文字</a>
+                                    </div>
+                                    <!-- HTML -->
+                                    <p class="m-0 p-0 pt-5">HTML</p>
+                                    <hr class="m-1">
+                                    <div class="position-relative">
+                                        <pre class="m-0">
+                                                                                                <code class="hljs" id="btn-copy-5">
+&lta href="#" class="textLink">範例連結文字</a>
+                                                                                                </code>
+                                                                                            </pre>
+                                        <div class="copy-code position-absolute btn-copy"
+                                            data-clipboard-target="#btn-copy-5">複製
+                                        </div>
+                                    </div>
+                                    <!-- HTML -->
+                                    <!-- CSS -->
+                                    <p class="m-0 p-0 pt-5">CSS</p>
+                                    <hr class="m-1">
+                                    <div class="position-relative">
+                                        <pre class="m-0">
+                                                                                                <code class="hljs" id="btn-copy-6">
+.textLink {
+    color: #00a19b;
+    font-size: 0.875rem;
+    text-decoration: underline;
+    }
+    .textLink:hover {
+    opacity: 0.7;
+    }
+                                                                                                </code>
+                                                                                                </pre>
+                                        <div class="copy-code position-absolute btn-copy"
+                                            data-clipboard-target="#btn-copy-6">複製
                                         </div>
                                     </div>
                                     <!-- CSS -->

@@ -11,3 +11,14 @@
         @content;
     }
 }
+
+//px-rem 
+@function px-rem($px) {
+    @if ($px==0) {
+        @return 0;
+    }
+
+    @else {
+        @return $px / $font-base * 1rem;
+    }
+}

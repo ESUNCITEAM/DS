@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -186,18 +187,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="false">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -446,12 +443,299 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 一般表格 (baseTable) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">一般表格 (baseTable)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="d-flex pt-4 w-100">
+                                            <table class="baseTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th align="center">標題1</th>
+                                                        <th align="center">標題2</th>
+                                                        <th align="center">標題3</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                        <td align="center">內容文字</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-baseTable-html">
+&lttable class="baseTable">
+    &ltthead>
+        &lttr>
+            &ltth align="center">標題1</th>
+            &ltth align="center">標題2</th>
+            &ltth align="center">標題3</th>
+        &lt/tr>
+    &lt/head>
+    &lttbody>
+        &lttr>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+        &lt/tr>
+        &lttr>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+        &lt/tr>
+        &lttr>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+        &lt/tr>
+        &lttr>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+            &lttd align="center">內容文字</td>
+        &lt/tr>
+    &lt/tbody>
+&lt/table>
+                                            </code>
+                                        </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-baseTable-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-baseTable-css">
+.baseTable {
+    font-size: 1rem;
+    border-left: solid 1px #d9d9d9;
+    border-right: solid 1px #d9d9d9;
+    width: 100%;
+    }
+    .baseTable th {
+    background: #00a19b;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.375rem;
+    border-right: solid 1px #ffffff;
+    }
+    .baseTable th:first-child {
+    border-left: solid 1px #00a19b;
+    }
+    .baseTable th:last-child {
+    border-right: solid 1px #00a19b;
+    }
+    .baseTable td {
+    border-left: solid 1px #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
+    padding: 0.375rem;
+    }
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-baseTable-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 自適應性表格(rwdTable) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">自適應性表格(rwdTable)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="d-flex pt-4">
+                                            <table class="rwdTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th align="center">標題1</th>
+                                                        <th align="center">標題2</th>
+                                                        <th align="center">標題3</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-th="標題1" align="center">內容文字</td>
+                                                        <td data-th="標題2" align="center">內容文字</td>
+                                                        <td data-th="標題3" align="center">內容文字</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-th="標題1" align="center">內容文字</td>
+                                                        <td data-th="標題2" align="center">內容文字</td>
+                                                        <td data-th="標題3" align="center">內容文字</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-th="標題1" align="center">內容文字</td>
+                                                        <td data-th="標題2" align="center">內容文字</td>
+                                                        <td data-th="標題3" align="center">內容文字</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-th="標題1" align="center">內容文字</td>
+                                                        <td data-th="標題2" align="center">內容文字</td>
+                                                        <td data-th="標題3" align="center">內容文字</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                                        <code class="hljs" id="btn-copy-rwdTable-html">
+&lttable class="rwdTable">
+    &ltthead>
+        &lttr>
+            &ltth align="center">標題1&lt/th>
+            &ltth align="center">標題2&lt/th>
+            &ltth align="center">標題3&lt/th>
+        &lt/tr>
+    &lt/thead>
+    &lttbody>
+        &lttr>
+            &lttd data-th="標題1" align="center">內容文字&lt/td>
+            &lttd data-th="標題2" align="center">內容文字&lt/td>
+            &lttd data-th="標題3" align="center">內容文字&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd data-th="標題1" align="center">內容文字&lt/td>
+            &lttd data-th="標題2" align="center">內容文字&lt/td>
+            &lttd data-th="標題3" align="center">內容文字&lt/td>
+        &lt/tr>
+        &lttr>
+            &lttd data-th="標題1" align="center">內容文字&lt/td>
+            &lttd data-th="標題2" align="center">內容文字&lt/td>
+            &lttd data-th="標題3" align="center">內容文字&lt/td>
+         &lt/tr>
+        &lttr>
+            &lttd data-th="標題1" align="center">內容文字&lt/td>
+            &lttd data-th="標題2" align="center">內容文字&lt/td>
+            &lttd data-th="標題3" align="center">內容文字&lt/td>
+        &lt/tr>
+    &lt/tbody>
+&lt/table>
+                                                                        </code>
+                                                                    </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-rwdTable-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                                        <code class="hljs" id="btn-copy-rwdTable-css">
+.rwdTable {
+    font-size: 1rem;
+    width: 100%;
+    }
+    .rwdTable thead {
+    display: none;
+    }
+    .rwdTable th {
+    background: #00a19b;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.375rem;
+    border-right: solid 1px #ffffff;
+    }
+    .rwdTable th:first-child {
+    border-left: solid 1px #00a19b;
+    }
+    .rwdTable th:last-child {
+    border-right: solid 1px #00a19b;
+    }
+    .rwdTable tr {
+    padding: 0.625rem 0;
+    display: block;
+    }
+    .rwdTable td {
+    border-bottom: solid 1px #d9d9d9;
+    padding: 0.375rem;
+    display: block;
+    text-align: left;
+    }
+    .rwdTable td::before {
+    content: attr(data-th) ":";
+    padding-right: 1.25rem;
+    }
+    @media (min-width: 576px) {
+    .rwdTable {
+        width: 100%;
+    }
+    .rwdTable thead {
+        display: table-row-group;
+    }
+    .rwdTable thead th {
+        display: table-cell;
+    }
+    .rwdTable tr {
+        display: table-row;
+        padding: 0;
+    }
+    .rwdTable td {
+        display: table-cell;
+        border-left: solid 1px #acacac;
+        border-left: solid 1px #acacac;
+        text-align: center;
+    }
+    .rwdTable td:last-child {
+        border-right: solid 1px #acacac;
+    }
+    .rwdTable td::before {
+        display: none;
+    }
+    }
+                                                                              
+                                                                        </code>
+                                                                        </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-rwdTable-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

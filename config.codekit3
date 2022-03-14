@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/about.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/about.html",
-      "oF" : 0
-    },
     "\/color.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3070,6 +3062,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/icon-demo.png" : {
+      "ft" : 32768,
+      "iS" : 72657,
+      "oA" : 0,
+      "oAP" : "\/img\/icon-demo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/icon\/icon-grid-error.png" : {
       "ft" : 32768,
