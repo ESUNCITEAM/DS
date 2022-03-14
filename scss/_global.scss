@@ -986,7 +986,6 @@ a {
 }
 
 //list
-//list
 .list {
   margin: 0 auto;
   text-align: left;
@@ -1044,4 +1043,96 @@ a {
       transition: 0.5s;
     }
   }
+}
+
+//checkbox-button
+.checkbox-input {
+  /*隱藏原先樣式*/
+  visibility: hidden;
+}
+
+.checkbox-label {
+  /*將label設定成可以被點選觸發*/
+  position: relative;
+  padding-left: px-rem(24px)
+}
+
+
+
+[type=checkbox]:not(:checked)+label:before,
+[type=checkbox]:checked+label:before {
+  /*未被觸發時顯示樣式*/
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: px-rem(16px);
+  height: px-rem(16px);
+  border: 1px solid #00a19b;
+  background: #FFF;
+  border-radius: 4px;
+}
+
+[type=checkbox]:checked+label:before {
+  background-color: #00a19b !important;
+}
+
+[type=checkbox]:not(:checked)+label:after,
+[type=checkbox]:checked+label:after {
+  /*觸發時顯示樣式*/
+  content: "";
+  background-image: url(../img/icon_check.svg);
+  background-size: px-rem(12px) px-rem(12px);
+  width: px-rem(12px);
+  height: px-rem(12px);
+  position: absolute;
+  top: px-rem(6px);
+  left: px-rem(2px);
+}
+
+//radio-button
+.radio-input {
+  /*隱藏原先樣式*/
+  visibility: hidden;
+}
+
+.radio-label {
+  /*將label設定成可以被點選觸發*/
+  position: relative;
+  padding-left: px-rem(24px)
+}
+
+[type=radio]:not(:checked)+label:before,
+[type=radio]:checked+label:before {
+  /*未被觸發時顯示樣式*/
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: px-rem(16px);
+  height: px-rem(16px);
+  border: 1px solid $primary-8;
+  background: $gray-1;
+  border-radius: 100%;
+}
+
+[type=radio]:checked+label:before {
+  background-color: $primary-8 !important;
+}
+
+[type=radio]:not(:checked)+label:after,
+[type=radio]:checked+label:after {
+  /*觸發時顯示樣式*/
+  content: "";
+  width: px-rem(5px);
+  height: px-rem(5px);
+  border: solid 1px $gray-1;
+  background: $gray-1;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: px-rem(6px);
 }

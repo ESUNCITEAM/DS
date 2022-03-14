@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -185,18 +186,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="false">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -281,12 +278,99 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 單選按鈕 (radiobutton) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">單選按鈕 (radiobutton)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="d-flex pt-4 w-100">
+                                            <input type="radio" class="radio-input" id="radio1" name="radio">
+                                            <label class="radio-label" for="radio1">範例條款選項一</label>
+                                            <input type="radio" class="radio-input" id="radio2" name="radio">
+                                            <label class="radio-label" for="radio2">範例條款選項二</label>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-radio-html">
+&ltinput type="radio" class="radio-input" id="radio" name="radio">
+&ltlabel class="radio-label" for="radio">範例條款選項&lt/label>
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-radio-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-radio-css">
+.radio-input {
+    /*隱藏原先樣式*/
+    visibility: hidden;
+    }
+    
+    .radio-label {
+    /*將label設定成可以被點選觸發*/
+    position: relative;
+    padding-left: 1.5rem;
+    }
+    
+    [type=radio]:not(:checked) + label:before,
+    [type=radio]:checked + label:before {
+    /*未被觸發時顯示樣式*/
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #00a19b;
+    background: #ffffff;
+    border-radius: 100%;
+    }
+    
+    [type=radio]:checked + label:before {
+    background-color: #00a19b !important;
+    }
+    
+    [type=radio]:not(:checked) + label:after,
+    [type=radio]:checked + label:after {
+    /*觸發時顯示樣式*/
+    content: "";
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border: solid 1px #ffffff;
+    background: #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.375rem;
+    }                                                  
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-radio-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

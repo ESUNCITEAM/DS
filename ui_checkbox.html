@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="E.SUN Design System">
+    <link href="css/monokai.css" rel="stylesheet">
     <meta name="author" content="玉山銀行">
 
     <title>Design System - 玉山銀行</title>
@@ -185,18 +186,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="false">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -311,12 +308,99 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 核取方塊 (checkbox) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">核取方塊 (checkbox)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="d-flex pt-4 w-100 flex-column">
+                                            <input type="checkbox" class="checkbox-input" id="checkbox1"
+                                                name="checkbox">
+                                            <label class="checkbox-label" for="checkbox1">範例條款選項一</label>
+                                            <input type="checkbox" class="checkbox-input" id="checkbox2"
+                                                name="checkbox">
+                                            <label class="checkbox-label" for="checkbox2">範例條款選項二</label>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-checkbox-html">
+&ltinput type="checkbox" class="checkbox-input" id="checkbox" name="checkbox">
+&ltlabel class="checkbox-label" for="checkbox">範例條款選項&lt/label>
+                                            </code>
+                                        </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-checkbox-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-checkbox-css">
+.checkbox-input {
+    /*隱藏原先樣式*/
+    visibility: hidden;
+    }
+    
+    .checkbox-label {
+    /*將label設定成可以被點選觸發*/
+    position: relative;
+    padding-left: 1.5rem;
+    }
+    
+    [type=checkbox]:not(:checked) + label:before,
+    [type=checkbox]:checked + label:before {
+    /*未被觸發時顯示樣式*/
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #00a19b;
+    background: #FFF;
+    border-radius: 4px;
+    }
+    
+    [type=checkbox]:checked + label:before {
+    background-color: #00a19b !important;
+    }
+    
+    [type=checkbox]:not(:checked) + label:after,
+    [type=checkbox]:checked + label:after {
+    /*觸發時顯示樣式*/
+    content: "";
+    background-image: url(../img/icon_check.svg);
+    background-size: 0.75rem 0.75rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    }
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-checkbox-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
