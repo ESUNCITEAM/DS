@@ -15,8 +15,8 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link rel="stylesheet" href="css/monokai.css">
     <link rel="stylesheet" href="css/ESUN-DS_admin.css">
+    <link rel="stylesheet" href="css/monokai.css">
     <link rel="stylesheet" href="./ds-paginate/ds_paginate.css">
 
 </head>
@@ -80,6 +80,7 @@
                     <i class="far fa-image"></i>
                     <span>Illustration 插圖</span></a>
             </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -118,6 +119,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item active" href="ui_doc.html#collapseTwo">Document 說明文件</a>
                         <a class="collapse-item" href="ui_button.html#collapseTwo">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
@@ -131,7 +133,7 @@
                         <a class="collapse-item" href="ui_navbar.html#collapseTwo">Navbar 導覽列</a>
                         <a class="collapse-item" href="ui_breadcrumb.html#collapseTwo">Breadcrumb 麵包屑</a>
                         <a class="collapse-item" href="ui_tab.html#collapseTwo">Tab 頁籤</a>
-                        <a class="collapse-item active" href="ui_pageanchor.html#collapseTwo">Page Anchor 網頁錨點</a>
+                        <a class="collapse-item" href="ui_pageanchor.html#collapseTwo">Page Anchor 網頁錨點</a>
                         <a class="collapse-item" href="ui_steps.html#collapseTwo">Steps 步驟表示</a>
                         <a class="collapse-item" href="ui_progress.html#collapseTwo">Progress 進度條</a>
                         <a class="collapse-item" href="ui_timeline.html#collapseTwo">Timeline 時間軸</a>
@@ -180,64 +182,39 @@
                 <div class="container mt-5">
                     <!-- Page Heading -->
                     <div class="pt-4 pb-2">
-                        <h1 class="h2 mb-0 text-gray-800 mt-5 font-weight-normal">Pageanchor 網頁錨點</h1>
-                        <h2 class="h5 mb-0 text-gray-800 mt-2 font-weight-light">網頁中的定位器，幫助瀏覽者快速跳轉至某個節點。</h2>
+                        <h1 class="h2 mb-0 text-gray-800 mt-5 font-weight-normal">Document 說明文件</h1>
+                        <h2 class="h5 mb-0 text-gray-800 mt-2 font-weight-light">依照作業環境選擇需部署檔案</h2>
                     </div>
-                    <!-- 頁籤 -->
-                    <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
-                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                                aria-selected="false">設計</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
-                                data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
-                                aria-selected="false">程式碼</a>
-                        </li>
-                    </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
-                            <!-- 網頁錨點類型 標題 -->
+                            <!-- 分頁器類型 標題 -->
                             <div class="pt-4 pb-2">
-                                <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">網頁錨點類型</h1>
+                                <h1 class="h4 mb-0 text-primary mt-2 font-weight-bold">說明文件</h1>
                             </div>
-                            <!-- 網頁錨點類型 卡片 -->
+                            <!-- 分頁器類型 卡片 -->
                             <div class="row mt-3 text-gray-900">
                                 <div class="col">
                                     <div class="card shadow mb-4 p-3">
-                                        <div class="my-3 p-3">
-                                            <p class="h5">適用平台：官網、網銀</p>
-                                            <p class="mb-0">pc版</p>
-                                            <img src="img/ui/pageanchor-pc.svg" class="max-w-800 d-block w-100 mb-3"
-                                                alt="">
-                                            <br>
-                                            <p class="mb-0">M版</p>
-                                            <img src="img/ui/pageanchor-m.svg" class="max-w-500 d-block w-100 mb-3"
-                                                alt="">
-                                            <ul class="pl-4 my-1">
-                                                <li>使用情境：當產品說明頁(例如：官網L3)項目/分類大於一個時，則可使用</li>
-                                                <li>預設底線：1px #ACACAC</li>
-                                                <li>Active時，底部線條會以企業色#00a19b與文字等寬呈現</li>
-                                                <li>項目置左排列，若有按鈕則置右</li>
-                                                <li>在M版上寬度受限時，則用淡化方式讓使用者知道還有其他項目</li>
-                                            </ul>
+                                        <div class="row">
+                                            <div class="col-12 m-paragraph-1 px-3 py-2">
+                                                透過SCSS的方式組建專案樣式，再依據編譯環境進行配置，並建議使用reset.css進行初始化樣式。
+                                            </div>
+                                            <a class="m-paragraph-1 px-3 py-2" href="#">
+                                                <i class="fas fa-download"></i> variable.scss</a>
+                                            <a class="m-paragraph-1 px-3 py-2"
+                                                href="https://meyerweb.com/eric/tools/css/reset">
+                                                <i class="fas fa-download"></i> reset.css</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
                     </div>
-
-
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <!-- End of Main Content主要內容 -->
@@ -273,7 +250,26 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-    <script src="./ds-paginate/ds_paginate.js"></script>
+    <script src="ds-paginate/ds_paginate.js"></script>
+    <script>
+        var items = $(".pagination .paginationList");
+        var numItems = items.length;
+        var perPage = 1;
+
+        items.slice(perPage).hide();
+
+        $('.pagination-container').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            prevText: "<",
+            nextText: ">",
+            onPageClick: function (pageNumber) {
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+                items.hide().slice(showFrom, showTo).show();
+            }
+        });
+    </script>
 
 </body>
 

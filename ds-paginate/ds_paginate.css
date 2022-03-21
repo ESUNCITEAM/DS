@@ -1,0 +1,93 @@
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+
+ul.simple-pagination {
+	list-style: none;
+}
+
+.simple-pagination {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	margin: 0;
+}
+
+.simple-pagination ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.simple-pagination li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+span.ellipse.clickable {
+	cursor: pointer;
+}
+
+.ellipse input {
+	width: 3em;
+}
+
+/*------------------------------------*\
+	Compact Theme Styles
+\*------------------------------------*/
+.esun-theme span {
+	cursor: pointer;
+}
+
+.esun-theme a,
+.esun-theme span {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	color: #00a19b;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align: center;
+	border: 1px solid #d9d9d9;
+	border-left: none;
+	min-width: 14px;
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+}
+
+.esun-theme a:hover,
+.esun-theme li:not(.disabled):not(.active) span:hover {
+	text-decoration: none;
+	background: #efefef;
+}
+
+.esun-theme li:first-child a,
+.esun-theme li:first-child span {
+	border-left: 1px solid #d9d9d9;
+	border-radius: 3px 0 0 3px;
+}
+
+.esun-theme li:last-child a,
+.esun-theme li:last-child span {
+	border-radius: 0 3px 3px 0;
+}
+
+.esun-theme .current {
+	background: #00a19b;
+	color: #ffffff;
+	cursor: default;
+}
+
+.esun-theme .ellipse {
+	background: #ffffff;
+	cursor: default;
+}

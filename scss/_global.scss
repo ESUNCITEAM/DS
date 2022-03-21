@@ -1138,13 +1138,63 @@ a {
 }
 
 //js-datepicker
-.js-datepicker {
-  font-size: px-rem(16px) !important;
-  padding: px-rem(8px) px-rem(12px) !important;
+.datepicker {
+  position: relative;
 
-  &:focus {
-    outline: none;
-    border-radius: 4px;
-    border: solid 1px $primary-8;
+  &:after {
+    content: "";
+    background: url('../img/icon_calendar.svg') no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 24px;
+    height: 24px;
   }
+
+  .js-datepicker {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: solid 1px #acacac;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #00a19b;
+    }
+  }
+
+}
+
+//select
+select {
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../img/dropdown.svg) no-repeat 98% center transparent;
+}
+
+select::-ms-expand {
+  visibility: hidden;
+}
+
+.selectList {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #acacac;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+}
+
+.selectList:focus {
+  outline: none;
+  border: 1px solid #00a19b;
 }
