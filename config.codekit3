@@ -45,14 +45,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/ESUN-DS_admin.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/ESUN-DS_admin.css.map",
-      "oF" : 0
-    },
     "\/css\/monokai.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -62,6 +54,30 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/css\/monokai-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/swiper-bundle.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/swiper-bundle.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/uikit.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/uikit.min-min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -3133,26 +3149,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/dropdown.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/dropdown.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/img\/icon_calendar.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/icon_calendar.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/img\/icon_check.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -3718,16 +3714,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/img\/photo\/dropdown.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/photo\/dropdown.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
     },
     "\/img\/photo\/icon_check.svg" : {
       "ft" : 2097152,
@@ -5596,6 +5582,39 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/ui\/swiper-button-next.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/swiper-button-next.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/swiper-button-prev.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/swiper-button-prev.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/swiperImg.png" : {
+      "ft" : 32768,
+      "iS" : 29311,
+      "oA" : 0,
+      "oAP" : "\/img\/ui\/swiperImg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/ui\/tab-m.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -5906,12 +5925,31 @@
       "oAP" : "\/js\/ESUN-DS_adminjs",
       "oF" : 0
     },
+    "\/js\/swiper-bundle.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/swiper-bundle.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/photography.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/photography.html",
+      "oF" : 0
+    },
+    "\/prepros.config" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/prepros.config",
       "oF" : 0
     },
     "\/principle.html" : {

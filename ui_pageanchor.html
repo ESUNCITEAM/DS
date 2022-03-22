@@ -15,9 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link rel="stylesheet" href="css/monokai.css">
-    <link rel="stylesheet" href="css/ESUN-DS_admin.css">
-    <link rel="stylesheet" href="./ds-paginate/ds_paginate.css">
+    <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
 
@@ -186,14 +184,18 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
-                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                                aria-selected="false">設計</a>
+                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
+                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -273,7 +275,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-    <script src="./ds-paginate/ds_paginate.js"></script>
 
 </body>
 

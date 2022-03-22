@@ -13,8 +13,10 @@
 
     <!-- Plugin套件 -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/uikit.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -184,18 +186,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -317,9 +315,219 @@
 
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 線條版頁籤 (Tab) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">線條版頁籤 (Tab)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="uk-container-center tab mt-4">
+                                            <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+                                                <li aria-expanded="true" class="uk-active"><a href="">活動流程</a></li>
+                                                <li aria-expanded="false" class=""><a href="">活動紀錄查詢</a></li>
+
+                                            </ul>
+                                            <ul id="my-id" class="uk-switcher uk-margin">
+                                                <li class="uk-active">
+                                                    <div style="height: 100px;"
+                                                        class="content d-flex align-items-center justify-content-center">
+                                                        內容示意</div>
+                                                </li>
+                                                <li class="">
+                                                    <div style="height: 100px;"
+                                                        class="content d-flex align-items-center justify-content-center">
+                                                        內容示意</div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-tab-html">
+//引入uikit套件
+&ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.13.1/css/uikit.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+&ltscript src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.5/js/uikit.min.js"> &lt/script>
+
+&ltdiv class="uk-container-center tab">
+&ltul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+    &ltli aria-expanded="true" class="uk-active">&lta href="">頁籤一&lt/a>&lt/li>
+    &ltli aria-expanded="false" class="">&lta href="">頁籤二&lt/a>&lt/li>
+&lt/ul>
+&ltul id="my-id" class="uk-switcher uk-margin">
+    &ltli class="uk-active">
+        &ltdiv style="height: 100px;" class="content d-flex align-items-center justify-content-center">
+            內容示意
+        &lt/div>
+    &lt/li>
+    &ltli class="">
+        &ltdiv style="height: 100px;" class="content d-flex align-items-center justify-content-center">
+            內容示意
+        &lt/div>
+    &lt/li>
+&lt/ul>
+&lt/div>
+                                            </code>
+                                                                              </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-tab-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                         <!-- CSS -->
+                                         <p class="m-0 p-0 pt-5">CSS</p>
+                                         <hr class="m-1">
+                                         <div class="position-relative">
+                                             <pre class="m-0">
+                                                                         <code class="hljs" id="btn-copy-rwdTable-css">
+ .rwdTable {
+     font-size: 1rem;
+     width: 100%;
+     }
+     .rwdTable thead {
+     display: none;
+     }
+     .rwdTable th {
+     background: #00a19b;
+     color: #ffffff;
+     font-weight: bold;
+     padding: 0.375rem;
+     border-right: solid 1px #ffffff;
+     }
+     .rwdTable th:first-child {
+     border-left: solid 1px #00a19b;
+     }
+     .rwdTable th:last-child {
+     border-right: solid 1px #00a19b;
+     }
+     .rwdTable tr {
+     padding: 0.625rem 0;
+     display: block;
+     }
+     .rwdTable td {
+     border-bottom: solid 1px #d9d9d9;
+     padding: 0.375rem;
+     display: block;
+     text-align: left;
+     }
+     .rwdTable td::before {
+     content: attr(data-th) ":";
+     padding-right: 1.25rem;
+     }
+     @media (min-width: 576px) {
+     .rwdTable {
+         width: 100%;
+     }
+     .rwdTable thead {
+         display: table-row-group;
+     }
+     .rwdTable thead th {
+         display: table-cell;
+     }
+     .rwdTable tr {
+         display: table-row;
+         padding: 0;
+     }
+     .rwdTable td {
+         display: table-cell;
+         border-left: solid 1px #acacac;
+         border-left: solid 1px #acacac;
+         text-align: center;
+     }
+     .rwdTable td:last-child {
+         border-right: solid 1px #acacac;
+     }
+     .rwdTable td::before {
+         display: none;
+     }
+     }
+                                                                               
+                                                                         </code>
+                                                                         </pre>
+                                             <div class="copy-code position-absolute btn-copy"
+                                                 data-clipboard-target="#btn-copy-rwdTable-css">複製
+                                             </div>
+                                         </div>
+                                         <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 色塊版頁籤 (Tab) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">色塊版頁籤 (Tab)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="uk-container-center tab mt-4">
+                                            <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+                                                <li aria-expanded="true" class="uk-active"><a href="">頁籤一</a></li>
+                                                <li aria-expanded="false" class=""><a href="">頁籤二</a></li>
+                                                <li aria-expanded="false" class=""><a href="">頁籤三</a></li>
+                                                <li aria-expanded="false" class=""><a href="">頁籤四</a></li>
+                                            </ul>
+                                            <ul id="my-id" class="uk-switcher uk-margin">
+                                                <li class="uk-active">
+                                                    <div style="height: 100px;"
+                                                        class="content d-flex align-items-center justify-content-center">
+                                                        內容示意</div>
+                                                </li>
+                                                <li class="">
+                                                    <div style="height: 100px;"
+                                                        class="content d-flex align-items-center justify-content-center">
+                                                        內容示意</div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                        <code class="hljs" id="btn-copy-tab-html">
+            //引入uikit套件
+            &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.13.1/css/uikit.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            &ltscript src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.5/js/uikit.min.js"> &lt/script>
+            
+            &ltdiv class="uk-container-center tab">
+            &ltul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+                &ltli aria-expanded="true" class="uk-active">&lta href="">頁籤一&lt/a>&lt/li>
+                &ltli aria-expanded="false" class="">&lta href="">頁籤二&lt/a>&lt/li>
+            &lt/ul>
+            &ltul id="my-id" class="uk-switcher uk-margin">
+                &ltli class="uk-active">
+                    &ltdiv style="height: 100px;" class="content d-flex align-items-center justify-content-center">
+                        內容示意
+                    &lt/div>
+                &lt/li>
+                &ltli class="">
+                    &ltdiv style="height: 100px;" class="content d-flex align-items-center justify-content-center">
+                        內容示意
+                    &lt/div>
+                &lt/li>
+            &lt/ul>
+            &lt/div>
+                                                        </code>
+                                                                                          </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-tab-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
@@ -358,6 +566,7 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/clipboard/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.5/js/uikit.min.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>

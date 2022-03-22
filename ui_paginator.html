@@ -15,9 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link rel="stylesheet" href="css/ESUN-DS_admin.css">
-    <link rel="stylesheet" href="css/monokai.css">
-    <link rel="stylesheet" href="./ds-paginate/ds_paginate.css">
+    <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
 
@@ -119,7 +117,6 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="ui_doc.html#collapseTwo">Document 說明文件</a>
                         <a class="collapse-item" href="ui_button.html#collapseTwo">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
@@ -188,14 +185,18 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
-                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                                aria-selected="false">設計</a>
+                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
+                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -309,129 +310,20 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">
-                            <!-- 分頁器 (paginator) -->
-                            <div class="pt-4 pb-2">
-                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">分頁器 (paginator)</h2>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col text-gray-11">
-                                    <div class="card shadow mb-4 p-4">
-                                        <p class="m-0 p-0 pt-2">Download</p>
-                                        <hr class="m-1 mb-2">
-                                        <a class="col m-paragraph-1 mb-4 p-0" href="./ds-paginate/ds_paginate.css">
-                                            <i class="fas fa-download"></i>
-                                            CSS ds-paginator</a>
-                                        <a class="col m-paragraph-1 mb-4 p-0" href="./ds-paginate/ds_paginate.js">
-                                            <i class="fas fa-download"></i>
-                                            JS ds-paginator</a>
-                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
-                                        <hr class="m-1">
-                                        <div class="pt-4 w-100">
-                                            <!-- add -->
-                                            <div class="pagination">
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第1頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第2頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第3頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第4頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第5頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第6頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第7頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第8頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第9頁</div>
-                                                <div class="paginationList">(つ´ω`)つ 你現在正在閱讀第10頁</div>
-                                            </div>
-                                            <br>
-                                            <div class="pagination-container"></div>
-                                            <!-- add -->
-                                        </div>
-                                        <!-- HTML -->
-                                        <p class="m-0 p-0 pt-5">HTML</p>
-                                        <hr class="m-1">
-                                        <div class="position-relative">
-                                            <pre class="m-0">
-                                            <code class="hljs" id="btn-copy-pagination-html">
-/*include ds_pagination.css*/
-&ltlink rel="stylesheet" href="./ds-pagination/ds_pagination.css">
-
-&ltdiv class="pagination">
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第1頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第2頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第3頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第4頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第5頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第6頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第7頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第8頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第9頁&lt/div>
-    &ltdiv class="paginationList">(つ´ω`)つ 你現在正在閱讀第10頁&lt/div>
-&lt/div>
-
-&ltdiv class="pagination-container">&lt/div>
-                                            </code>
-                                            </pre>
-                                            <div class="copy-code position-absolute btn-copy"
-                                                data-clipboard-target="#btn-copy-pagination-html">複製
-                                            </div>
-                                        </div>
-                                        <!-- HTML -->
-                                        <!-- CSS -->
-                                        <p class="m-0 p-0 pt-5">CSS</p>
-                                        <hr class="m-1">
-                                        <div class="position-relative">
-                                            <pre class="m-0">
-                                            <code class="hljs" id="btn-copy-pagination-css">
-/*base on simplePagination.js*/
-use esun theme      
-                                            </code>
-                                            </pre>
-                                            <div class="copy-code position-absolute btn-copy"
-                                                data-clipboard-target="#btn-copy-pagination-css">複製
-                                            </div>
-                                        </div>
-                                        <!-- CSS -->
-                                        <!-- JS -->
-                                        <p class="m-0 p-0 pt-5">JS</p>
-                                        <hr class="m-1">
-                                        <div class="position-relative">
-                                            <pre class="m-0">
-                                            <code class="hljs" id="btn-copy-pagination-js">
-var items = $(".pagination .paginationList");
-var numItems = items.length;
-var perPage = 1;
-
-items.slice(perPage).hide();
-
-/*依照專案需求更改*/
-$('.pagination-container').pagination({
-    items: numItems,
-    itemsOnPage: perPage,
-    prevText: "<",
-    nextText: ">",
-    onPageClick: function (pageNumber) {
-        var showFrom = perPage * (pageNumber - 1);
-        var showTo = showFrom + perPage;
-        items.hide().slice(showFrom, showTo).show();
-    }
-});
-                                            </code>
-                                            </pre>
-                                            <div class="copy-code position-absolute btn-copy"
-                                                data-clipboard-target="#btn-copy-pagination-js">複製
-                                            </div>
-                                        </div>
-                                        <!-- JS -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...</div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -470,26 +362,6 @@ $('.pagination-container').pagination({
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-    <script src="ds-paginate/ds_paginate.js"></script>
-    <script>
-        var items = $(".pagination .paginationList");
-        var numItems = items.length;
-        var perPage = 1;
-
-        items.slice(perPage).hide();
-
-        $('.pagination-container').pagination({
-            items: numItems,
-            itemsOnPage: perPage,
-            prevText: "<",
-            nextText: ">",
-            onPageClick: function (pageNumber) {
-                var showFrom = perPage * (pageNumber - 1);
-                var showTo = showFrom + perPage;
-                items.hide().slice(showFrom, showTo).show();
-            }
-        });
-    </script>
 
 </body>
 
