@@ -15,8 +15,6 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link href="css/swiper-bundle.min.css" rel="stylesheet">
-    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -188,14 +186,18 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
-                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                                aria-selected="true">設計</a>
+                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
+                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -331,130 +333,9 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">
-                            <!-- 分隔線 (divider) -->
-                            <div class="pt-4 pb-2">
-                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">分隔線 (divider)</h2>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col text-gray-11">
-                                    <div class="card shadow mb-4 p-4">
-                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
-                                        <hr class="m-1">
-                                        <!-- Swiper -->
-                                        <div class="swiper-container mt-4">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <img src="img/ui/swiperImg.png" class="max-w-800 w-100 d-block mx-auto"
-                                                        alt="">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="img/ui/swiperImg.png" class="max-w-800 w-100 d-block mx-auto"
-                                                        alt="">
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <img src="img/ui/swiperImg.png" class="max-w-800 w-100 d-block mx-auto"
-                                                        alt="">
-                                                </div>
-
-                                            </div>
-
-                                            <span class="swiper-notification" aria-live="assertive"
-                                                aria-atomic="true"></span>
-                                                <div class="swiper-pagination"></div>
-                                                <!-- If we need navigation buttons -->
-                                                <div class="swiper-button-prev"></div>
-                                                <div class="swiper-button-next"></div>
-                                        </div>
-                             
-                                        <!-- HTML -->
-                                        <p class="m-0 p-0 pt-5">HTML</p>
-                                        <hr class="m-1">
-                                        <div class="position-relative">
-                                            <pre class="m-0">
-                                                            <code class="hljs" id="btn-copy-swiper-html">
-//引入swiper套件
-&ltlink rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-&ltscript src="https://unpkg.com/swiper@8/swiper-bundle.min.js">&lt/script>
-
-&ltdiv class="swiper-container">
-    &ltdiv class="swiper-wrapper">
-        &ltdiv class="swiper-slide">
-            &ltimg src="img/ui/swiperImg.png" class="max-w-800 d-block mx-auto"
-                alt="">
-        &lt/div>
-        &ltdiv class="swiper-slide">
-            &ltimg src="img/ui/swiperImg.png" class="max-w-800 d-block mx-auto"
-                alt="">
-        &lt/div>
-        &ltdiv class="swiper-slide">
-            &ltimg src="img/ui/swiperImg.png" class="max-w-800 d-block mx-auto"
-                alt="">
-        &lt/div>
-
-    &lt/div>
-    &ltspan class="swiper-notification" aria-live="assertive" aria-atomic="true">&lt/span>
-        &ltdiv class="swiper-pagination">&lt/div>
-        &ltdiv class="swiper-button-prev">&lt/div>
-        &ltdiv class="swiper-button-next">&lt/div>
-&lt/div>
-                                                            </code>
-                                                        </pre>
-                                            <div class="copy-code position-absolute btn-copy"
-                                                data-clipboard-target="#btn-copy-swiper-html">複製
-                                            </div>
-                                        </div>
-                                        <!-- HTML -->
-                                        <!-- CSS -->
-                                        <p class="m-0 p-0 pt-5">CSS</p>
-                                        <hr class="m-1">
-                                        <div class="position-relative">
-                                            <pre class="m-0">
-                                                                                    <code class="hljs" id="btn-copy-swiper-css">
-.swiper-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  color: #00a19b;
-}
-
-.swiper-pagination {
-  position: absolute;
-  bottom: 20px !important;
-  left: 50% !important;
-  -webkit-transform: translateX(-50%) !important;
-          transform: translateX(-50%) !important;
-}
-.swiper-pagination span {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid #d9d9d9;
-  margin: 0 5px;
-  background: #ffffff;
-  opacity: 1;
-}
-.swiper-pagination .swiper-pagination-bullet-active {
-  background: #00a19b;
-  border: 1px solid #00a19b;
-}
-                   
-                                                                                    </code>
-                                                                                    </pre>
-                                            <div class="copy-code position-absolute btn-copy"
-                                                data-clipboard-target="#btn-copy-swiper-css">複製
-                                            </div>
-                                        </div>
-                                        <!-- CSS -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                            aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...</div>
                     </div>
 
 
@@ -493,27 +374,10 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/clipboard/clipboard.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-    <script>
-       const swiper = new Swiper('.swiper-container', {
 
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-
-});
-    </script>
 </body>
 
 </html>

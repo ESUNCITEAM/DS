@@ -352,10 +352,23 @@
                             <div class="row mt-3">
                                 <div class="col text-gray-11">
                                     <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">Download</p>
+                                        <hr class="m-1 mb-2">
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="./ds-datepicker/ds_datepicker.css">
+                                            <i class="fas fa-download"></i>
+                                            CSS ds-datepicker</a>
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="./ds-datepicker/ds_datepicker.css">
+                                            <i class="fas fa-download"></i>
+                                            JS ds-datepicker</a>
+
                                         <p class="m-0 p-0 pt-2">SAMPLE</p>
                                         <hr class="m-1">
                                         <div class="d-flex pt-4 w-100">
-                                            <input class="js-datepicker">
+                                            <!-- add -->
+                                            <div class="datepicker">
+                                                <input type="text" class="js-datepicker">
+                                            </div>
+                                            <!-- add -->
                                         </div>
                                         <!-- HTML -->
                                         <p class="m-0 p-0 pt-5">HTML</p>
@@ -363,7 +376,12 @@
                                         <div class="position-relative">
                                             <pre class="m-0">
                                             <code class="hljs" id="btn-copy-datepicker-html">
-&ltinput class="js-datepicker">
+/*include ds_datepicker.css*/
+&ltlink rel="stylesheet" href="./ds-datepicker/ds_datepicker.css">
+
+&ltdiv class="datepicker">
+    &ltinput type="text" class="js-datepicker">
+&lt/div>
                                             </code>
                                             </pre>
                                             <div class="copy-code position-absolute btn-copy"
@@ -377,8 +395,31 @@
                                         <div class="position-relative">
                                             <pre class="m-0">
                                             <code class="hljs" id="btn-copy-datepicker-css">
-/*include ds_datepicker.css*/
-&ltlink rel="stylesheet" href="./ds-datepicker/ds_datepicker.css">                                
+.datepicker {
+    position: relative;
+  }
+  .datepicker:after {
+    content: "";
+    background: url("../img/icon_calendar.svg") no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+  .datepicker .js-datepicker {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: solid 1px #acacac;
+    border-radius: 4px;
+  }
+  .datepicker .js-datepicker:focus {
+    outline: none;
+    border: 1px solid #00a19b;
+  }                                
                                             </code>
                                             </pre>
                                             <div class="copy-code position-absolute btn-copy"
@@ -394,6 +435,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <!-- End of Main Content主要內容 -->

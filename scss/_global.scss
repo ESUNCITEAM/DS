@@ -1044,105 +1044,6 @@ a {
     }
   }
 }
-//divider 
-.divider{
-  border-top: 1px solid $gray-5;
-  margin:  px-rem(30px) 0;
-}
-//swiper
-.swiper-container{
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.swiper-button-next, .swiper-button-prev{
-  color:$primary-8;
-}
-.swiper-pagination {
-  position: absolute;
-  bottom: 20px!important;
-  left: 50%!important;
-  transform: translateX(-50%)!important;
-  span{
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1px solid $gray-5;
-    margin: 0 5px;
-    background: $gray-1;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
-    background: $primary-8;
-    border: 1px solid $primary-8;;
-  }
-
-}
-//tab
-.tab {
-  max-width: 1100px;
-  .uk-switcher {
-      background: #E1EFEF;
-      border-radius: 10px;
-      padding: 20px;
-
-  }
-}
-
-.uk-tab {
-  max-width: 660px;
-  width: 100%;
-  margin: 0 auto;
-
-  &>li {
-      display: inline-block!important;
-      width: 50%;
-      padding-left: 0;
-      position: relative;
-
-      a {
-          font-size: 18px;
-      }
-  }
-
-  &>.uk-active {
-      &::after {
-          content: "";
-          width: 100%;
-          height: 4px;
-          background: #00a19b;
-          border-radius: 10px;
-          display: block;
-          position: absolute;
-          bottom: -4px;
-          right: 0;
-      }
-
-      &>a {
-          color: #00a19b;
-          font-weight: bold;
-          padding-bottom: 16px;
-          border: 0;
-      }
-  }
-
-  &::before {
-      display: none;
-  }
-
-  &::after {
-      content: "";
-      bottom: 0;
-      left: 20px;
-      right: 0;
-      width: 100%;
-      height: 4px;
-      background: #E1EFEF;
-      border-radius: 10px;
-      position: static;
-  }
-}
 
 //checkbox-button
 .checkbox-input {
@@ -1237,13 +1138,63 @@ a {
 }
 
 //js-datepicker
-.js-datepicker {
-  font-size: px-rem(16px) !important;
-  padding: px-rem(8px) px-rem(12px) !important;
+.datepicker {
+  position: relative;
 
-  &:focus {
-    outline: none;
-    border-radius: 4px;
-    border: solid 1px $primary-8;
+  &:after {
+    content: "";
+    background: url('../img/icon_calendar.svg') no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 24px;
+    height: 24px;
   }
+
+  .js-datepicker {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: solid 1px #acacac;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #00a19b;
+    }
+  }
+
+}
+
+//select
+select {
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../img/dropdown.svg) no-repeat 98% center transparent;
+}
+
+select::-ms-expand {
+  visibility: hidden;
+}
+
+.selectList {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #acacac;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+}
+
+.selectList:focus {
+  outline: none;
+  border: 1px solid #00a19b;
 }
