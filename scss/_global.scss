@@ -1198,3 +1198,172 @@ select::-ms-expand {
   outline: none;
   border: 1px solid #00a19b;
 }
+
+
+//steps 
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .stepsList {
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+
+    .stepsName {
+      background-color: $primary-8;
+      border-radius: 50px;
+      color: #FFFFFF;
+      font-size: 14px;
+      margin: 6px;
+      padding: 5px 15px 5px 6px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 40px;
+        height: 4px;
+        position: absolute;
+        background: #D9D9D9;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      @include min(lg) {
+        margin: 16px 8px;
+        font-size: 18px;
+        width: 186px;
+        padding: 10px;
+
+        &::after {
+          content: "";
+          width: 60px;
+          right: -60px;
+        }
+      }
+
+      .stepsNum {
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        line-height: 22px;
+        border-radius: 100%;
+        background-color: $primary-8;
+        padding: 0;
+        margin: 0;
+      }
+
+      .stepsTxt {
+        vertical-align: middle;
+      }
+    }
+
+    .done {
+      background-color: transparent;
+
+      &::after {
+        content: "";
+        width: 40px;
+        height: 4px;
+        position: absolute;
+        background: $primary-8;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+
+        @include max(md) {
+          right: -28px;
+        }
+      }
+
+      @include min(md) {
+        background: $primary-8;
+
+        &::after {
+          content: "";
+          width: 60px;
+          right: -60px;
+        }
+      }
+
+      .stepsTxt {
+        display: none;
+
+        @include min(md) {
+          display: block;
+        }
+
+      }
+    }
+
+    .todo {
+      background-color: transparent;
+      padding: 5px 0 5px 6px;
+
+      @include min(md) {
+        background-color: #D9D9D9;
+        padding: 5px 15px 5px 6px;
+      }
+
+      .stepsNum {
+        background-color: #D9D9D9;
+        color: #1c1c1c;
+      }
+
+      .stepsTxt {
+        color: #1c1c1c;
+        display: none;
+
+        @include min(md) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//popUp
+.popUp {
+  .title {
+    font-size: px-rem(24px);
+    font-weight: bold;
+    color: $primary-8;
+  }
+
+  .content {
+    font-size: 1rem;
+    margin-top: px-rem(10px);
+  }
+
+  .btnWrap {
+    width: 100%;
+    display: flex;
+    padding-top: px-rem(12px);
+  }
+
+  .btn {
+    width: 150px;
+    height: px-rem(50px);
+    margin: 0 10px;
+  }
+
+  .btnLine {
+    width: 150px;
+    height: px-rem(50px);
+  }
+}

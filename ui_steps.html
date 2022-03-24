@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -185,19 +186,16 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
-                        </li>
+
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -232,7 +230,6 @@
                                                             <img src="img/ui/step-center.svg" class="w300  mb-2" alt="">
 
                                                         </td>
-
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -248,7 +245,6 @@
                                                         <td>
                                                             -
                                                         </td>
-
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -260,12 +256,284 @@
 
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 分頁器 (paginator) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">分頁器 (paginator)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="pt-4 w-100">
+                                            <!-- steps 4 -->
+                                            <div class="steps">
+                                                <ul class="stepsList">
+                                                    <li class="stepsName">
+                                                        <div class="stepsNum">1</div>
+                                                        <div class="stepsTxt">身份驗證</div>
+                                                    </li>
+                                                    <li class="stepsName todo">
+                                                        <div class="stepsNum">2</div>
+                                                        <div class="stepsTxt">填寫申請書</div>
+                                                    </li>
+                                                    <li class="stepsName todo">
+                                                        <div class="stepsNum">3</div>
+                                                        <div class="stepsTxt">上傳文件</div>
+                                                    </li>
+                                                    <li class="stepsName todo">
+                                                        <div class="stepsNum">4</div>
+                                                        <div class="stepsTxt">完成申請</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- steps 4 -->
+                                            <!-- steps 3 -->
+                                            <div class="steps">
+                                                <ul class="stepsList">
+                                                    <li class="stepsName done">
+                                                        <div class="stepsNum">1</div>
+                                                        <div class="stepsTxt">身份驗證</div>
+                                                    </li>
+                                                    <li class="stepsName ">
+                                                        <div class="stepsNum">2</div>
+                                                        <div class="stepsTxt">填寫申請書</div>
+                                                    </li>
+                                                    <li class="stepsName todo">
+                                                        <div class="stepsNum">3</div>
+                                                        <div class="stepsTxt">上傳文件</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- steps 3 -->
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-steps-html">
+<!-- steps 4 -->
+&ltdiv class="steps">
+    &ltul class="stepsList">
+        &ltli class="stepsName">
+            &ltdiv class="stepsNum">1&lt/div>
+            &ltdiv class="stepsTxt">身份驗證&lt/div>
+        &lt/li>
+        &ltli class="stepsName todo">
+            &ltdiv class="stepsNum">2&lt/div>
+            &ltdiv class="stepsTxt">填寫申請書&lt/div>
+        &lt/li>
+        &ltli class="stepsName todo">
+            &ltdiv class="stepsNum">3&lt/div>
+            &ltdiv class="stepsTxt">上傳文件&lt/div>
+        &lt/li>
+        &ltli class="stepsName todo">
+            &ltdiv class="stepsNum">4&lt/div>
+            &ltdiv class="stepsTxt">完成申請&lt/div>
+        &lt/li>
+    &lt/ul>
+&lt/div>
+<!-- steps 4 -->
+<!-- steps 3 -->
+&ltdiv class="steps">
+    &ltul class="stepsList">
+        /*done為已完成*/
+        &ltli class="stepsName done">
+            &ltdiv class="stepsNum">1&lt/div>
+            &ltdiv class="stepsTxt">身份驗證&lt/div>
+        &lt/li>
+        &ltli class="stepsName ">
+            &ltdiv class="stepsNum">2&lt/div>
+            &ltdiv class="stepsTxt">填寫申請書&lt/div>
+        &lt/li>
+        /*todo為即將執行*/
+        &ltli class="stepsName todo">
+            &ltdiv class="stepsNum">3&lt/div>
+            &ltdiv class="stepsTxt">完成申請&lt/div>
+        &lt/li>
+    &lt/ul>
+&lt/div>
+<!-- steps 3 -->
+                                                </code>
+                                                </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-steps-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-steps-css">
+.steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    }
+    .steps .stepsList {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0;
+    padding: 0;
+    }
+    .steps .stepsList .stepsName {
+    background-color: #00a19b;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 6px;
+    padding: 5px 15px 5px 6px;
+    text-align: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    }
+    .steps .stepsList .stepsName::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background: #D9D9D9;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -40px;
+    }
+    .steps .stepsList .stepsName:last-child::after {
+    display: none;
+    }
+    @media (min-width: 992px) {
+    .steps .stepsList .stepsName {
+        margin: 16px 8px;
+        font-size: 18px;
+        width: 186px;
+        padding: 10px;
+    }
+    .steps .stepsList .stepsName::after {
+        content: "";
+        width: 60px;
+        right: -60px;
+    }
+    }
+    .steps .stepsList .stepsName .stepsNum {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 100%;
+    background-color: #00a19b;
+    padding: 0;
+    margin: 0;
+    }
+    .steps .stepsList .stepsName .stepsTxt {
+    vertical-align: middle;
+    }
+    @media (max-width: 768px) {
+    .steps .stepsList .stepsName .stepsTxt {
+        width: 100px;
+        font-size: 16px;
+        padding: 2px 0;
+    }
+    }
+    .steps .stepsList .done {
+    background-color: transparent;
+    }
+    @media (max-width: 768px) {
+    .steps .stepsList .done {
+        padding-right: 6px;
+        margin: 0;
+    }
+    }
+    .steps .stepsList .done::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background: #00a19b;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -40px;
+    }
+    @media (max-width: 768px) {
+    .steps .stepsList .done::after {
+        right: -28px;
+    }
+    }
+    @media (min-width: 768px) {
+    .steps .stepsList .done {
+        background-color: #00a19b;
+    }
+    .steps .stepsList .done::after {
+        content: "";
+        width: 60px;
+        right: -60px;
+    }
+    }
+    .steps .stepsList .done .stepsTxt {
+    display: none;
+    }
+    @media (min-width: 768px) {
+    .steps .stepsList .done .stepsTxt {
+        display: block;
+    }
+    }
+    .steps .stepsList .todo {
+    background-color: transparent;
+    padding: 5px 0 5px 6px;
+    }
+    @media (min-width: 768px) {
+    .steps .stepsList .todo {
+        background-color: #D9D9D9;
+        padding: 5px 15px 5px 6px;
+    }
+    }
+    .steps .stepsList .todo .stepsNum {
+    background-color: #D9D9D9;
+    color: #1c1c1c;
+    }
+    .steps .stepsList .todo .stepsTxt {
+    color: #1c1c1c;
+    display: none;
+    }
+    @media (min-width: 768px) {
+    .steps .stepsList .todo .stepsTxt {
+        display: block;
+    }
+    }   
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-steps-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
