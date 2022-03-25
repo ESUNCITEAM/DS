@@ -15,7 +15,9 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link href="css/ESUN-DS_admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/monokai.css">
+    <link rel="stylesheet" href="css/exchangeChart.css">
+    <link rel="stylesheet" href="css/ESUN-DS_admin.css">
 
 </head>
 
@@ -187,18 +189,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="false">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -306,21 +304,267 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 圖表 (chart) -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">圖表 (chart)</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">Download</p>
+                                        <hr class="m-1 mb-2">
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="js/highcharts.js">
+                                            <i class="fas fa-download"></i>
+                                            JS highcharts.js</a>
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="js/highcharts-ratechart-more.js">
+                                            <i class="fas fa-download"></i>
+                                            JS highcharts-ratechart.js</a>
+
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="pt-4 w-100">
+                                            <!-- add -->
+                                            <div id="trend">
+                                                <figure class="highcharts-figure">
+                                                    <div id="trendArea"></div>
+                                                </figure>
+                                            </div>
+                                            <!-- add -->
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-chart-html">
+&ltdiv id="trend">
+    &ltfigure class="highcharts-figure">
+        &ltdiv id="trendArea">&lt/div>
+    &lt/figure>
+&lt/div>
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-chart-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-chart-css">
+.highcharts-figure,
+.highcharts-data-table table {
+    margin-top: 30px;
+}
+
+.highcharts-credits,
+.highcharts-axis-title,
+.highcharts-series-label {
+    display: none;
+}
+
+.date-select-group {
+    margin: 20px 0;
+}
+
+.date-select-group {
+    margin: 20px 0;
+}
+
+.mobile-none {
+    display: none;
+}
+
+.ui-datepicker-calendar,
+.ui-datepicker-header {
+    display: none;
+}                           
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-chart-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                        <!-- JS -->
+                                        <p class="m-0 p-0 pt-5">JS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                            <code class="hljs" id="btn-copy-chart-js">
+Highcharts.chart('trendArea', {
+
+    chart: {
+        scrollablePlotArea: {
+            minWidth: 700
+        }
+    },
+
+    title: {
+        text: '美元匯率',
+        style: {
+            fontSize: '18px',
+            color: '#00a19b'
+        }
+    },
+
+    xAxis: {
+        tickInterval: 7 * 24 * 3600 * 1000, // one week
+        tickWidth: 0,
+        gridLineWidth: 1,
+        type: 'datetime',
+        labels: {
+            align: 'left',
+            style: {
+                fontSize: '14px'
+            }
+        }
+    },
+
+    yAxis: [{ 
+        title: {
+            text: null
+        },
+        labels: {
+            style: {
+                fontSize: '14px'
+            }
+        },
+        showFirstLabel: false
+    }, { 
+        linkedTo: 0,
+        gridLineWidth: 0,
+        opposite: true,
+        title: {
+            text: null
+        },
+        labels: {
+            style: {
+                fontSize: '14px'
+            }
+        },
+        showFirstLabel: false
+    }],
+
+    legend: {
+        align: 'left',
+        margin: 50,
+        verticalAlign: 'top',
+        borderWidth: 0,
+        itemStyle: {
+            fontWeight: 'medium',
+            color: '#1C1C1C',
+            fontSize: '16px'
+        }
+    },
+
+    tooltip: {
+        shared: true,
+        crosshairs: true,
+        borderColor: '#d9d9d9',
+        style: {
+            fontSize: '14px'
+        }
+    },
+
+    plotOptions: {
+        series: {
+            cursor: 'pointer',
+            className: 'popup-on-click',
+            marker: {
+                lineWidth: 1
+            }
+        }
+    },
+    series: [{
+        name: '銀行賣出',
+        lineWidth: 2,
+        data: [
+            [Date.UTC(2017, 12, 18), 40585],
+            [Date.UTC(2017, 12, 19), 43039],
+            [Date.UTC(2017, 12, 20), 44926],
+            [Date.UTC(2017, 12, 21), 41256],
+            [Date.UTC(2017, 12, 22), 36844],
+            [Date.UTC(2017, 12, 23), 28955],
+            [Date.UTC(2017, 12, 24), 26113],
+            [Date.UTC(2017, 12, 25), 28433],
+            [Date.UTC(2017, 12, 26), 32687],
+            [Date.UTC(2017, 12, 27), 35689],
+            [Date.UTC(2017, 12, 28), 33656],
+            [Date.UTC(2017, 12, 29), 34559],
+            [Date.UTC(2017, 12, 30), 29197],
+            [Date.UTC(2017, 12, 31), 29197],
+            [Date.UTC(2018, 1, 1), 28291],
+            [Date.UTC(2018, 1, 2), 35472],
+            [Date.UTC(2018, 1, 3), 38363],
+            [Date.UTC(2018, 1, 4), 41645],
+            [Date.UTC(2018, 1, 5), 40268],
+            [Date.UTC(2018, 1, 6), 32846],
+            [Date.UTC(2018, 1, 7), 33560],
+            [Date.UTC(2018, 1, 8), 39327],
+            [Date.UTC(2018, 1, 9), 42947]
+        ],
+        market: {
+            radius: 4
+        },
+        color: '#1DA4EF',
+    }, {
+        name: '銀行買入',
+        color: '#FD9A01',
+        data: [
+            [Date.UTC(2017, 12, 18), 48351],
+            [Date.UTC(2017, 12, 19), 51499],
+            [Date.UTC(2017, 12, 20), 53359],
+            [Date.UTC(2017, 12, 21), 49018],
+            [Date.UTC(2017, 12, 22), 43332],
+            [Date.UTC(2017, 12, 23), 33419],
+            [Date.UTC(2017, 12, 24), 30020],
+            [Date.UTC(2017, 12, 25), 33183],
+            [Date.UTC(2017, 12, 26), 38782],
+            [Date.UTC(2017, 12, 27), 42566],
+            [Date.UTC(2017, 12, 28), 39972],
+            [Date.UTC(2017, 12, 29), 40414],
+            [Date.UTC(2017, 12, 30), 33565],
+            [Date.UTC(2017, 12, 31), 30738],
+            [Date.UTC(2018, 1, 1), 32822],
+            [Date.UTC(2018, 1, 2), 42081],
+            [Date.UTC(2018, 1, 3), 45652],
+            [Date.UTC(2018, 1, 4), 49572],
+            [Date.UTC(2018, 1, 5), 47936],
+            [Date.UTC(2018, 1, 6), 37539],
+            [Date.UTC(2018, 1, 7), 38527],
+            [Date.UTC(2018, 1, 8), 46847],
+            [Date.UTC(2018, 1, 9), 51286]
+        ],
+        lineWidth: 2,
+        market: {
+            radius: 4
+        },
+    }]
+});                   
+                                            </code>
+                                            </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-chart-js">複製
+                                            </div>
+                                        </div>
+                                        <!-- JS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -360,6 +604,174 @@
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
 
+    <!-- HighChart -->
+    <!--script src="https://code.highcharts.com/highcharts.js"></script-->
+    <!--script src="https://code.highcharts.com/modules/series-label.js"></script-->
+    <script src="js/highcharts.js"></script>
+    <script src="js/highcharts-ratechart-more.js"></script>
+
+    <script>
+        Highcharts.chart('trendArea', {
+
+            chart: {
+                scrollablePlotArea: {
+                    minWidth: 700
+                }
+            },
+
+            title: {
+                text: '美元匯率',
+                style: {
+                    fontSize: '18px',
+                    color: '#00a19b'
+                }
+            },
+
+            xAxis: {
+                tickInterval: 7 * 24 * 3600 * 1000, // one week
+                tickWidth: 0,
+                gridLineWidth: 1,
+                type: 'datetime',
+                labels: {
+                    align: 'left',
+                    // x: 3,
+                    // y: -3,
+                    style: {
+                        fontSize: '14px'
+                    }
+                }
+            },
+
+            yAxis: [{ // left y axis
+                title: {
+                    text: null
+                },
+                labels: {
+                    // align: 'left',
+                    // x: 3,
+                    // y: 16,
+                    // format: '{value:.,0f}',
+                    style: {
+                        fontSize: '14px'
+                    }
+                },
+                showFirstLabel: false
+            }, { // right y axis
+                linkedTo: 0,
+                gridLineWidth: 0,
+                opposite: true,
+                title: {
+                    text: null
+                },
+                labels: {
+                    // align: 'right',
+                    // x: -3,
+                    // y: 16,
+                    // format: '{value:.,0f}',
+                    style: {
+                        fontSize: '14px'
+                    }
+                },
+                showFirstLabel: false
+            }],
+
+            legend: {
+                align: 'left',
+                margin: 50,
+                verticalAlign: 'top',
+                borderWidth: 0,
+                itemStyle: {
+                    fontWeight: 'medium',
+                    color: '#1C1C1C',
+                    fontSize: '16px'
+                }
+            },
+
+            tooltip: {
+                shared: true,
+                crosshairs: true,
+                borderColor: '#d9d9d9',
+                style: {
+                    fontSize: '14px'
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    cursor: 'pointer',
+                    className: 'popup-on-click',
+                    marker: {
+                        lineWidth: 1
+                    }
+                }
+            },
+            series: [{
+                name: '銀行賣出',
+                lineWidth: 2,
+                data: [
+                    [Date.UTC(2017, 12, 18), 40585],
+                    [Date.UTC(2017, 12, 19), 43039],
+                    [Date.UTC(2017, 12, 20), 44926],
+                    [Date.UTC(2017, 12, 21), 41256],
+                    [Date.UTC(2017, 12, 22), 36844],
+                    [Date.UTC(2017, 12, 23), 28955],
+                    [Date.UTC(2017, 12, 24), 26113],
+                    [Date.UTC(2017, 12, 25), 28433],
+                    [Date.UTC(2017, 12, 26), 32687],
+                    [Date.UTC(2017, 12, 27), 35689],
+                    [Date.UTC(2017, 12, 28), 33656],
+                    [Date.UTC(2017, 12, 29), 34559],
+                    [Date.UTC(2017, 12, 30), 29197],
+                    [Date.UTC(2017, 12, 31), 29197],
+                    [Date.UTC(2018, 1, 1), 28291],
+                    [Date.UTC(2018, 1, 2), 35472],
+                    [Date.UTC(2018, 1, 3), 38363],
+                    [Date.UTC(2018, 1, 4), 41645],
+                    [Date.UTC(2018, 1, 5), 40268],
+                    [Date.UTC(2018, 1, 6), 32846],
+                    [Date.UTC(2018, 1, 7), 33560],
+                    [Date.UTC(2018, 1, 8), 39327],
+                    [Date.UTC(2018, 1, 9), 42947]
+                ],
+                market: {
+                    radius: 4
+                },
+                color: '#1DA4EF',
+            }, {
+                name: '銀行買入',
+                color: '#FD9A01',
+                data: [
+                    [Date.UTC(2017, 12, 18), 48351],
+                    [Date.UTC(2017, 12, 19), 51499],
+                    [Date.UTC(2017, 12, 20), 53359],
+                    [Date.UTC(2017, 12, 21), 49018],
+                    [Date.UTC(2017, 12, 22), 43332],
+                    [Date.UTC(2017, 12, 23), 33419],
+                    [Date.UTC(2017, 12, 24), 30020],
+                    [Date.UTC(2017, 12, 25), 33183],
+                    [Date.UTC(2017, 12, 26), 38782],
+                    [Date.UTC(2017, 12, 27), 42566],
+                    [Date.UTC(2017, 12, 28), 39972],
+                    [Date.UTC(2017, 12, 29), 40414],
+                    [Date.UTC(2017, 12, 30), 33565],
+                    [Date.UTC(2017, 12, 31), 30738],
+                    [Date.UTC(2018, 1, 1), 32822],
+                    [Date.UTC(2018, 1, 2), 42081],
+                    [Date.UTC(2018, 1, 3), 45652],
+                    [Date.UTC(2018, 1, 4), 49572],
+                    [Date.UTC(2018, 1, 5), 47936],
+                    [Date.UTC(2018, 1, 6), 37539],
+                    [Date.UTC(2018, 1, 7), 38527],
+                    [Date.UTC(2018, 1, 8), 46847],
+                    [Date.UTC(2018, 1, 9), 51286]
+                ],
+                lineWidth: 2,
+                market: {
+                    radius: 4
+                },
+            }]
+        });
+    </script>
 </body>
 
 </html>

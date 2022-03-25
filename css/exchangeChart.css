@@ -1,0 +1,27 @@
+.highcharts-figure,
+.highcharts-data-table table {
+  margin-top: 30px;
+}
+
+.highcharts-credits,
+.highcharts-axis-title,
+.highcharts-series-label {
+  display: none;
+}
+
+.date-select-group {
+  margin: 20px 0;
+}
+
+.date-select-group {
+  margin: 20px 0;
+}
+
+.mobile-none {
+  display: none;
+}
+
+.ui-datepicker-calendar,
+.ui-datepicker-header {
+  display: none;
+}
