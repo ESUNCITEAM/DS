@@ -15,7 +15,8 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link href="css/ESUN-DS_admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/monokai.css">
+    <link rel="stylesheet" href="css/ESUN-DS_admin.css">
 
 </head>
 
@@ -117,6 +118,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="ui_doc.html#collapseTwo">Document 說明文件</a>
                         <a class="collapse-item" href="ui_button.html#collapseTwo">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
@@ -185,19 +187,16 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
-                        </li>
+
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -379,12 +378,146 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+
+                            <!-- 手風琴（Accordion） -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">手風琴（Accordion）</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="faq-section">
+                                            <div class="qa-click">注意事項
+                                                <img src="img/ui/arrow.svg" class="arrow rotate-reset" alt="">
+                                            </div>
+                                            <div class="qa-answer">
+                                                <ul>
+                                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Eveniet, quas.
+                                                        Omnis, eos laudantium non temporibus quas quibusdam eligendi ab
+                                                        quia nam
+                                                        molestias impedit amet eius facilis. Dolores recusandae
+                                                        quibusdam quae?
+                                                        <a class="hyperLink" href="#">Lorem ipsum dolor sit amet
+                                                            consectetur
+                                                            adipisicing elit.
+                                                            Assumenda vero eveniet atque, quo ipsam, impedit accusamus
+                                                            totam ea
+                                                            minus eaque sequi consequuntur omnis beatae pariatur non rem
+                                                            iusto neque
+                                                            corrupti.</a>
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Officiis fuga
+                                                        veniam cupiditate. Vitae asperiores architecto ex ad fuga
+                                                        explicabo
+                                                        voluptatum? Possimus repudiandae totam praesentium, similique
+                                                        quae veritatis
+                                                        magnam aperiam quod.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                <code class="hljs" id="btn-copy-accordion-html">
+&ltdiv class="faq-section">
+    &ltdiv class="qa-click">注意事項
+        &ltimg src="img/ui/arrow.svg" class="arrow rotate-reset" alt="">
+    &lt/div>
+    &ltdiv class="qa-answer">
+        &ltul>
+            &ltli>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, quas.
+                Omnis, eos laudantium non temporibus quas quibusdam eligendi ab
+                quia nam
+                molestias impedit amet eius facilis. Dolores recusandae
+                quibusdam quae?
+            &lt/li>
+            &ltli>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis fuga
+                veniam cupiditate. Vitae asperiores architecto ex ad fuga
+                explicabo
+                voluptatum? Possimus repudiandae totam praesentium, similique
+                quae veritatis
+                magnam aperiam quod.
+            &lt/li>
+        &lt/ul>
+    &lt/div>
+&lt/div>
+                                                </code>
+                                                </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-accordion-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                <code class="hljs" id="btn-copy-accordion-css">
+.faq-section {
+    background: #efefef;
+    color: #1c1c1c;
+    }
+    .faq-section .qa-click {
+    background: #efefef;
+    height: auto;
+    cursor: pointer;
+    padding: 16px 16px;
+    }
+    .faq-section .qa-click img {
+    color: #b7acac;
+    font-size: 12px;
+    margin-top: 5px;
+    float: right;
+    }
+    .faq-section .arrow {
+    position: relative;
+    }
+    .faq-section .qa-answer {
+    display: none;
+    padding: 10px 40px 10px 10px;
+    margin: 5px 0;
+    }
+    .faq-section .qa-answer li {
+    line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+    text-justify: inter-ideograph;
+    word-break: normal;
+    }
+    .faq-section .rotate {
+    transform: rotate(-180deg);
+    /*transform: rotate(180deg);*/
+    transition: 0.1s;
+    }
+    .faq-section .rotate-reset {
+    transform: rotate(0deg);
+    transition: 0.1s;
+    }
+                                                </code>
+                                                </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-accordion-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -423,6 +556,18 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".qa-click").click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $(this).next("div.qa-answer").slideToggle("fast");
+                $(this).find(".arrow").toggleClass('rotate-reset');
+                $(this).find(".arrow").toggleClass('rotate');
+            });
+        });
+    </script>
 
 </body>
 

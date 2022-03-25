@@ -77,6 +77,30 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/css\/swiper-bundle.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/swiper-bundle.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/uikit.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/uikit.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/designlibrary\/civi\/Atm_01BasicSystem.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3004,6 +3028,22 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/file\/2022-HeaderFooter_eFingo.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/file\/2022-HeaderFooter_eFingo.zip",
+      "oF" : 0
+    },
+    "\/file\/2022-HeaderFooter.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/file\/2022-HeaderFooter.zip",
+      "oF" : 0
+    },
     "\/file\/Icon-type1.ai" : {
       "cB" : 0,
       "ft" : 8192,
@@ -4433,6 +4473,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/ui\/arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/ui\/bargraph-type1.jpg" : {
       "ft" : 16384,
       "iS" : 126768,
@@ -4474,6 +4524,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/img\/ui\/breadcrumb-hover.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/breadCrumb.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/breadCrumb.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -5169,6 +5229,36 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/ui\/logo_efingo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/logo_efingo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/logo_esun.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/logo_esun.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/logo_line.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/logo_line.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/ui\/maybe.jpg" : {
       "ft" : 16384,
       "iS" : 10378,
@@ -5445,6 +5535,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/ui\/right.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/right.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/img\/ui\/step-01.jpg" : {
       "ft" : 16384,
       "iS" : 53218,
@@ -5653,6 +5753,39 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/ui\/swiper-button-next.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/swiper-button-next.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/swiper-button-prev.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/img\/ui\/swiper-button-prev.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/img\/ui\/swiperImg.png" : {
+      "ft" : 32768,
+      "iS" : 29311,
+      "oA" : 0,
+      "oAP" : "\/img\/ui\/swiperImg.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/img\/ui\/tab-m.svg" : {
       "ft" : 2097152,
@@ -5986,20 +6119,23 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/js\/swiper-bundle.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/swiper-bundle.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/photography.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/photography.html",
-      "oF" : 0
-    },
-    "\/prepros.config" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/prepros.config",
       "oF" : 0
     },
     "\/principle.html" : {
@@ -7155,6 +7291,18 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/vendor\/bootstrap\/scss\/bootstrap-reboot.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/vendor\/bootstrap\/scss\/bootstrap-reboot-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/vendor\/bootstrap\/scss\/bootstrap-reboot.scss" : {
       "aP" : 0,

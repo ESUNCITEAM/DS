@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -117,6 +118,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="ui_doc.html#collapseTwo">Document 說明文件</a>
                         <a class="collapse-item" href="ui_button.html#collapseTwo">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
@@ -185,18 +187,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -312,9 +310,299 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 時間軸 -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">時間軸</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <div class="l-timeLine__wrap">
+                                            <div class="l-timeLine__line"></div>
+                                            <ul class="l-timeLine__contentWrap">
+                                                <li>
+                                                    <a data-fancybox="" data-src="#timeLine-01" href="javascript:;">
+                                                        <div class="l-timeLine__boxTop h3 color-primary">童年</div>
+                                                        <div class="l-timeLine__boxBottom">
+                                                            <ul class="l-timeLine__content">
+                                                                <li>
+                                                                    <p class="color-primary">標題</p>
+                                                                    <span>內文內文內文內文內文</span>
+                                                                </li>
+                                                                <li>
+                                                                    <p class="color-primary">標題</p>
+                                                                    <span>內文內文內文內文內文</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-fancybox="" data-src="#timeLine-02" href="javascript:;">
+                                                        <div class="l-timeLine__boxTop h3 color-primary">青年</div>
+                                                        <div class="l-timeLine__boxBottom">
+                                                            <ul class="l-timeLine__content">
+                                                                <li>
+                                                                    <p class="color-primary">標題</p>
+                                                                    <span>內文內文內文內文內文</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-fancybox="" data-src="#timeLine-03" href="javascript:;">
+                                                        <div class="l-timeLine__boxTop h3 color-primary">中年</div>
+                                                        <div class="l-timeLine__boxBottom">
+                                                            <ul class="l-timeLine__content">
+                                                                <li>
+                                                                    <p class="color-primary">標題</p>
+                                                                    <span>內文內文內文內文內文</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-fancybox="" data-src="#timeLine-04" href="javascript:;">
+                                                        <div class="l-timeLine__boxTop h3 color-primary">銀髮族</div>
+                                                        <div class="l-timeLine__boxBottom">
+                                                            <ul class="l-timeLine__content">
+                                                                <li>
+                                                                    <p class="color-primary">標題</p>
+                                                                    <span>內文內文內文內文內文</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                                    <code class="hljs" id="btn-copy-timeline-html">
+&ltdiv class="l-timeLine__wrap">
+    &ltdiv class="l-timeLine__line">&lt/div>
+    &ltul class="l-timeLine__contentWrap">
+        &ltli>
+            &lta data-fancybox="" data-src="#timeLine-01" href="javascript:;">
+                &ltdiv class="l-timeLine__boxTop h3 color-primary">童年&lt/div>
+                &ltdiv class="l-timeLine__boxBottom">
+                    &ltul class="l-timeLine__content">
+                        &ltli>
+                            &ltp class="color-primary">標題&lt/p>
+                            &ltspan>內文內文內文內文內文&lt/span>
+                        &lt/li>
+                        &ltli>
+                            &ltp class="color-primary">標題&lt/p>
+                            &ltspan>內文內文內文內文內文&lt/span>
+                        &lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/a>
+        &lt/li>
+        &ltli>
+            &lta data-fancybox="" data-src="#timeLine-02" href="javascript:;">
+                &ltdiv class="l-timeLine__boxTop h3 color-primary">青年&lt/div>
+                &ltdiv class="l-timeLine__boxBottom">
+                    &ltul class="l-timeLine__content">
+                        &ltli>
+                            &ltp class="color-primary">標題&lt/p>
+                            &ltspan>內文內文內文內文內文&lt/span>
+                        &lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/a>
+        &lt/li>
+        &ltli>
+            &lta data-fancybox="" data-src="#timeLine-03" href="javascript:;">
+                &ltdiv class="l-timeLine__boxTop h3 color-primary">中年&lt/div>
+                &ltdiv class="l-timeLine__boxBottom">
+                    &ltul class="l-timeLine__content">
+                        &ltli>
+                            &ltp class="color-primary">標題&lt/p>
+                            &ltspan>內文內文內文內文內文&lt/span>
+                        &lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/a>
+        &lt/li>
+        &ltli>
+            &lta data-fancybox="" data-src="#timeLine-04" href="javascript:;">
+                &ltdiv class="l-timeLine__boxTop h3 color-primary">銀髮族&lt/div>
+                &ltdiv class="l-timeLine__boxBottom">
+                    &ltul class="l-timeLine__content">
+                        &ltli>
+                            &ltp class="color-primary">標題&lt/p>
+                            &ltspan>內文內文內文內文內文&lt/span>
+                        &lt/li>
+                    &lt/ul>
+                &lt/div>
+            &lt/a>
+        &lt/li>
+    &lt/ul>
+&lt/div>
+                                                                    </code>
+                                                                                                      </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-timeline-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                                                                 <code class="hljs" id="btn-copy-timeline-css">
+.l-timeLine {
+    text-align: center;
+    }
+    .l-timeLine__wrap {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px;
+    position: relative;
+    }
+    .l-timeLine__wrap ul {
+    list-style: none;
+    }
+    .l-timeLine__line {
+    height: calc(100% - 250px);
+    width: 2px;
+    position: absolute;
+    left: 55px;
+    top: 60px;
+    background: #d9d9d9;
+    }
+    .l-timeLine__contentWrap {
+    width: 100%;
+    margin-left: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    }
+    .l-timeLine__contentWrap li {
+    margin-bottom: 10px;
+    padding: 0 5px;
+    }
+    .l-timeLine__contentWrap li a {
+    outline: none;
+    }
+    .l-timeLine__contentWrap li:hover .l-timeLine__boxTop {
+    border: solid 1px #3cbaad;
+    color: #3cbaad;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .l-timeLine__contentWrap li:hover .l-timeLine__boxBottom {
+    border: solid 1px #3cbaad;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .l-timeLine__contentWrap li:hover .l-timeLine__boxBottom::before {
+    border-right: 1px solid #3cbaad;
+    border-bottom: 1px solid #3cbaad;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .l-timeLine__content {
+    padding: 20px;
+    }
+    .l-timeLine__boxTop {
+    text-align: center;
+    border: solid 1px #00a19b;
+    border-radius: 4px;
+    padding: pxTorem(10px);
+    position: relative;
+    }
+    .l-timeLine__boxTop::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #00a19b;
+    border-radius: 100px;
+    left: -40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    }
+    .l-timeLine__boxBottom {
+    border: solid 1px #d9d9d9;
+    border-radius: 4px;
+    margin-top: 20px;
+    position: relative;
+    }
+    .l-timeLine__boxBottom::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -8px;
+    left: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+    background: #ffffff;
+    border: 0px dashed #000;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 2px;
+    }
+    @media (min-width: 768px) {
+    .l-timeLine__line {
+        width: calc(100%);
+        height: 2px;
+        top: 114px;
+        left: 0;
+    }
+    .l-timeLine__contentWrap {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        margin: auto;
+    }
+    .l-timeLine__boxBottom {
+        margin-top: 60px;
+    }
+    .l-timeLine__boxTop::before {
+        top: 66px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+    }
+                                                                                                      
+                                                                                                       
+                                                                                                 </code>
+                                                                                                 </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-timeline-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 

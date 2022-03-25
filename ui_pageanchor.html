@@ -15,9 +15,8 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
-    <link rel="stylesheet" href="css/monokai.css">
-    <link rel="stylesheet" href="css/ESUN-DS_admin.css">
-    <link rel="stylesheet" href="./ds-paginate/ds_paginate.css">
+    <link href="css/monokai.css" rel="stylesheet">
+    <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
 
@@ -118,6 +117,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="ui_doc.html#collapseTwo">Document 說明文件</a>
                         <a class="collapse-item" href="ui_button.html#collapseTwo">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
@@ -186,9 +186,9 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-home-tab"
+                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
                                 data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                                aria-selected="false">設計</a>
+                                aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
@@ -229,9 +229,314 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 網頁錨點類型 -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">網頁錨點類型</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <!-- 頁面導覽列 -->
+                                        <nav class="subnav-sections mt-4" data-type="comp" data-comp-name="_scrollspy">
+                                            <ul class="subnav-menu row justify-content-between align-items-center">
+
+                                                <div class="col-9 col-md-8 subnav-menu--contentLeft">
+                                                    <li class="subnav-menu-item"><a class="subnav-menu-item-link active"
+                                                            href="#a1">熱門卡片</a></li>
+                                                    <li class="subnav-menu-item"><a class="subnav-menu-item-link"
+                                                            href="#a2">世界卡/無限卡</a></li>
+                                                    <li class="subnav-menu-item"><a class="subnav-menu-item-link"
+                                                            href="#a3">銀行卡</a></li>
+                                                    <li class="subnav-menu-item"><a class="subnav-menu-item-link"
+                                                            href="#a4">聯名卡</a></li>
+                                                    <li class="subnav-menu-item"><a class="subnav-menu-item-link"
+                                                            href="#a5">國民旅遊卡/政府採購卡</a></li>
+                                                    <li class="subnav-menu-item"><a class="subnav-menu-item-link"
+                                                            href="#a6">簽帳金融卡</a></li>
+                                                    <div class="active-line"
+                                                        style="transform: translateX(15px); width: 96px;"></div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-2 col-3 subnav-menu--contentRight">
+                                                    <div class="row d-flex btnWrapper">
+                                                        <a class="btnLine color-primary mx-2 clear" href="#">清除篩選</a>
+                                                        <a class="btn bg-primary mx-2" data-fancybox="cardFilter"
+                                                            data-src="#cardFilter" href="javascript:;">篩選</a>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </nav>
+
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                             <code class="hljs" id="btn-copy-anchor-html">
+&ltnav class="subnav-sections">
+    &ltul class="subnav-menu row justify-content-between align-items-center">
+        &ltdiv class="col-9 col-md-8 subnav-menu--contentLeft">
+            &ltli class="subnav-menu-item">&lta class="subnav-menu-item-link active"
+                    href="#a1">熱門卡片&lt/a>&lt/li>
+            &ltli class="subnav-menu-item">&lta class="subnav-menu-item-link"
+                    href="#a2">世界卡/無限卡&lt/a>&lt/li>
+            &ltli class="subnav-menu-item">&lta class="subnav-menu-item-link"
+                    href="#a3">銀行卡&lt/a>&lt/li>
+            &ltli class="subnav-menu-item">&lta class="subnav-menu-item-link"
+                    href="#a4">聯名卡&lt/a>&lt/li>
+            &ltli class="subnav-menu-item">&lta class="subnav-menu-item-link"
+                    href="#a5">國民旅遊卡/政府採購卡&lt/a>&lt/li>
+            &ltli class="subnav-menu-item">&lta class="subnav-menu-item-link"
+                    href="#a6">簽帳金融卡&lt/a>&lt/li>
+            &ltdiv class="active-line"
+                style="transform: translateX(15px); width: 96px;">&lt/div>
+        &lt/div>
+        &ltdiv class="col-lg-4 col-md-2 col-3 subnav-menu--contentRight">
+            &ltdiv class="row d-flex btnWrapper">
+                &lta class="btnLine color-primary mx-2 clear" href="#">清除篩選&lt/a>
+                &lta class="btn bg-primary mx-2" data-fancybox="cardFilter"
+                    data-src="#cardFilter" href="javascript:;">篩選&lt/a>
+            &lt/div>
+        &lt/div>
+    &lt/ul>
+&lt/nav>
+                                               </code>
+                                                                                                                                          </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-anchor-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+                                        <!-- CSS -->
+                                        <p class="m-0 p-0 pt-5">CSS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                 <code class="hljs" id="btn-copy-anchor-css">
+:root {
+--space: 1rem;
+--border: 4px;
+--page-width: 120ch;
+--color-link: #595959;
+--color-active: #00a19b;
+--ease: cubic-bezier(0.23, 1, 0.32, 1);
+--duration: 350ms;
+--section-offset: 0;
+}
+
+.subnav-sections {
+top: 0px;
+width: 100%;
+background-color: white;
+-webkit-box-shadow: inset lightgrey 0 0px 0, rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+        box-shadow: inset lightgrey 0 0px 0, rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+}
+@media (min-width: 1200px) {
+.subnav-sections {
+    top: 0;
+}
+}
+.subnav-sections .subnav-menu {
+max-width: 1200px;
+margin: 0 auto;
+list-style: none;
+padding: 0;
+}
+.subnav-sections .subnav-menu .btn {
+max-width: 8.5rem;
+}
+.subnav-sections .subnav-menu .btnLine {
+max-width: 8.5rem;
+}
+.subnav-sections .subnav-menu--contentLeft {
+position: relative;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+overflow: scroll;
+-ms-scroll-chaining: none;
+    overscroll-behavior: none;
+scrollbar-width: none;
+-ms-overflow-style: none;
+max-width: var(--page-width);
+-webkit-transform: translateZ(0);
+        transform: translateZ(0);
+-webkit-transition: -webkit-transform var(--ease) var(--duration);
+transition: -webkit-transform var(--ease) var(--duration);
+transition: transform var(--ease) var(--duration);
+transition: transform var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+}
+@media (min-width: 576px) {
+.subnav-sections .subnav-menu--contentLeft {
+    margin: 0 auto;
+}
+}
+@media (min-width: 992px) {
+.subnav-sections .subnav-menu--contentLeft {
+    margin: initial;
+}
+}
+.subnav-sections .subnav-menu--contentLeft::-webkit-scrollbar {
+display: none;
+}
+.subnav-sections .subnav-menu--contentLeft .subnav-menu-item-link {
+display: block;
+padding: 16px;
+text-decoration: none;
+white-space: nowrap;
+color: #00a19b;
+-webkit-transition: color var(--ease) var(--duration);
+transition: color var(--ease) var(--duration);
+}
+.subnav-sections .subnav-menu--contentLeft .subnav-menu-item-link.active {
+color: #00a19b;
+}
+.subnav-sections .subnav-menu--contentRight {
+width: 100%;
+}
+.subnav-sections .subnav-menu--contentRight .btnWrapper {
+-webkit-box-pack: end !important;
+-ms-flex-pack: end !important;
+justify-content: flex-end !important;
+}
+.subnav-sections .subnav-menu--contentRight .btn {
+width: 150px;
+height: auto;
+padding: 4px 0;
+position: relative;
+}
+@media (min-width: 992px) {
+.subnav-sections .subnav-menu--contentRight .btn {
+    height: auto;
+}
+}
+.subnav-sections .subnav-menu--contentRight .btn::before {
+content: "";
+width: 20px;
+height: 100%;
+position: absolute;
+left: -21px;
+top: 0;
+/* FF3.6-15 */
+/* Chrome10-25,Safari5.1-6 */
+background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(52%, white), to(white));
+background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#ffffff", GradientType=1);
+/* IE6-9 */
+background-size: 100% auto;
+}
+@media (min-width: 576px) {
+.subnav-sections .subnav-menu--contentRight .btn {
+    padding: 10px 0;
+}
+}
+.subnav-sections .subnav-menu--contentRight .btnLine {
+width: 150px;
+height: auto;
+position: relative;
+display: none;
+}
+@media (min-width: 1200px) {
+.subnav-sections .subnav-menu--contentRight .btnLine {
+    padding: 12px 0;
+    display: block;
+}
+}
+.subnav-sections::before {
+content: "";
+width: 20px;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 1;
+-webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+/* FF3.6-15 */
+/* Chrome10-25,Safari5.1-6 */
+background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(52%, white), to(white));
+background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 52%, white 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#ffffff", GradientType=1);
+/* IE6-9 */
+background-size: 100% auto;
+}
+
+.active-line {
+position: absolute;
+bottom: 0;
+left: 0;
+height: 4px;
+background-color: var(--color-active);
+-webkit-transition: width var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+transition: width var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
+transition: width var(--ease) var(--duration), transform var(--ease) var(--duration), -webkit-transform var(--ease) var(--duration);
+}
+
+.placeholder-section {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+text-align: center;
+height: 50vh;
+background-color: lightgray;
+}
+
+.subnav-sections::before {
+content: "";
+width: 20px;
+height: 100%;
+position: absolute;
+right: 0;
+top: 0;
+z-index: 100;
+background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(70%, white), to(white));
+background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+background-size: 100% auto;
+}
+.subnav-sections::after {
+content: "";
+width: 20px;
+height: 100%;
+position: absolute;
+left: 0px;
+top: 0;
+z-index: 100;
+background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(70%, white), to(white));
+background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 70%, white 100%);
+background-size: 100% auto;
+}
+@media (min-width: 992px) {
+.subnav-sections::after {
+    display: none;
+}
+}
+                                                      
+                                             </code>
+                                          </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-anchor-css">複製
+                                            </div>
+                                        </div>
+                                        <!-- CSS -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
@@ -273,7 +578,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-    <script src="./ds-paginate/ds_paginate.js"></script>
 
 </body>
 

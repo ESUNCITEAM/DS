@@ -15,6 +15,7 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
+    <link href="css/monokai.css" rel="stylesheet">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
 
 </head>
@@ -116,6 +117,7 @@
                 <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="ui_doc.html#collapseTwo">Document 說明文件</a>
                         <a class="collapse-item" href="ui_button.html#collapseTwo">Button 按鈕</a>
                         <a class="collapse-item" href="ui_table.html#collapseTwo">Table 表格</a>
                         <a class="collapse-item" href="ui_list.html#collapseTwo">List 列表</a>
@@ -166,7 +168,7 @@
                     <!-- 玉山銀行logo -->
                     <ul class="navbar-nav overflow-hidden">
                         <li class="d-flex justify-content-center align-items-center"><a href="index.html"><img
-                                    src="./img/logo.svg" alt="玉山銀行logo"></a></li>
+                                    src="img/logo.svg" alt="玉山銀行logo"></a></li>
                         <li class="px-2 d-md-block">|</li>
                         <li class="text-primary font-weight-bold d-md-block">Design System</li>
                     </ul>
@@ -185,18 +187,14 @@
                     <!-- 頁籤 -->
                     <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link  active mx-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">設計</a>
+                            <a class="nav-link border border-color-primary-8 active mx-2" id="pills-home-tab"
+                                data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                aria-selected="true">設計</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link border border-color-primary-8 mx-2" id="pills-profile-tab"
                                 data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">程式碼</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link border border-color-primary-8 mx-2" id="pills-contact-tab"
-                                data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                                aria-selected="false">其他</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -496,9 +494,127 @@
 
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                            aria-labelledby="pills-profile-tab">
+                            <!-- 網頁導覽列 -->
+                            <div class="pt-4 pb-2">
+                                <h2 class="h4 mb-0 text-primary mt-2 font-weight-bold">網頁導覽列</h2>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col text-gray-11">
+                                    <div class="card shadow mb-4 p-4">
+                                        <p class="m-0 p-0 pt-2">Download</p>
+                                        <hr class="m-1">
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="./file/2022-HeaderFooter.zip">
+                                            <i class="fas fa-download"></i>
+                                            2022-HeaderFooter</a>
+                                        <a class="col m-paragraph-1 mb-4 p-0"
+                                            href="./file/2022-HeaderFooter_eFingo.zip">
+                                            <i class="fas fa-download"></i>
+                                            2022-HeaderFooter_eFingo</a>
+                                        <p class="m-0 p-0 pt-2">SAMPLE</p>
+                                        <hr class="m-1">
+                                        <header id="header" class="header01 mt-4">
+                                            <div class="container clearfix">
+                                                <a href="#menu" id="toggle" class="toggle01"><span></span></a>
+                                                <div class="head_logo">
+                                                    <a class="ef_tracking esunlogo"
+                                                        href="https://www.esunbank.com.tw/bank/personal"
+                                                        target="_blank"><img src="img/ui/logo_esun.svg"
+                                                            class="img-responsive" alt="玉山銀行"></a>
+                                                </div>
+                                                <nav class="main-nav" role="navigation">
+                                                    <ul class="anchor">
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/vcre5">帳戶主頁</a></li>
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/vkzeq">獨享優惠</a></li>
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/w5uph">開戶流程</a></li>
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/vsdcv">帳戶特色</a></li>
+                                                        <li><a class="ef_tracking btn_join"
+                                                                href="https://www.esunbank.com.tw/efingo/index.html#join">線上開戶</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </header>
+                                        <header id="header" class="header_efingo mt-4">
+                                            <div class="container clearfix">
+                                                <a href="#menu" id="toggle" class="toggle02"><span></span></a>
+                                                <div class="head_logo">
+                                                    <a class="ef_tracking esunlogo"
+                                                        href="https://www.esunbank.com.tw/bank/personal"
+                                                        target="_blank"><img src="img/logo.svg" class="img-responsive"
+                                                            alt="玉山銀行"></a>
+                                                    <img src="img/ui/logo_line.svg" class="img-responsive logo_line"
+                                                        alt="">
+                                                    <a class="ef_tracking efingologo"
+                                                        href="https://www.esunbank.com.tw/efingo/index.html"
+                                                        target="_blank"><img src="img/ui/logo_efingo.svg"
+                                                            class="img-responsive" alt="玉山銀行"></a>
+                                                </div>
+                                                <nav class="main-nav" role="navigation">
+                                                    <ul class="anchor">
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/vcre5">帳戶主頁</a></li>
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/vkzeq">獨享優惠</a></li>
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/w5uph">開戶流程</a></li>
+                                                        <li><a class="ef_tracking"
+                                                                href="https://esn.pse.is/vsdcv">帳戶特色</a></li>
+                                                        <li><a class="ef_tracking btn_join"
+                                                                href="https://www.esunbank.com.tw/efingo/index.html#join">線上開戶</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </header>
+
+                                        <!-- HTML -->
+                                        <p class="m-0 p-0 pt-5">HTML</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                                                <code class="hljs" id="btn-copy-navbar-html">
+//引入headerFooter css與js檔案，載點在上方
+&ltlink rel="stylesheet" href="headerFooter.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+&ltscript src="headerFooter.js"> &lt/script>
+
+&ltheader id="header">
+    &ltdiv class="container clearfix">
+        &lta href="#menu" id="toggle">&ltspan>&lt/span>&lt/a>
+        &ltdiv class="head_logo">
+            &lta class="ef_tracking esunlogo" href="https://www.esunbank.com.tw/bank/personal" target="_blank">&ltimg
+                    src="img/HeaderFooter/logo_esun.svg" class="img-responsive" alt="玉山銀行">&lt/a>
+            &ltimg src="img/HeaderFooter/logo_line.svg" class="img-responsive logo_line" alt="">
+            &lta class="ef_tracking efingologo" href="https://www.esunbank.com.tw/efingo/index.html"
+                target="_blank">&ltimg src="img/HeaderFooter/logo_efingo.svg" class="img-responsive" alt="玉山銀行">&lt/a>
+        &lt/div>
+        &ltnav class="main-nav" role="navigation">
+            &ltul class="anchor">
+                &ltli>&lta class="ef_tracking" href="https://esn.pse.is/vcre5">選單一&lt/a>&lt/li>
+                &ltli>&lta class="ef_tracking" href="https://esn.pse.is/vkzeq">選單二&lt/a>&lt/li>
+                &ltli>&lta class="ef_tracking" href="https://esn.pse.is/w5uph">選單三&lt/a>&lt/li>
+                &ltli>&lta class="ef_tracking" href="https://esn.pse.is/vsdcv">選單四&lt/a>&lt/li>
+            &lt/ul>
+        &lt/nav>
+    &lt/div>
+&lt/header>
+                                                                </code>
+                                                                                                  </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-navbar-html">複製
+                                            </div>
+                                        </div>
+                                        <!-- HTML -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
 
@@ -540,7 +656,17 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-
+    <script>
+        //m版漢堡選單
+        $('.toggle01').click(function (e) {
+            $('.toggle01, .header01').toggleClass('on');
+            e.preventDefault();
+        });
+        $('.toggle02').click(function (e) {
+            $('.toggle02, .header_efingo').toggleClass('on');
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
