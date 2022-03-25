@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="181.5" viewBox="0 0 208 181.5">
+  <g id="marketing_float_btn" transform="translate(-628 -366)">
+    <circle id="Ellipse_145" data-name="Ellipse 145" cx="25" cy="25" r="25" transform="translate(736 458.5)" fill="#00a19b"/>
+    <line id="Line_5" data-name="Line 5" y2="116" transform="translate(823 409)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+    <line id="Line_6" data-name="Line 6" x2="131" transform="translate(692.5 525.5)" fill="none" stroke="#c3c3c3" stroke-width="1"/>
+    <line id="Line_7" data-name="Line 7" x2="15.5" transform="translate(807 409.163)" fill="none" stroke="#ff5d5d" stroke-width="1"/>
+    <line id="Line_9" data-name="Line 9" y2="16" transform="translate(760.5 509)" fill="none" stroke="#ff5d5d" stroke-width="1"/>
+    <line id="Line_10" data-name="Line 10" y2="16" transform="translate(760.5 442)" fill="none" stroke="#ff5d5d" stroke-width="1"/>
+    <text id="_16px" data-name="16px" transform="translate(809 399.663)" fill="#ff5d5d" font-size="12" font-family="'\.AppleSystemUIFont'"><tspan x="0" y="0">16px</tspan></text>
+    <text id="_16_" data-name="16%" transform="translate(750 544.5)" fill="#ff5d5d" font-size="12" font-family="'\.AppleSystemUIFont'"><tspan x="0" y="0">16%</tspan></text>
+    <path id="Path_2628" data-name="Path 2628" d="M4889,907.118l9-9,9,9" transform="translate(-4136.5 -419.118)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <g id="float-txt" transform="translate(0 64)">
+      <circle id="Ellipse_147" data-name="Ellipse 147" cx="38" cy="38" r="38" transform="translate(628 302)" fill="#ef7800"/>
+      <text id="純文字_按鈕" data-name="純文字
+按鈕" transform="translate(666 337)" fill="#fff" font-size="14" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC"><tspan x="-21" y="0">純文字</tspan><tspan x="-14" y="18">按鈕</tspan></text>
+    </g>
+    <g id="float-icon" transform="translate(0 65)">
+      <circle id="Ellipse_172" data-name="Ellipse 172" cx="38" cy="38" r="38" transform="translate(723 301)" fill="#ef7800"/>
+      <text id="icon按鈕" transform="translate(761 358)" fill="#fff" font-size="14" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC"><tspan x="-27.839" y="0">icon</tspan><tspan y="0">按鈕</tspan></text>
+      <g id="Rectangle_1217" data-name="Rectangle 1217" transform="translate(748 314)" fill="none" stroke="#fff" stroke-width="1">
+        <rect width="26" height="26" stroke="none"/>
+        <rect x="0.5" y="0.5" width="25" height="25" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

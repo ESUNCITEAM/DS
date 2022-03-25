@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="355" height="175" viewBox="0 0 355 175">
+  <g id="marketing_tab01" transform="translate(-64 -265)">
+    <rect id="Rectangle_1225" data-name="Rectangle 1225" width="285" height="4" rx="2" transform="translate(100 290)" fill="#e1efef"/>
+    <rect id="Rectangle_1247" data-name="Rectangle 1247" width="285" height="4" rx="2" transform="translate(100 265)" fill="none"/>
+    <text id="活動流程" transform="translate(146 280)" fill="#1c1c1c" font-size="12" font-family="'\.PingFangTC-Medium', '\.AppleTraditionalChineseFont'" font-weight="500"><tspan x="-24.504" y="0">活動流程</tspan></text>
+    <text id="活動紀錄查詢" transform="translate(241 280)" fill="#1c1c1c" font-size="11" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-33.726" y="0">活動紀錄查詢</tspan></text>
+    <text id="其他" transform="translate(336 280)" fill="#1c1c1c" font-size="11" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-11.242" y="0">其他</tspan></text>
+    <rect id="Rectangle_1226" data-name="Rectangle 1226" width="94.971" height="4" rx="2" transform="translate(99.614 290)" fill="#00a19b"/>
+    <rect id="Rectangle_1227" data-name="Rectangle 1227" width="355" height="132" rx="4" transform="translate(64 308)" fill="#e1efef"/>
+    <text id="內容" transform="translate(241 383)" fill="#1c1c1c" font-size="11" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-11.242" y="0">內容</tspan></text>
+  </g>
+</svg>

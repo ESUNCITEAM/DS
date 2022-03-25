@@ -2421,3 +2421,13 @@ select::-ms-expand {
 .card-wrapper-line {
   border: 1px solid $gray-5;
 }
+
+//行銷頁規範
+.float-btn-table {
+  overflow-x: scroll;
+
+  td {
+    border: 1px solid $gray-5;
+    padding: 10px;
+  }
+}
