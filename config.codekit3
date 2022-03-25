@@ -3081,6 +3081,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/guideline_application.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/guideline_application.html",
+      "oF" : 0
+    },
     "\/icon.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -6490,6 +6498,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/ui_button.html",
+      "oF" : 0
+    },
+    "\/ui_card.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/ui_card.html",
       "oF" : 0
     },
     "\/ui_carousel.html" : {
