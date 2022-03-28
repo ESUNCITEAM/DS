@@ -13,6 +13,9 @@
 
     <!-- Plugin套件 -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
     <link href="css/ESUN-DS_admin.css" rel="stylesheet">
@@ -73,7 +76,7 @@
                     <span>Photo 照片</span></a>
             </li>
             <!-- Nav Item - illustration插圖 -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="illustration.html">
                     <i class="far fa-image"></i>
                     <span>Illustration 插圖</span></a>
@@ -105,7 +108,7 @@
             <div class="sidebar-heading">
                 Guideline
             </div>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
                     aria-expanded="true" aria-controls="collapseThree">
                     <i class="fas fa-bookmark"></i>
@@ -117,7 +120,7 @@
                             行銷頁面
                         </a>
                         <a class="collapse-item" href="guideline_application.html#collapseThree">
-                            流程頁面
+                            申請頁面
                         </a>
                     </div>
                 </div>
@@ -238,7 +241,19 @@
     <div class="row mt-3 text-gray-900">
         <div class="col">
             <div class="card shadow mb-4 p-3">
+                <div class="row">
+                    <div class="col-12 m-paragraph-1 px-3 py-2">
+                        1:1共用元件檔案下載
+                    </div>
+                    <a class="col m-paragraph-1 mb-4 px-3" href="./file/20220120_行銷頁共用元件.xd">
+                        <i class="fas fa-download"></i>
+                        行銷頁共用元件</a>
+                </div>
+            </div>
+            <div class="card shadow mb-4 p-3">
+                
                 <div class="row p-3">
+            
                     <div class="col-lg-12">
                         <p class="h5 mb-3 font-weight-bold">按鈕:</p>
                         <ul class="pl-4 my-1  mb-3">
@@ -247,6 +262,7 @@
                         </ul>
                         <p class="mb-1">例如：在外匯網頁裡，可以使用以下按鈕樣式</p>
                         <img src="img/guideline/marketing_btn.svg" class="my-2 w-100 max-w-800" alt="">
+                        
                     </div>
   
                 </div>
@@ -287,11 +303,15 @@
                     </div>
                     <div class="col-lg-6 my-4">
                         <p>線條版</p>
-                        <img src="img/guideline/marketing_tab01.svg" class="w-100 d-block" alt="">
+                        <a href="img/guideline/marketing_tab01.svg" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline/marketing_tab01.svg" class="w-100 d-block" alt="">
+                        </a>
                     </div>
                     <div class="col-lg-6 my-4">
                         <p>色塊版</p>
-                        <img src="img/guideline/marketing_tab02.svg" class="w-100 d-block" alt="">
+                        <a href="img/guideline/marketing_tab02.svg" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline/marketing_tab02.svg" class="w-100 d-block" alt="">
+                        </a>
                     </div>
          
                 </div>
@@ -306,7 +326,9 @@
                             <li>背景色#F4F8FA(primary-1)</li>
                             <li>標題#00a19b(primary-8)</li>
                         </ul>
-                        <img src="img/guideline/marketing_faq01.svg" class="w-100 d-block" alt="">
+                        <a href="img/guideline/marketing_faq01.svg" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline/marketing_faq01.svg" class="w-100 d-block" alt="">
+                        </a>
                     </div>
 
                     <div class="col-12 my-4">
@@ -315,11 +337,56 @@
                             <li>線框#D9D9D9(gray-5)</li>
                             <li>標題#00a19b(primary-8)</li>
                         </ul>
-                        <img src="img/guideline/marketing_faq02.svg" class="w-100 d-block" alt="">
+                        <a href="img/guideline//marketing_faq02.svg" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline//marketing_faq02.svg" class="w-100 d-block" alt="">
+                        </a>
                     </div>
-         
                 </div>
-
+                <br>
+                <div class="row p-3">
+                    <div class="col-lg-12">
+                        <p class="h5 mb-3 font-weight-bold">注意事項:</p>
+                    </div>
+                    <div class="col-12 my-2">
+                        <ul class="pl-4 my-1  mb-3">
+                            <li>背景色#FAFAFA(gray-2)</li>
+                            <li>照需求選擇收合或展開的版本</li>
+                        </ul>
+                        <a href="img/guideline/marketing_notice.svg" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline/marketing_notice.svg" class="w-100 d-block" alt="">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="row p-3">
+                    <div class="col-lg-12">
+                        <p class="h5 mb-3 font-weight-bold">警語:</p>
+                    </div>
+                    <div class="col-12 my-2">
+                        <ul class="pl-4 my-1  mb-3">
+                            <li>顏色依照強調色#EF7800、#F8524C、#00A19B擇一使用，切勿一次使用多種色</li>
+                            <li>照需求選擇收合或展開的版本</li>
+                        </ul>
+                        <a href="img/guideline/marketing_warning.png" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline/marketing_warning.png" class="w-100 d-block" alt="">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="row p-3">
+                    <div class="col-lg-12">
+                        <p class="h5 mb-3 font-weight-bold">彈跳視窗:</p>
+                    </div>
+                    <div class="col-12 my-2">
+                        <ul class="pl-4 my-1  mb-3">
+                            <li>建議可使用Fancybox插件，設計方法同Design System，請參照<a class="link-primary"
+                                href="ui_modal.html">Modal 彈跳視窗</a>。</li>
+                        </ul>
+                        <a href="img/guideline/marketing_popup.svg" data-toggle="lightbox" data-title="Before">
+                            <img src="img/guideline/marketing_popup.svg" class="w-100 d-block" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -359,6 +426,9 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/clipboard/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
