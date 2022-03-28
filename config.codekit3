@@ -6376,6 +6376,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/ui\/timeline-pc-defualt.png" : {
+      "ft" : 32768,
+      "iS" : 41477,
+      "oA" : 0,
+      "oAP" : "\/img\/ui\/timeline-pc-defualt.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/ui\/timeline-pc-hover.png" : {
+      "ft" : 32768,
+      "iS" : 41276,
+      "oA" : 0,
+      "oAP" : "\/img\/ui\/timeline-pc-hover.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/ui\/web-btn-order.jpg" : {
       "ft" : 16384,
       "iS" : 62707,
@@ -7081,14 +7107,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/ui_table.html",
-      "oF" : 0
-    },
-    "\/ui_timeline.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/ui_timeline.html",
       "oF" : 0
     },
     "\/vendor\/bootstrap\/css\/bootstrap-grid.css" : {
