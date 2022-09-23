@@ -1,0 +1,107 @@
+////Color System
+
+//Primary Color
+$primary-1: #f4f8fa !default;
+$primary-2: #daf1f0 !default;
+$primary-3: #bde3e2 !default;
+$primary-4: #87d4c7 !default;
+$primary-5: #5fc7b9 !default;
+$primary-6: #3cbaad !default;
+$primary-7: #1cada4 !default;
+$primary-8: #00a19b !default;
+$primary-9: #007a7a !default;
+$primary-10: #005154 !default;
+
+//Neutral Color
+$gray-1: #ffffff !default;
+$gray-2: #fafafa !default;
+$gray-3: #f5f5f5 !default;
+$gray-4: #f0f0f0 !default;
+$gray-5: #d9d9d9 !default;
+$gray-6: #acacac !default;
+$gray-7: #7c7c7c !default;
+$gray-8: #595959 !default;
+$gray-9: #434343 !default;
+$gray-10: #262626 !default;
+$gray-11: #1c1c1c !default;
+$gray-12: #141414 !default;
+$gray-13: #000000 !default;
+
+//Blue Color
+$blue-1: #e6fbff !default;
+$blue-2: #a3eeff !default;
+$blue-3: #7ae2ff !default;
+$blue-4: #52d4ff !default;
+$blue-5: #28c0fc !default;
+$blue-6: #00a4ef !default;
+$blue-7: #0083c9 !default;
+$blue-8: #0065a3 !default;
+$blue-9: #00497d !default;
+$blue-10: #003057 !default;
+
+//Green Color
+$green-1: #e6fff4 !default;
+$green-2: #9bf2ce !default;
+$green-3: #6ee6b8 !default;
+$green-4: #45d9a5 !default;
+$green-5: #21cc96 !default;
+$green-6: #00c08b !default;
+$green-7: #009973 !default;
+$green-8: #00735a !default;
+$green-9: #004d3e !default;
+$green-10: #002621 !default;
+
+//Yellow Color
+$yellow-1: #fffde6 !default;
+$yellow-2: #fff7ba !default;
+$yellow-3: #ffef91 !default;
+$yellow-4: #ffe369 !default;
+$yellow-5: #ffd640 !default;
+$yellow-6: #ffc517 !default;
+$yellow-7: #d99e09 !default;
+$yellow-8: #b37a00 !default;
+$yellow-9: #8c5b00 !default;
+$yellow-10: #663f00 !default;
+
+//Orange Color
+$orange-1: #fff9e6 !default;
+$orange-2: #ffe7a3 !default;
+$orange-3: #ffd77a !default;
+$orange-4: #ffc552 !default;
+$orange-5: #ffb029 !default;
+$orange-6: #ff9900 !default;
+$orange-7: #d97b00 !default;
+$orange-8: #b35f00 !default;
+$orange-9: #8c4600 !default;
+$orange-10: #663000 !default;
+
+//Red Color
+$red-1: #fff2f0 !default;
+$red-2: #ffedeb !default;
+$red-3: #ffc8c2 !default;
+$red-4: #ffa099 !default;
+$red-5: #fc746f !default;
+$red-6: #ef4343 !default;
+$red-7: #c92e34 !default;
+$red-8: #a31d26 !default;
+$red-9: #7d101b !default;
+$red-10: #570a15 !default;
+
+//Error Color
+$error-color: #c92e34 !default;
+
+//Strong Color
+$strong-color-orange: #e66900 !default;
+$strong-color-red: #f8524c !default;
+
+////Breakpoints
+
+//default
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
