@@ -98,6 +98,7 @@ a {
 
   td,
   th {
+    padding: 0.5rem 0.75rem;
     border-color: $gray-5;
   }
 }
@@ -804,7 +805,7 @@ a {
 
   &:hover {
     opacity: .7;
-    color: $gray-1;
+    color: $white;
   }
 
   &:disabled {
@@ -1339,11 +1340,19 @@ select::-ms-expand {
 }
 
 //popUp
+.fancybox-stage{
+  background-color: rgb(28 28 28 / 60%);
+}
 .popUp {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 30px;
   .title {
     font-size: px-rem(24px);
     font-weight: bold;
     color: $primary-8;
+    margin-bottom: 1.25rem;
   }
 
   .content {
@@ -2422,13 +2431,11 @@ select::-ms-expand {
 .card-wrapper-line {
   border: 1px solid $gray-5;
 }
-
 //行銷頁規範
-.float-btn-table {
+.float-btn-table{
   overflow-x: scroll;
-
-  td {
-    border: 1px solid $gray-5;
-    padding: 10px;
-  }
+ td{
+  border: 1px solid $gray-5;
+  padding: 10px;
+ }
 }
