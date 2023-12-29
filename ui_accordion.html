@@ -119,7 +119,7 @@
                             行銷頁面
                         </a>
                         <a class="collapse-item" href="guideline_application.html#collapseThree">
-                            申請頁面
+                            流程頁面
                         </a>
                     </div>
                 </div>
@@ -528,6 +528,27 @@
                                             </div>
                                         </div>
                                         <!-- CSS -->
+                                        <!-- JS -->
+                                        <p class="m-0 p-0 pt-5">JS</p>
+                                        <hr class="m-1">
+                                        <div class="position-relative">
+                                            <pre class="m-0">
+                                             <code class="hljs" id="btn-copy-accordion-js">
+$(".qa-click").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).next("div.qa-answer").slideToggle("fast");
+    $(this).find(".arrow").toggleClass('rotate-reset');
+    $(this).find(".arrow").toggleClass('rotate');
+});                                                                                         
+                        
+                                                </code>
+                                               </pre>
+                                            <div class="copy-code position-absolute btn-copy"
+                                                data-clipboard-target="#btn-copy-accordion-js">複製
+                                            </div>
+                                        </div>
+                                        <!-- JS -->
                                     </div>
                                 </div>
                             </div>

@@ -16,8 +16,8 @@
     <!-- CSS引入 -->
     <link rel="shortcut icon" href="https://www.esunbank.com.tw/bank/images/esunbank/favicon.ico">
     <link rel="stylesheet" href="css/monokai.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/ESUN-DS_admin.css">
-    <link rel="stylesheet" href="./ds-fancybox/fancybox-min.css">
 
 </head>
 
@@ -120,7 +120,7 @@
                             行銷頁面
                         </a>
                         <a class="collapse-item" href="guideline_application.html#collapseThree">
-                            申請頁面
+                            流程頁面
                         </a>
                     </div>
                 </div>
@@ -282,12 +282,12 @@
                                     <div class="card shadow mb-4 p-4">
                                         <p class="m-0 p-0 pt-2">Download</p>
                                         <hr class="m-1 mb-2">
-                                        <a class="col m-paragraph-1 mb-4 p-0" href="./ds-fancybox/fancybox-min.css">
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="css/jquery.fancybox.min.css">
                                             <i class="fas fa-download"></i>
-                                            CSS ds-fanncybox</a>
-                                        <a class="col m-paragraph-1 mb-4 p-0" href="./ds-fancybox/fancybox-min.js">
+                                            CSS ds-jquery.fancybox</a>
+                                        <a class="col m-paragraph-1 mb-4 p-0" href="js/jquery.fancybox.min.js">
                                             <i class="fas fa-download"></i>
-                                            JS ds-fanncybox</a>
+                                            JS ds-jquery.fancybox</a>
 
                                         <p class="m-0 p-0 pt-2">SAMPLE</p>
                                         <hr class="m-1">
@@ -299,7 +299,7 @@
                                                 <p class="title">
                                                     主要標題
                                                 </p>
-                                                <p class="content">
+                                                <p class="content text-gray-11">
                                                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
                                                     earum autem blanditiis ut natus, eos,
                                                     molestias esse praesentium delectus ducimus accusantium nisi facilis
@@ -325,13 +325,13 @@
                                             <pre class="m-0">
                                             <code class="hljs" id="btn-copy-modal-html">
 /*include fancybox.css*/
-&ltlink rel="stylesheet" href="./ds-fancybox/fancybox.css">
+&ltlink rel="stylesheet" href="css/jquery.fancybox.min.css">
     &lta data-fancybox="popUp" data-src="#popUp" href="javascript:;">點選啟動彈跳視窗&lt/a>
     &ltdiv class="popUp" id="popUp" style="display: none">
         &ltp class="title">
             主要標題
         &lt/p>
-        &ltp class="content">
+        &ltp class="content text-gray-11">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
             earum autem blanditiis ut natus, eos,
             molestias esse praesentium delectus ducimus accusantium nisi facilis
@@ -347,8 +347,9 @@
             &lta class="btnLine" href="#">次要按鈕&lt/a>
             &lta class="btn" href="#">主要按鈕&lt/a>
         &lt/div>
+    &lt/div>
  /*include fancybox.js*/
-&ltlink rel="stylesheet" href="./ds-fancybox/fancybox.js">
+&ltlink rel="stylesheet" href="js/jquery.fancybox.min.js">
                                             </code>
                                             </pre>
                                             <div class="copy-code position-absolute btn-copy"
@@ -362,10 +363,17 @@
                                         <div class="position-relative">
                                             <pre class="m-0">
                                             <code class="hljs" id="btn-copy-modal-css">
-.popUp .title {
+    .popUp{
+        max-width: 1000px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 30px;
+    }
+    .popUp .title {
     font-size: 1.5rem;
     font-weight: bold;
     color: #00a19b;
+    margin-bottom: 1.25rem;
     }
     .popUp .content {
     font-size: 1rem;
@@ -435,7 +443,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/ESUN-DS_admin.js"></script>
-    <script src="./ds-fancybox/fancybox-min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 
 </body>
 

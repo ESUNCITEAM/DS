@@ -120,7 +120,7 @@
                             行銷頁面
                         </a>
                         <a class="collapse-item" href="guideline_application.html#collapseThree">
-                            申請頁面
+                            流程頁面
                         </a>
                     </div>
                 </div>
@@ -432,7 +432,9 @@
   overflow: hidden;
   position: relative;
 }
-
+.swiper-slide img{
+    width: 100%;
+}
 .swiper-button-next, .swiper-button-prev {
   color: #00a19b;
 }
@@ -466,6 +468,31 @@
                                             </div>
                                         </div>
                                         <!-- CSS -->
+                                             <!-- JS -->
+                                             <p class="m-0 p-0 pt-5">JS</p>
+                                             <hr class="m-1">
+                                             <div class="position-relative">
+                                                 <pre class="m-0">
+                                                                                         <code class="hljs" id="btn-copy-swiper-js">
+ const swiper = new Swiper('.swiper-container', {
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+                        
+                                                                                         </code>
+                                                                                         </pre>
+                                                 <div class="copy-code position-absolute btn-copy"
+                                                     data-clipboard-target="#btn-copy-swiper-js">複製
+                                                 </div>
+                                             </div>
+                                             <!-- JS -->
                                     </div>
                                 </div>
                             </div>

@@ -118,7 +118,7 @@
                             行銷頁面
                         </a>
                         <a class="collapse-item" href="guideline_application.html#collapseThree">
-                            申請頁面
+                            流程頁面
                         </a>
                     </div>
                 </div>
@@ -546,7 +546,131 @@ background-size: 100% auto;
                                             </div>
                                         </div>
                                         <!-- CSS -->
+     <!-- JS -->
+     <p class="m-0 p-0 pt-5">JS</p>
+     <hr class="m-1">
+     <div class="position-relative">
+         <pre class="m-0">
+                                                 <code class="hljs" id="btn-copy-anchor-js">
+const sectionsContainer = document.querySelector('.page-sections');
+const sections = document.querySelectorAll('.page-section');
+const nav = document.querySelector('.subnav-sections');
+const menu = nav.querySelector('.subnav-menu--contentLeft');
+const links = nav.querySelectorAll('.subnav-menu-item-link');
+const activeLine = nav.querySelector('.active-line');
+const sectionOffset = nav.offsetHeight;
+const activeClass = 'active';
+let activeIndex = 0;
+let isScrolling = true;
+let userScroll = true;
 
+
+//加上active
+const setActiveClass = () => {
+    links[activeIndex].classList.add(activeClass);
+};
+
+//移除active
+const removeActiveClass = () => {
+    links[activeIndex].classList.remove(activeClass);
+};
+
+//底線移動
+const moveActiveLine = () => {
+    const link = links[activeIndex];
+    const linkX = link.getBoundingClientRect().x;
+    const menuX = menu.getBoundingClientRect().x;
+
+    // activeLine.style.transform = `translateX(${menu.scrollLeft - menuX + linkX}px)`;
+    // activeLine.style.width = `${link.offsetWidth}px`;
+};
+
+//
+const setMenuLeftPosition = position => {
+    menu.scrollTo({
+        left: position,
+        behavior: 'smooth'
+    });
+
+};
+
+
+//確認導覽列是否overflow
+const checkMenuOverflow = () => {
+    const activeLink = links[activeIndex].getBoundingClientRect();
+    const offset = 200;
+    if (Math.floor(activeLink.right) > window.innerWidth) {
+        setMenuLeftPosition(menu.scrollLeft + activeLink.right - window.innerWidth + offset);
+    } else if (activeLink.left < 0) {
+        setMenuLeftPosition(menu.scrollLeft + activeLink.left - offset);
+    }
+};
+
+//手動active選項
+const handleActiveLinkUpdate = current => {
+    removeActiveClass();
+    activeIndex = current;
+    checkMenuOverflow();
+    setActiveClass();
+    moveActiveLine();
+};
+
+
+const init = () => {
+    setActiveClass();
+    moveActiveLine(links[0]);
+    document.documentElement.style.setProperty('--section-offset', sectionOffset);
+};
+
+links.forEach((link, index) => link.addEventListener('click', () => {
+    userScroll = false;
+    handleActiveLinkUpdate(index);
+}));
+
+
+
+//監聽位置
+window.addEventListener("scroll", () => {
+    const currentIndex = sectionsContainer.getBoundingClientRect().top < 0 ? findIndexEx() : 0;
+
+    if (userScroll && currentIndex == -1) {
+        handleActiveLinkUpdate(activeIndex);
+    }
+    else if (userScroll && activeIndex !== currentIndex) {
+        handleActiveLinkUpdate(currentIndex);
+    } else {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(() => userScroll = true, 100);
+    }
+
+    function findIndexEx() {
+        let index = [...sections].reverse().findIndex(section => window.scrollY >= section.offsetTop - sectionOffset * 2);
+        return index == -1 ? -1 : sections.length - 1 - index;
+    }
+});
+
+init();
+
+
+const element = document.querySelector('.subnav-menu--contentLeft');
+
+element.addEventListener('wheel', (event) => {
+    event.preventDefault();
+
+    element.scrollBy({
+        left: event.deltaY < 0 ? -30 : 30,
+
+    });
+});
+//# sourceURL=scrollspy.js
+
+                                                 </code>
+                                                 </pre>
+         <div class="copy-code position-absolute btn-copy"
+             data-clipboard-target="#btn-copy-anchor-js">複製
+         </div>
+     </div>
+     <!-- JS -->
                                     </div>
                                 </div>
                             </div>
