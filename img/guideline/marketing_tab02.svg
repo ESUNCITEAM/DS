@@ -1,20 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="869" height="440" viewBox="0 0 869 440">
-  <g id="marketing_tab02" transform="translate(34 22.656)">
-    <rect id="Rectangle_1250" data-name="Rectangle 1250" width="869" height="440" transform="translate(-34 -22.656)" fill="#fff"/>
-    <rect id="Rectangle_1230" data-name="Rectangle 1230" width="191.734" height="65.097" rx="2" transform="translate(81.232)" fill="#00a19b"/>
-    <g id="Rectangle_1231" data-name="Rectangle 1231" transform="translate(304.621)" fill="none" stroke="#00a19b" stroke-width="1">
-      <rect width="191.734" height="65.097" rx="2" stroke="none"/>
-      <rect x="0.5" y="0.5" width="190.734" height="64.097" rx="1.5" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="355" height="175" viewBox="0 0 355 175">
+  <g id="marketing_tab02" transform="translate(-452 -264.656)">
+    <rect id="Rectangle_1230" data-name="Rectangle 1230" width="84.971" height="28.849" rx="2" transform="translate(488 264.656)" fill="#00a19b"/>
+    <g id="Rectangle_1231" data-name="Rectangle 1231" transform="translate(587 264.656)" fill="none" stroke="#00a19b" stroke-width="1">
+      <rect width="84.971" height="28.849" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="83.971" height="27.849" rx="1.5" fill="none"/>
     </g>
-    <g id="Rectangle_1232" data-name="Rectangle 1232" transform="translate(537.035)" fill="none" stroke="#00a19b" stroke-width="1">
-      <rect width="191.734" height="65.097" rx="2" stroke="none"/>
-      <rect x="0.5" y="0.5" width="190.734" height="64.097" rx="1.5" fill="none"/>
+    <g id="Rectangle_1232" data-name="Rectangle 1232" transform="translate(690 264.656)" fill="none" stroke="#00a19b" stroke-width="1">
+      <rect width="84.971" height="28.849" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="83.971" height="27.849" rx="1.5" fill="none"/>
     </g>
-    <text id="活動流程" transform="translate(174.497 41.344)" fill="#fff" font-size="27" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-54.702" y="0">活動流程</tspan></text>
-    <text id="活動紀錄查詢" transform="translate(400.497 41.344)" fill="#00a19b" font-size="27" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-82.053" y="0">活動紀錄查詢</tspan></text>
-    <text id="其他" transform="translate(631.497 41.344)" fill="#00a19b" font-size="27" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-27.351" y="0">其他</tspan></text>
-    <rect id="Rectangle_1228" data-name="Rectangle 1228" width="801.04" height="297.076" rx="4" transform="translate(0 97.803)" fill="#f4f8fa"/>
-    <text id="內容" transform="translate(400.827 267.213)" fill="#1c1c1c" font-size="24" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-24.312" y="0">內容</tspan></text>
-    <rect id="Rectangle_1233" data-name="Rectangle 1233" width="31.59" height="31.59" transform="translate(153.666 65.097) rotate(-45)" fill="#00a19b"/>
+    <text id="活動流程" transform="translate(530 283)" fill="#fff" font-size="12" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-24.504" y="0">活動流程</tspan></text>
+    <text id="活動紀錄查詢" transform="translate(630 283)" fill="#00a19b" font-size="12" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-36.756" y="0">活動紀錄查詢</tspan></text>
+    <text id="其他" transform="translate(732 283)" fill="#00a19b" font-size="12" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-12.252" y="0">其他</tspan></text>
+    <rect id="Rectangle_1228" data-name="Rectangle 1228" width="355" height="131.656" rx="4" transform="translate(452 308)" fill="#f4f8fa"/>
+    <text id="內容" transform="translate(630 382.771)" fill="#1c1c1c" font-size="11" font-family="'\.PingFangTC-Regular', '\.AppleTraditionalChineseFont'"><tspan x="-11.242" y="0">內容</tspan></text>
+    <rect id="Rectangle_1233" data-name="Rectangle 1233" width="14" height="14" transform="translate(520.101 293.505) rotate(-45)" fill="#00a19b"/>
   </g>
 </svg>
